@@ -1,0 +1,597 @@
+{
+  "config": {
+    "plant": "cartpole",
+    "objective": "V",
+    "horizon": 10,
+    "steps": 180,
+    "rho_u": 0.01,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "budgets": [
+      3,
+      10
+    ],
+    "run_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "pred_dec": "accepted_update",
+    "configs": [
+      [
+        "value_only",
+        0.003,
+        0.0
+      ],
+      [
+        "grad_only",
+        0.0,
+        0.05
+      ],
+      [
+        "value+grad",
+        0.003,
+        0.05
+      ]
+    ]
+  },
+  "per_seed": {
+    "0": {
+      "value_only": {
+        "3": {
+          "success_V2": 0.0,
+          "success_V10": 0.2,
+          "accepted_frac": 0.30444444444444446,
+          "true_incr_frac": 0.5911111111111111,
+          "mean_pred_dec": 682.5817608975372,
+          "mean_pred_dec_applied": 682.5817608975372,
+          "mean_pred_dec_full": 7784.524401588014,
+          "mean_true_dec": -460.5729416797655
+        },
+        "10": {
+          "success_V2": 0.0,
+          "success_V10": 0.2,
+          "accepted_frac": 0.36733333333333335,
+          "true_incr_frac": 0.5933333333333334,
+          "mean_pred_dec": 135.36859784443968,
+          "mean_pred_dec_applied": 135.36859784443968,
+          "mean_pred_dec_full": 27757.556377749028,
+          "mean_true_dec": -263.81628403569533
+        }
+      },
+      "grad_only": {
+        "3": {
+          "success_V2": 0.8,
+          "success_V10": 0.8,
+          "accepted_frac": 0.5477777777777778,
+          "true_incr_frac": 0.4255555555555556,
+          "mean_pred_dec": 848.577411919466,
+          "mean_pred_dec_applied": 848.577411919466,
+          "mean_pred_dec_full": 14001.380992507571,
+          "mean_true_dec": -62.04072190790894
+        },
+        "10": {
+          "success_V2": 1.0,
+          "success_V10": 1.0,
+          "accepted_frac": 0.5566666666666666,
+          "true_incr_frac": 0.3055555555555555,
+          "mean_pred_dec": 2.4486268198272167,
+          "mean_pred_dec_applied": 2.4486268198272167,
+          "mean_pred_dec_full": 16.41781718442005,
+          "mean_true_dec": 0.6008361965953404
+        }
+      },
+      "value+grad": {
+        "3": {
+          "success_V2": 0.8,
+          "success_V10": 0.8,
+          "accepted_frac": 0.5192592592592592,
+          "true_incr_frac": 0.46333333333333326,
+          "mean_pred_dec": 29.00676731271842,
+          "mean_pred_dec_applied": 29.00676731271842,
+          "mean_pred_dec_full": 369.7957453629218,
+          "mean_true_dec": -269.74631027354474
+        },
+        "10": {
+          "success_V2": 1.0,
+          "success_V10": 1.0,
+          "accepted_frac": 0.5612222222222222,
+          "true_incr_frac": 0.35555555555555557,
+          "mean_pred_dec": 2.2768427432671716,
+          "mean_pred_dec_applied": 2.2768427432671716,
+          "mean_pred_dec_full": 18.256763661059914,
+          "mean_true_dec": 0.6043632637018093
+        }
+      }
+    },
+    "1": {
+      "value_only": {
+        "3": {
+          "success_V2": 0.0,
+          "success_V10": 0.2,
+          "accepted_frac": 0.2240740740740741,
+          "true_incr_frac": 0.6966666666666668,
+          "mean_pred_dec": 1423.1082308038851,
+          "mean_pred_dec_applied": 1423.1082308038851,
+          "mean_pred_dec_full": 22875.523690549875,
+          "mean_true_dec": -710.7836873386765
+        },
+        "10": {
+          "success_V2": 0.0,
+          "success_V10": 0.0,
+          "accepted_frac": 0.3824444444444445,
+          "true_incr_frac": 0.7066666666666667,
+          "mean_pred_dec": 226.03112179772816,
+          "mean_pred_dec_applied": 226.03112179772816,
+          "mean_pred_dec_full": 2564.7899790504807,
+          "mean_true_dec": -66.81757123542695
+        }
+      },
+      "grad_only": {
+        "3": {
+          "success_V2": 1.0,
+          "success_V10": 1.0,
+          "accepted_frac": 0.5325925925925926,
+          "true_incr_frac": 0.25222222222222224,
+          "mean_pred_dec": 9.721337317099959,
+          "mean_pred_dec_applied": 9.721337317099959,
+          "mean_pred_dec_full": 37.77713466145519,
+          "mean_true_dec": 0.5984000359271533
+        },
+        "10": {
+          "success_V2": 0.4,
+          "success_V10": 1.0,
+          "accepted_frac": 0.5371111111111111,
+          "true_incr_frac": 0.21000000000000002,
+          "mean_pred_dec": 1.9217168431709417,
+          "mean_pred_dec_applied": 1.9217168431709417,
+          "mean_pred_dec_full": 11.314833578655826,
+          "mean_true_dec": 0.5938294039993091
+        }
+      },
+      "value+grad": {
+        "3": {
+          "success_V2": 0.8,
+          "success_V10": 1.0,
+          "accepted_frac": 0.5511111111111111,
+          "true_incr_frac": 0.2522222222222222,
+          "mean_pred_dec": 8.455940294353358,
+          "mean_pred_dec_applied": 8.455940294353358,
+          "mean_pred_dec_full": 37.680996253856264,
+          "mean_true_dec": 0.5989640258134762
+        },
+        "10": {
+          "success_V2": 0.4,
+          "success_V10": 1.0,
+          "accepted_frac": 0.5395555555555556,
+          "true_incr_frac": 0.25,
+          "mean_pred_dec": 2.0404106066400423,
+          "mean_pred_dec_applied": 2.0404106066400423,
+          "mean_pred_dec_full": 12.614613926597489,
+          "mean_true_dec": 0.5950398822840706
+        }
+      }
+    },
+    "2": {
+      "value_only": {
+        "3": {
+          "success_V2": 0.0,
+          "success_V10": 0.0,
+          "accepted_frac": 0.37777777777777777,
+          "true_incr_frac": 0.5688888888888889,
+          "mean_pred_dec": 1263.3124589772287,
+          "mean_pred_dec_applied": 1263.3124589772287,
+          "mean_pred_dec_full": 43421.736741351226,
+          "mean_true_dec": -425.424688057793
+        },
+        "10": {
+          "success_V2": 0.0,
+          "success_V10": 0.0,
+          "accepted_frac": 0.4254444444444445,
+          "true_incr_frac": 0.5522222222222222,
+          "mean_pred_dec": 143.41837818846625,
+          "mean_pred_dec_applied": 143.41837818846625,
+          "mean_pred_dec_full": 2643.6812790082013,
+          "mean_true_dec": -75.38952717382111
+        }
+      },
+      "grad_only": {
+        "3": {
+          "success_V2": 1.0,
+          "success_V10": 1.0,
+          "accepted_frac": 0.6333333333333333,
+          "true_incr_frac": 0.23555555555555552,
+          "mean_pred_dec": 7.660410738975889,
+          "mean_pred_dec_applied": 7.660410738975889,
+          "mean_pred_dec_full": 34.48971343881301,
+          "mean_true_dec": 0.6042176793634548
+        },
+        "10": {
+          "success_V2": 1.0,
+          "success_V10": 1.0,
+          "accepted_frac": 0.5803333333333333,
+          "true_incr_frac": 0.20222222222222222,
+          "mean_pred_dec": 1.7228779741901448,
+          "mean_pred_dec_applied": 1.7228779741901448,
+          "mean_pred_dec_full": 11.471663529186335,
+          "mean_true_dec": 0.6033078963127011
+        }
+      },
+      "value+grad": {
+        "3": {
+          "success_V2": 1.0,
+          "success_V10": 1.0,
+          "accepted_frac": 0.6607407407407407,
+          "true_incr_frac": 0.1911111111111111,
+          "mean_pred_dec": 8.307142275225278,
+          "mean_pred_dec_applied": 8.307142275225278,
+          "mean_pred_dec_full": 40.26206011661015,
+          "mean_true_dec": 0.6019944365547746
+        },
+        "10": {
+          "success_V2": 1.0,
+          "success_V10": 1.0,
+          "accepted_frac": 0.5643333333333332,
+          "true_incr_frac": 0.1611111111111111,
+          "mean_pred_dec": 1.794406832610844,
+          "mean_pred_dec_applied": 1.794406832610844,
+          "mean_pred_dec_full": 10.370546952967981,
+          "mean_true_dec": 0.6021983675113397
+        }
+      }
+    },
+    "3": {
+      "value_only": {
+        "3": {
+          "success_V2": 0.0,
+          "success_V10": 0.0,
+          "accepted_frac": 0.4881481481481481,
+          "true_incr_frac": 0.5599999999999999,
+          "mean_pred_dec": 1223.1753581490116,
+          "mean_pred_dec_applied": 1223.1753581490116,
+          "mean_pred_dec_full": 11036.819718482153,
+          "mean_true_dec": -100.00523574648457
+        },
+        "10": {
+          "success_V2": 0.0,
+          "success_V10": 0.0,
+          "accepted_frac": 0.5131111111111111,
+          "true_incr_frac": 0.4855555555555555,
+          "mean_pred_dec": 14.492146327873915,
+          "mean_pred_dec_applied": 14.492146327873915,
+          "mean_pred_dec_full": 139.09253977751473,
+          "mean_true_dec": -0.33533868065194455
+        }
+      },
+      "grad_only": {
+        "3": {
+          "success_V2": 0.0,
+          "success_V10": 0.4,
+          "accepted_frac": 0.42444444444444446,
+          "true_incr_frac": 0.4155555555555555,
+          "mean_pred_dec": 16.311289467629706,
+          "mean_pred_dec_applied": 16.311289467629706,
+          "mean_pred_dec_full": 96.87277062312526,
+          "mean_true_dec": 0.46413572341849624
+        },
+        "10": {
+          "success_V2": 0.0,
+          "success_V10": 0.4,
+          "accepted_frac": 0.5441111111111111,
+          "true_incr_frac": 0.4255555555555556,
+          "mean_pred_dec": 3.353129194903476,
+          "mean_pred_dec_applied": 3.353129194903476,
+          "mean_pred_dec_full": 27.70601078386685,
+          "mean_true_dec": 0.5258275083053641
+        }
+      },
+      "value+grad": {
+        "3": {
+          "success_V2": 0.0,
+          "success_V10": 0.4,
+          "accepted_frac": 0.4181481481481482,
+          "true_incr_frac": 0.42333333333333334,
+          "mean_pred_dec": 19.084989637989548,
+          "mean_pred_dec_applied": 19.084989637989548,
+          "mean_pred_dec_full": 134.2877186006671,
+          "mean_true_dec": 0.40290755384479554
+        },
+        "10": {
+          "success_V2": 0.0,
+          "success_V10": 0.4,
+          "accepted_frac": 0.5434444444444444,
+          "true_incr_frac": 0.4311111111111111,
+          "mean_pred_dec": 3.583307072887094,
+          "mean_pred_dec_applied": 3.583307072887094,
+          "mean_pred_dec_full": 38.873243650761424,
+          "mean_true_dec": 0.5083523809130878
+        }
+      }
+    },
+    "4": {
+      "value_only": {
+        "3": {
+          "success_V2": 0.0,
+          "success_V10": 0.0,
+          "accepted_frac": 0.3340740740740741,
+          "true_incr_frac": 0.5333333333333333,
+          "mean_pred_dec": 114.81771278601434,
+          "mean_pred_dec_applied": 114.81771278601434,
+          "mean_pred_dec_full": 949.1096538547666,
+          "mean_true_dec": -17.788609582755576
+        },
+        "10": {
+          "success_V2": 0.0,
+          "success_V10": 0.0,
+          "accepted_frac": 0.5173333333333333,
+          "true_incr_frac": 0.5344444444444445,
+          "mean_pred_dec": 35.032149343850236,
+          "mean_pred_dec_applied": 35.032149343850236,
+          "mean_pred_dec_full": 218.58218922584607,
+          "mean_true_dec": -4.390243608688345
+        }
+      },
+      "grad_only": {
+        "3": {
+          "success_V2": 0.0,
+          "success_V10": 0.0,
+          "accepted_frac": 0.4851851851851852,
+          "true_incr_frac": 0.5344444444444445,
+          "mean_pred_dec": 19.186902211583735,
+          "mean_pred_dec_applied": 19.186902211583735,
+          "mean_pred_dec_full": 110.7436327913841,
+          "mean_true_dec": -0.10366678068414861
+        },
+        "10": {
+          "success_V2": 0.0,
+          "success_V10": 0.0,
+          "accepted_frac": 0.5606666666666666,
+          "true_incr_frac": 0.6355555555555557,
+          "mean_pred_dec": 6.175313606232476,
+          "mean_pred_dec_applied": 6.175313606232476,
+          "mean_pred_dec_full": 33.382690546346176,
+          "mean_true_dec": 0.32546171533279616
+        }
+      },
+      "value+grad": {
+        "3": {
+          "success_V2": 0.0,
+          "success_V10": 0.0,
+          "accepted_frac": 0.45740740740740743,
+          "true_incr_frac": 0.5255555555555557,
+          "mean_pred_dec": 20.286068967168536,
+          "mean_pred_dec_applied": 20.286068967168536,
+          "mean_pred_dec_full": 172.5869827927756,
+          "mean_true_dec": -0.43507402005666496
+        },
+        "10": {
+          "success_V2": 0.0,
+          "success_V10": 0.0,
+          "accepted_frac": 0.567111111111111,
+          "true_incr_frac": 0.5611111111111111,
+          "mean_pred_dec": 5.54192762405214,
+          "mean_pred_dec_applied": 5.54192762405214,
+          "mean_pred_dec_full": 34.73137015517024,
+          "mean_true_dec": 0.4103846539922894
+        }
+      }
+    },
+    "5": {
+      "value_only": {
+        "3": {
+          "success_V2": 0.0,
+          "success_V10": 0.0,
+          "accepted_frac": 0.5514814814814816,
+          "true_incr_frac": 0.4533333333333333,
+          "mean_pred_dec": 78.69495463087296,
+          "mean_pred_dec_applied": 78.69495463087296,
+          "mean_pred_dec_full": 214.29737915819274,
+          "mean_true_dec": 0.21697137609003816
+        },
+        "10": {
+          "success_V2": 0.0,
+          "success_V10": 0.0,
+          "accepted_frac": 0.49777777777777776,
+          "true_incr_frac": 0.45111111111111113,
+          "mean_pred_dec": 43.836859162215276,
+          "mean_pred_dec_applied": 43.836859162215276,
+          "mean_pred_dec_full": 206.9759700164776,
+          "mean_true_dec": 0.08893363781084165
+        }
+      },
+      "grad_only": {
+        "3": {
+          "success_V2": 0.8,
+          "success_V10": 1.0,
+          "accepted_frac": 0.6418518518518519,
+          "true_incr_frac": 0.34777777777777774,
+          "mean_pred_dec": 11.552576262244964,
+          "mean_pred_dec_applied": 11.552576262244964,
+          "mean_pred_dec_full": 46.99205285064873,
+          "mean_true_dec": 0.597301010339214
+        },
+        "10": {
+          "success_V2": 1.0,
+          "success_V10": 1.0,
+          "accepted_frac": 0.6042222222222222,
+          "true_incr_frac": 0.3655555555555555,
+          "mean_pred_dec": 2.594425769438983,
+          "mean_pred_dec_applied": 2.594425769438983,
+          "mean_pred_dec_full": 10.714827369285576,
+          "mean_true_dec": 0.6015731987548023
+        }
+      },
+      "value+grad": {
+        "3": {
+          "success_V2": 1.0,
+          "success_V10": 1.0,
+          "accepted_frac": 0.6437037037037037,
+          "true_incr_frac": 0.3333333333333333,
+          "mean_pred_dec": 9.13224387729387,
+          "mean_pred_dec_applied": 9.13224387729387,
+          "mean_pred_dec_full": 39.644643973754334,
+          "mean_true_dec": 0.6027184474059788
+        },
+        "10": {
+          "success_V2": 1.0,
+          "success_V10": 1.0,
+          "accepted_frac": 0.61,
+          "true_incr_frac": 0.3522222222222222,
+          "mean_pred_dec": 2.394312318576078,
+          "mean_pred_dec_applied": 2.394312318576078,
+          "mean_pred_dec_full": 10.51377283458947,
+          "mean_true_dec": 0.602770078035714
+        }
+      }
+    },
+    "6": {
+      "value_only": {
+        "3": {
+          "success_V2": 0.0,
+          "success_V10": 0.4,
+          "accepted_frac": 0.504074074074074,
+          "true_incr_frac": 0.5422222222222223,
+          "mean_pred_dec": 637.7022248509768,
+          "mean_pred_dec_applied": 637.7022248509768,
+          "mean_pred_dec_full": 14392.437529977464,
+          "mean_true_dec": -237.5704227627535
+        },
+        "10": {
+          "success_V2": 0.2,
+          "success_V10": 0.2,
+          "accepted_frac": 0.5018888888888889,
+          "true_incr_frac": 0.47111111111111115,
+          "mean_pred_dec": 17.654555067999695,
+          "mean_pred_dec_applied": 17.654555067999695,
+          "mean_pred_dec_full": 83.32023482496542,
+          "mean_true_dec": 0.3636131545139721
+        }
+      },
+      "grad_only": {
+        "3": {
+          "success_V2": 0.0,
+          "success_V10": 0.0,
+          "accepted_frac": 0.4348148148148148,
+          "true_incr_frac": 0.49111111111111105,
+          "mean_pred_dec": 10.443841308459413,
+          "mean_pred_dec_applied": 10.443841308459413,
+          "mean_pred_dec_full": 68.56993980980232,
+          "mean_true_dec": 0.19387899784544257
+        },
+        "10": {
+          "success_V2": 0.0,
+          "success_V10": 0.0,
+          "accepted_frac": 0.5501111111111111,
+          "true_incr_frac": 0.48,
+          "mean_pred_dec": 2.7957422942075327,
+          "mean_pred_dec_applied": 2.7957422942075327,
+          "mean_pred_dec_full": 21.76178930437883,
+          "mean_true_dec": 0.30057823501855635
+        }
+      },
+      "value+grad": {
+        "3": {
+          "success_V2": 0.0,
+          "success_V10": 0.0,
+          "accepted_frac": 0.44185185185185183,
+          "true_incr_frac": 0.48555555555555563,
+          "mean_pred_dec": 15.986760810953603,
+          "mean_pred_dec_applied": 15.986760810953603,
+          "mean_pred_dec_full": 137.99967967176508,
+          "mean_true_dec": -0.06750734072091016
+        },
+        "10": {
+          "success_V2": 0.0,
+          "success_V10": 0.0,
+          "accepted_frac": 0.5298888888888889,
+          "true_incr_frac": 0.4833333333333333,
+          "mean_pred_dec": 2.5638836125452444,
+          "mean_pred_dec_applied": 2.5638836125452444,
+          "mean_pred_dec_full": 29.601202128914103,
+          "mean_true_dec": 0.21842131181118626
+        }
+      }
+    },
+    "7": {
+      "value_only": {
+        "3": {
+          "success_V2": 0.0,
+          "success_V10": 0.6,
+          "accepted_frac": 0.5207407407407407,
+          "true_incr_frac": 0.4722222222222222,
+          "mean_pred_dec": 368.94041291826125,
+          "mean_pred_dec_applied": 368.94041291826125,
+          "mean_pred_dec_full": 5289.691131799404,
+          "mean_true_dec": -30.579523900696586
+        },
+        "10": {
+          "success_V2": 0.0,
+          "success_V10": 0.8,
+          "accepted_frac": 0.5605555555555555,
+          "true_incr_frac": 0.4522222222222222,
+          "mean_pred_dec": 115.77496638867254,
+          "mean_pred_dec_applied": 115.77496638867254,
+          "mean_pred_dec_full": 974.3632515592404,
+          "mean_true_dec": -4.620617560298995
+        }
+      },
+      "grad_only": {
+        "3": {
+          "success_V2": 0.0,
+          "success_V10": 0.0,
+          "accepted_frac": 0.6211111111111112,
+          "true_incr_frac": 0.5633333333333334,
+          "mean_pred_dec": 22.6115801881512,
+          "mean_pred_dec_applied": 22.6115801881512,
+          "mean_pred_dec_full": 81.55109865056417,
+          "mean_true_dec": 0.014034724182722202
+        },
+        "10": {
+          "success_V2": 0.0,
+          "success_V10": 0.0,
+          "accepted_frac": 0.578111111111111,
+          "true_incr_frac": 0.6144444444444445,
+          "mean_pred_dec": 7.803544836756328,
+          "mean_pred_dec_applied": 7.803544836756328,
+          "mean_pred_dec_full": 35.20415154479559,
+          "mean_true_dec": 0.0033353008070750923
+        }
+      },
+      "value+grad": {
+        "3": {
+          "success_V2": 0.0,
+          "success_V10": 0.0,
+          "accepted_frac": 0.6977777777777778,
+          "true_incr_frac": 0.4666666666666666,
+          "mean_pred_dec": 17.370298441558663,
+          "mean_pred_dec_applied": 17.370298441558663,
+          "mean_pred_dec_full": 63.03134585520597,
+          "mean_true_dec": 0.4282587937970278
+        },
+        "10": {
+          "success_V2": 0.0,
+          "success_V10": 0.0,
+          "accepted_frac": 0.5837777777777777,
+          "true_incr_frac": 0.5555555555555556,
+          "mean_pred_dec": 6.083464726846614,
+          "mean_pred_dec_applied": 6.083464726846614,
+          "mean_pred_dec_full": 30.635853376997794,
+          "mean_true_dec": 0.3932351914243724
+        }
+      }
+    }
+  }
+}

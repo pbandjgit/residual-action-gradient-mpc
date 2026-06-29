@@ -1,0 +1,189 @@
+{
+  "config": {
+    "plant": "cstr",
+    "solver": "damped-GN + line search",
+    "objective": "residual",
+    "horizon": 3,
+    "steps": 120,
+    "rho_u": 0.01,
+    "success_V": 2.0,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "budgets": [
+      3,
+      10
+    ],
+    "configs": [
+      [
+        "value_only",
+        0.003,
+        0.0
+      ],
+      [
+        "grad_only",
+        0.0,
+        0.05
+      ],
+      [
+        "value+grad",
+        0.003,
+        0.05
+      ]
+    ]
+  },
+  "per_seed": {
+    "0": {
+      "value_only": {
+        "3": {
+          "success": 0.0,
+          "accepted_frac": 0.555,
+          "true_incr_frac": 0.43833333333333335,
+          "mean_pred_dec": 213.23508092612775,
+          "mean_true_dec": 1.4184585595640384
+        },
+        "10": {
+          "success": 0.0,
+          "accepted_frac": 0.43033333333333335,
+          "true_incr_frac": 0.48999999999999994,
+          "mean_pred_dec": 69.50985515999106,
+          "mean_true_dec": -5.791965895850916
+        }
+      },
+      "grad_only": {
+        "3": {
+          "success": 0.4,
+          "accepted_frac": 0.5155555555555555,
+          "true_incr_frac": 0.4083333333333334,
+          "mean_pred_dec": 0.7568391879278961,
+          "mean_true_dec": 1.6905208223461148
+        },
+        "10": {
+          "success": 0.4,
+          "accepted_frac": 0.5058333333333334,
+          "true_incr_frac": 0.42666666666666664,
+          "mean_pred_dec": 0.25916898310367953,
+          "mean_true_dec": 1.6887448274832129
+        }
+      },
+      "value+grad": {
+        "3": {
+          "success": 0.4,
+          "accepted_frac": 0.6744444444444444,
+          "true_incr_frac": 0.525,
+          "mean_pred_dec": 0.6306016003691828,
+          "mean_true_dec": 1.723908929403057
+        },
+        "10": {
+          "success": 0.4,
+          "accepted_frac": 0.5663333333333334,
+          "true_incr_frac": 0.5083333333333333,
+          "mean_pred_dec": 0.25149748534106775,
+          "mean_true_dec": 1.7188180688640997
+        }
+      }
+    },
+    "1": {
+      "value_only": {
+        "3": {
+          "success": 0.0,
+          "accepted_frac": 0.555,
+          "true_incr_frac": 0.5316666666666666,
+          "mean_pred_dec": 119.57016321560145,
+          "mean_true_dec": 1.5943284197116134
+        },
+        "10": {
+          "success": 0.0,
+          "accepted_frac": 0.3338333333333333,
+          "true_incr_frac": 0.5766666666666667,
+          "mean_pred_dec": 60.54429998650653,
+          "mean_true_dec": 1.6245083875757704
+        }
+      },
+      "grad_only": {
+        "3": {
+          "success": 0.6,
+          "accepted_frac": 0.7883333333333333,
+          "true_incr_frac": 0.23499999999999996,
+          "mean_pred_dec": 0.6840158088984932,
+          "mean_true_dec": 1.795829429159052
+        },
+        "10": {
+          "success": 0.6,
+          "accepted_frac": 0.7041666666666666,
+          "true_incr_frac": 0.285,
+          "mean_pred_dec": 0.23793269909291487,
+          "mean_true_dec": 1.795224891456133
+        }
+      },
+      "value+grad": {
+        "3": {
+          "success": 0.6,
+          "accepted_frac": 0.8272222222222222,
+          "true_incr_frac": 0.525,
+          "mean_pred_dec": 0.8169740823466484,
+          "mean_true_dec": 1.77561916757614
+        },
+        "10": {
+          "success": 0.6,
+          "accepted_frac": 0.7116666666666667,
+          "true_incr_frac": 0.4966666666666667,
+          "mean_pred_dec": 0.29072050825572104,
+          "mean_true_dec": 1.7723463613675565
+        }
+      }
+    },
+    "2": {
+      "value_only": {
+        "3": {
+          "success": 0.0,
+          "accepted_frac": 0.4955555555555556,
+          "true_incr_frac": 0.27999999999999997,
+          "mean_pred_dec": 547.0151818810517,
+          "mean_true_dec": 1.7246296689695857
+        },
+        "10": {
+          "success": 0.2,
+          "accepted_frac": 0.369,
+          "true_incr_frac": 0.5216666666666667,
+          "mean_pred_dec": 169.26244303365684,
+          "mean_true_dec": 1.4335994759048911
+        }
+      },
+      "grad_only": {
+        "3": {
+          "success": 0.2,
+          "accepted_frac": 0.45166666666666677,
+          "true_incr_frac": 0.6783333333333333,
+          "mean_pred_dec": 12.733380252731852,
+          "mean_true_dec": 1.7450260025475248
+        },
+        "10": {
+          "success": 0.4,
+          "accepted_frac": 0.3126666666666666,
+          "true_incr_frac": 0.6766666666666666,
+          "mean_pred_dec": 5.825665814117913,
+          "mean_true_dec": 1.7474897062509196
+        }
+      },
+      "value+grad": {
+        "3": {
+          "success": 0.2,
+          "accepted_frac": 0.45444444444444443,
+          "true_incr_frac": 0.6683333333333333,
+          "mean_pred_dec": 7.0729239172278735,
+          "mean_true_dec": 1.7485084227749599
+        },
+        "10": {
+          "success": 0.2,
+          "accepted_frac": 0.3341666666666666,
+          "true_incr_frac": 0.6666666666666667,
+          "mean_pred_dec": 3.5049965884104237,
+          "mean_true_dec": 1.7487280688901845
+        }
+      }
+    }
+  }
+}

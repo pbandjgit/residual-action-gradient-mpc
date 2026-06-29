@@ -1,0 +1,385 @@
+{
+  "config": {
+    "plant": "cartpole",
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "horizon": 10,
+    "budget": 20,
+    "steps": 180,
+    "lr": 0.15,
+    "success_V": 2.0,
+    "configs": [
+      [
+        "value_only",
+        0.003,
+        0.0
+      ],
+      [
+        "grad_only",
+        0.0,
+        0.05
+      ],
+      [
+        "value+grad",
+        0.003,
+        0.05
+      ],
+      [
+        "sweep_0.01",
+        0.003,
+        0.01
+      ],
+      [
+        "sweep_0.2",
+        0.003,
+        0.2
+      ]
+    ]
+  },
+  "per_seed": {
+    "0": {
+      "value_only": {
+        "test_mse": 0.002199558075517416,
+        "frac_neg": 0.258,
+        "b20": 0.0,
+        "state_jac_med": 1.2251523733139038,
+        "lam_val": 0.003,
+        "lam_grad": 0.0
+      },
+      "grad_only": {
+        "test_mse": 0.0017338403267785907,
+        "frac_neg": 0.056,
+        "b20": 1.0,
+        "state_jac_med": 1.2302595973014832,
+        "lam_val": 0.0,
+        "lam_grad": 0.05
+      },
+      "value+grad": {
+        "test_mse": 0.0017272408585995436,
+        "frac_neg": 0.056,
+        "b20": 1.0,
+        "state_jac_med": 1.2281160354614258,
+        "lam_val": 0.003,
+        "lam_grad": 0.05
+      },
+      "sweep_0.01": {
+        "test_mse": 0.0019509688718244433,
+        "frac_neg": 0.076,
+        "b20": 0.8,
+        "state_jac_med": 1.207777202129364,
+        "lam_val": 0.003,
+        "lam_grad": 0.01
+      },
+      "sweep_0.2": {
+        "test_mse": 0.0007978230714797974,
+        "frac_neg": 0.032,
+        "b20": 1.0,
+        "state_jac_med": 1.2083062529563904,
+        "lam_val": 0.003,
+        "lam_grad": 0.2
+      }
+    },
+    "1": {
+      "value_only": {
+        "test_mse": 0.002392855705693364,
+        "frac_neg": 0.222,
+        "b20": 0.0,
+        "state_jac_med": 1.261325478553772,
+        "lam_val": 0.003,
+        "lam_grad": 0.0
+      },
+      "grad_only": {
+        "test_mse": 0.0010741493897512555,
+        "frac_neg": 0.032,
+        "b20": 0.6,
+        "state_jac_med": 1.205849051475525,
+        "lam_val": 0.0,
+        "lam_grad": 0.05
+      },
+      "value+grad": {
+        "test_mse": 0.0010693564545363188,
+        "frac_neg": 0.032,
+        "b20": 0.6,
+        "state_jac_med": 1.2067613005638123,
+        "lam_val": 0.003,
+        "lam_grad": 0.05
+      },
+      "sweep_0.01": {
+        "test_mse": 0.0016642366535961628,
+        "frac_neg": 0.026,
+        "b20": 0.0,
+        "state_jac_med": 1.2500364184379578,
+        "lam_val": 0.003,
+        "lam_grad": 0.01
+      },
+      "sweep_0.2": {
+        "test_mse": 0.0007731773075647652,
+        "frac_neg": 0.022,
+        "b20": 0.0,
+        "state_jac_med": 1.1901392936706543,
+        "lam_val": 0.003,
+        "lam_grad": 0.2
+      }
+    },
+    "2": {
+      "value_only": {
+        "test_mse": 0.0038693868555128574,
+        "frac_neg": 0.194,
+        "b20": 0.0,
+        "state_jac_med": 1.1923825144767761,
+        "lam_val": 0.003,
+        "lam_grad": 0.0
+      },
+      "grad_only": {
+        "test_mse": 0.001998313469812274,
+        "frac_neg": 0.03,
+        "b20": 1.0,
+        "state_jac_med": 1.1957594156265259,
+        "lam_val": 0.0,
+        "lam_grad": 0.05
+      },
+      "value+grad": {
+        "test_mse": 0.002014060039073229,
+        "frac_neg": 0.03,
+        "b20": 1.0,
+        "state_jac_med": 1.194990873336792,
+        "lam_val": 0.003,
+        "lam_grad": 0.05
+      },
+      "sweep_0.01": {
+        "test_mse": 0.0025557996705174446,
+        "frac_neg": 0.048,
+        "b20": 0.6,
+        "state_jac_med": 1.188908040523529,
+        "lam_val": 0.003,
+        "lam_grad": 0.01
+      },
+      "sweep_0.2": {
+        "test_mse": 0.0011548763141036034,
+        "frac_neg": 0.024,
+        "b20": 1.0,
+        "state_jac_med": 1.2027682065963745,
+        "lam_val": 0.003,
+        "lam_grad": 0.2
+      }
+    },
+    "3": {
+      "value_only": {
+        "test_mse": 0.00395559798926115,
+        "frac_neg": 0.212,
+        "b20": 0.0,
+        "state_jac_med": 1.2387903332710266,
+        "lam_val": 0.003,
+        "lam_grad": 0.0
+      },
+      "grad_only": {
+        "test_mse": 0.002160832518711686,
+        "frac_neg": 0.038,
+        "b20": 0.2,
+        "state_jac_med": 1.217317283153534,
+        "lam_val": 0.0,
+        "lam_grad": 0.05
+      },
+      "value+grad": {
+        "test_mse": 0.0021331938914954662,
+        "frac_neg": 0.032,
+        "b20": 0.0,
+        "state_jac_med": 1.219532072544098,
+        "lam_val": 0.003,
+        "lam_grad": 0.05
+      },
+      "sweep_0.01": {
+        "test_mse": 0.00308020762167871,
+        "frac_neg": 0.056,
+        "b20": 0.0,
+        "state_jac_med": 1.228278398513794,
+        "lam_val": 0.003,
+        "lam_grad": 0.01
+      },
+      "sweep_0.2": {
+        "test_mse": 0.0010208365274593234,
+        "frac_neg": 0.03,
+        "b20": 0.2,
+        "state_jac_med": 1.17863529920578,
+        "lam_val": 0.003,
+        "lam_grad": 0.2
+      }
+    },
+    "4": {
+      "value_only": {
+        "test_mse": 0.0035217294935137033,
+        "frac_neg": 0.204,
+        "b20": 0.0,
+        "state_jac_med": 1.2089623808860779,
+        "lam_val": 0.003,
+        "lam_grad": 0.0
+      },
+      "grad_only": {
+        "test_mse": 0.002450345316901803,
+        "frac_neg": 0.054,
+        "b20": 0.0,
+        "state_jac_med": 1.1958263516426086,
+        "lam_val": 0.0,
+        "lam_grad": 0.05
+      },
+      "value+grad": {
+        "test_mse": 0.002409669104963541,
+        "frac_neg": 0.066,
+        "b20": 0.0,
+        "state_jac_med": 1.1948949694633484,
+        "lam_val": 0.003,
+        "lam_grad": 0.05
+      },
+      "sweep_0.01": {
+        "test_mse": 0.0028940225020051003,
+        "frac_neg": 0.076,
+        "b20": 0.0,
+        "state_jac_med": 1.199281930923462,
+        "lam_val": 0.003,
+        "lam_grad": 0.01
+      },
+      "sweep_0.2": {
+        "test_mse": 0.001383327879011631,
+        "frac_neg": 0.036,
+        "b20": 0.0,
+        "state_jac_med": 1.2003397941589355,
+        "lam_val": 0.003,
+        "lam_grad": 0.2
+      }
+    },
+    "5": {
+      "value_only": {
+        "test_mse": 0.004303981550037861,
+        "frac_neg": 0.202,
+        "b20": 0.0,
+        "state_jac_med": 1.2502164840698242,
+        "lam_val": 0.003,
+        "lam_grad": 0.0
+      },
+      "grad_only": {
+        "test_mse": 0.002637395868077874,
+        "frac_neg": 0.044,
+        "b20": 1.0,
+        "state_jac_med": 1.2313645482063293,
+        "lam_val": 0.0,
+        "lam_grad": 0.05
+      },
+      "value+grad": {
+        "test_mse": 0.0026370175182819366,
+        "frac_neg": 0.048,
+        "b20": 1.0,
+        "state_jac_med": 1.228153944015503,
+        "lam_val": 0.003,
+        "lam_grad": 0.05
+      },
+      "sweep_0.01": {
+        "test_mse": 0.0035696914419531822,
+        "frac_neg": 0.054,
+        "b20": 1.0,
+        "state_jac_med": 1.2600905895233154,
+        "lam_val": 0.003,
+        "lam_grad": 0.01
+      },
+      "sweep_0.2": {
+        "test_mse": 0.001391997910104692,
+        "frac_neg": 0.034,
+        "b20": 1.0,
+        "state_jac_med": 1.1849285960197449,
+        "lam_val": 0.003,
+        "lam_grad": 0.2
+      }
+    },
+    "6": {
+      "value_only": {
+        "test_mse": 0.0023553180508315563,
+        "frac_neg": 0.15,
+        "b20": 0.0,
+        "state_jac_med": 1.2357392311096191,
+        "lam_val": 0.003,
+        "lam_grad": 0.0
+      },
+      "grad_only": {
+        "test_mse": 0.001450711744837463,
+        "frac_neg": 0.034,
+        "b20": 0.0,
+        "state_jac_med": 1.2067919969558716,
+        "lam_val": 0.0,
+        "lam_grad": 0.05
+      },
+      "value+grad": {
+        "test_mse": 0.0014713058480992913,
+        "frac_neg": 0.038,
+        "b20": 0.0,
+        "state_jac_med": 1.202088475227356,
+        "lam_val": 0.003,
+        "lam_grad": 0.05
+      },
+      "sweep_0.01": {
+        "test_mse": 0.0016409792006015778,
+        "frac_neg": 0.052,
+        "b20": 0.0,
+        "state_jac_med": 1.2082006931304932,
+        "lam_val": 0.003,
+        "lam_grad": 0.01
+      },
+      "sweep_0.2": {
+        "test_mse": 0.0013732960214838386,
+        "frac_neg": 0.028,
+        "b20": 0.0,
+        "state_jac_med": 1.1671592593193054,
+        "lam_val": 0.003,
+        "lam_grad": 0.2
+      }
+    },
+    "7": {
+      "value_only": {
+        "test_mse": 0.003214996075257659,
+        "frac_neg": 0.234,
+        "b20": 0.0,
+        "state_jac_med": 1.250114381313324,
+        "lam_val": 0.003,
+        "lam_grad": 0.0
+      },
+      "grad_only": {
+        "test_mse": 0.002824164927005768,
+        "frac_neg": 0.03,
+        "b20": 0.0,
+        "state_jac_med": 1.2217913269996643,
+        "lam_val": 0.0,
+        "lam_grad": 0.05
+      },
+      "value+grad": {
+        "test_mse": 0.0027660850901156664,
+        "frac_neg": 0.034,
+        "b20": 0.0,
+        "state_jac_med": 1.2202211618423462,
+        "lam_val": 0.003,
+        "lam_grad": 0.05
+      },
+      "sweep_0.01": {
+        "test_mse": 0.003420520108193159,
+        "frac_neg": 0.06,
+        "b20": 0.0,
+        "state_jac_med": 1.2380431294441223,
+        "lam_val": 0.003,
+        "lam_grad": 0.01
+      },
+      "sweep_0.2": {
+        "test_mse": 0.001845229766331613,
+        "frac_neg": 0.024,
+        "b20": 0.0,
+        "state_jac_med": 1.1788776516914368,
+        "lam_val": 0.003,
+        "lam_grad": 0.2
+      }
+    }
+  }
+}

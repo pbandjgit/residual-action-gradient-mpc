@@ -1,0 +1,62 @@
+{
+  "cstr": {
+    "aux (Sontag)": {
+      "settle_time": 23.0,
+      "cost": 4528.910196425551,
+      "input_tv": 95.00384499436396,
+      "constr_active": 1.0,
+      "success": 0.2
+    },
+    "value_only GGN": {
+      "settle_time": 113.0,
+      "cost": 4598.290149850956,
+      "input_tv": 20.602491137474857,
+      "constr_active": 0.09,
+      "success": 0.4
+    },
+    "value+Lgrad GGN": {
+      "settle_time": 10.8,
+      "cost": 725.6608958917404,
+      "input_tv": 1.7432826734565534,
+      "constr_active": 0.11666666666666667,
+      "success": 1.0
+    },
+    "value+Lgrad GGN +\u0394u": {
+      "settle_time": 10.8,
+      "cost": 735.0270859496089,
+      "input_tv": 2.3890311020776887,
+      "constr_active": 0.11166666666666666,
+      "success": 1.0
+    }
+  },
+  "cartpole": {
+    "aux (LQR)": {
+      "settle_time": 1.4440000000000002,
+      "cost": 69.16054384327711,
+      "input_tv": 0.7927625573252215,
+      "constr_active": 0.014444444444444444,
+      "success": 1.0
+    },
+    "value_only GGN": {
+      "settle_time": 2.3000000000000003,
+      "cost": 42521.63667380173,
+      "input_tv": 43.91118249282241,
+      "constr_active": 0.49444444444444435,
+      "success": 0.2
+    },
+    "value+Lgrad GGN": {
+      "settle_time": 1.28,
+      "cost": 62.68653963457094,
+      "input_tv": 67.32501035913826,
+      "constr_active": 0.20777777777777776,
+      "success": 1.0
+    },
+    "value+Lgrad GGN +\u0394u": {
+      "settle_time": 1.17,
+      "cost": 10404.227229357417,
+      "input_tv": 44.577724422216406,
+      "constr_active": 0.2866666666666666,
+      "success": 0.8
+    }
+  }
+}

@@ -1,0 +1,285 @@
+{
+  "config": {
+    "arch": "lcnn_groupsort",
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "configs": [
+      [
+        "value_only",
+        0.003,
+        0.0
+      ],
+      [
+        "grad_only",
+        0.0,
+        0.05
+      ],
+      [
+        "value+grad",
+        0.003,
+        0.05
+      ],
+      [
+        "sweep_0.01",
+        0.003,
+        0.01
+      ],
+      [
+        "sweep_0.2",
+        0.003,
+        0.2
+      ],
+      [
+        "sweep_1.0",
+        0.003,
+        1.0
+      ]
+    ],
+    "note": "ablation + lam_grad sweep, fixed architecture"
+  },
+  "per_seed": {
+    "0": {
+      "value_only": {
+        "align_cos_med": 0.45613041759901396,
+        "align_frac_neg": 0.29125,
+        "grad_irreg_p90": 330.4766052246097,
+        "grad_succ_b3": 0.0,
+        "grad_succ_b20": 0.0,
+        "cem_cheap_succ": 0.8,
+        "state_jac_med": 1.936869740486145,
+        "input_jac_med": 0.4751918911933899,
+        "test_mse": 0.00204343325458467,
+        "lam_val": 0.003,
+        "lam_grad": 0.0
+      },
+      "grad_only": {
+        "align_cos_med": 0.9888704093730423,
+        "align_frac_neg": 0.0025,
+        "grad_irreg_p90": 16.614358901977553,
+        "grad_succ_b3": 1.0,
+        "grad_succ_b20": 1.0,
+        "cem_cheap_succ": 1.0,
+        "state_jac_med": 1.3238252401351929,
+        "input_jac_med": 0.15015088766813278,
+        "test_mse": 0.0010305325267836452,
+        "lam_val": 0.0,
+        "lam_grad": 0.05
+      },
+      "value+grad": {
+        "align_cos_med": 0.9917934435239266,
+        "align_frac_neg": 0.0125,
+        "grad_irreg_p90": 20.41888828277588,
+        "grad_succ_b3": 1.0,
+        "grad_succ_b20": 1.0,
+        "cem_cheap_succ": 1.0,
+        "state_jac_med": 1.369304895401001,
+        "input_jac_med": 0.11696690693497658,
+        "test_mse": 0.0012164462823420763,
+        "lam_val": 0.003,
+        "lam_grad": 0.05
+      },
+      "sweep_0.01": {
+        "align_cos_med": 0.9814409515105622,
+        "align_frac_neg": 0.02,
+        "grad_irreg_p90": 23.938351249694826,
+        "grad_succ_b3": 1.0,
+        "grad_succ_b20": 1.0,
+        "cem_cheap_succ": 1.0,
+        "state_jac_med": 1.1224740743637085,
+        "input_jac_med": 0.1049342006444931,
+        "test_mse": 0.0011923478450626135,
+        "lam_val": 0.003,
+        "lam_grad": 0.01
+      },
+      "sweep_0.2": {
+        "align_cos_med": 0.9982982824806222,
+        "align_frac_neg": 0.01,
+        "grad_irreg_p90": 15.171508789062502,
+        "grad_succ_b3": 1.0,
+        "grad_succ_b20": 1.0,
+        "cem_cheap_succ": 1.0,
+        "state_jac_med": 4.118190050125122,
+        "input_jac_med": 0.04380262643098831,
+        "test_mse": 0.002627722220495343,
+        "lam_val": 0.003,
+        "lam_grad": 0.2
+      },
+      "sweep_1.0": {
+        "align_cos_med": 0.998965554281461,
+        "align_frac_neg": 0.04,
+        "grad_irreg_p90": 19.572738647460945,
+        "grad_succ_b3": 0.0,
+        "grad_succ_b20": 1.0,
+        "cem_cheap_succ": 1.0,
+        "state_jac_med": 14.34277868270874,
+        "input_jac_med": 0.1692925989627838,
+        "test_mse": 0.039314575493335724,
+        "lam_val": 0.003,
+        "lam_grad": 1.0
+      }
+    },
+    "1": {
+      "value_only": {
+        "align_cos_med": 0.541848936876312,
+        "align_frac_neg": 0.31875,
+        "grad_irreg_p90": 385.6147155761729,
+        "grad_succ_b3": 0.0,
+        "grad_succ_b20": 0.0,
+        "cem_cheap_succ": 0.6,
+        "state_jac_med": 1.6051283478736877,
+        "input_jac_med": 0.5720049738883972,
+        "test_mse": 0.0013720085844397545,
+        "lam_val": 0.003,
+        "lam_grad": 0.0
+      },
+      "grad_only": {
+        "align_cos_med": 0.997065352362052,
+        "align_frac_neg": 0.0025,
+        "grad_irreg_p90": 14.220670700073262,
+        "grad_succ_b3": 1.0,
+        "grad_succ_b20": 1.0,
+        "cem_cheap_succ": 1.0,
+        "state_jac_med": 2.1551530361175537,
+        "input_jac_med": 0.056194715201854706,
+        "test_mse": 0.0005122320144437253,
+        "lam_val": 0.0,
+        "lam_grad": 0.05
+      },
+      "value+grad": {
+        "align_cos_med": 0.9967604908613661,
+        "align_frac_neg": 0.005,
+        "grad_irreg_p90": 8.571793556213391,
+        "grad_succ_b3": 1.0,
+        "grad_succ_b20": 1.0,
+        "cem_cheap_succ": 1.0,
+        "state_jac_med": 1.9309911131858826,
+        "input_jac_med": 0.04417008347809315,
+        "test_mse": 0.000502062204759568,
+        "lam_val": 0.003,
+        "lam_grad": 0.05
+      },
+      "sweep_0.01": {
+        "align_cos_med": 0.9896836648716832,
+        "align_frac_neg": 0.00875,
+        "grad_irreg_p90": 20.908975028991705,
+        "grad_succ_b3": 1.0,
+        "grad_succ_b20": 1.0,
+        "cem_cheap_succ": 1.0,
+        "state_jac_med": 1.5150399208068848,
+        "input_jac_med": 0.13129397481679916,
+        "test_mse": 0.0005681951297447085,
+        "lam_val": 0.003,
+        "lam_grad": 0.01
+      },
+      "sweep_0.2": {
+        "align_cos_med": 0.999206261257938,
+        "align_frac_neg": 0.00625,
+        "grad_irreg_p90": 7.52539291381836,
+        "grad_succ_b3": 1.0,
+        "grad_succ_b20": 1.0,
+        "cem_cheap_succ": 1.0,
+        "state_jac_med": 6.113753318786621,
+        "input_jac_med": 0.04726332612335682,
+        "test_mse": 0.0031092651188373566,
+        "lam_val": 0.003,
+        "lam_grad": 0.2
+      },
+      "sweep_1.0": {
+        "align_cos_med": 0.9982452264216756,
+        "align_frac_neg": 0.0075,
+        "grad_irreg_p90": 16.055324554443366,
+        "grad_succ_b3": 1.0,
+        "grad_succ_b20": 1.0,
+        "cem_cheap_succ": 1.0,
+        "state_jac_med": 7.329994440078735,
+        "input_jac_med": 0.08586195483803749,
+        "test_mse": 0.005340976174920797,
+        "lam_val": 0.003,
+        "lam_grad": 1.0
+      }
+    },
+    "2": {
+      "value_only": {
+        "align_cos_med": 0.32225306863705083,
+        "align_frac_neg": 0.38625,
+        "grad_irreg_p90": 406.62802429199223,
+        "grad_succ_b3": 0.0,
+        "grad_succ_b20": 0.0,
+        "cem_cheap_succ": 0.6,
+        "state_jac_med": 1.8727895021438599,
+        "input_jac_med": 0.7358458340167999,
+        "test_mse": 0.0019706089515239,
+        "lam_val": 0.003,
+        "lam_grad": 0.0
+      },
+      "grad_only": {
+        "align_cos_med": 0.9647518600555648,
+        "align_frac_neg": 0.00375,
+        "grad_irreg_p90": 6.883018827438355,
+        "grad_succ_b3": 1.0,
+        "grad_succ_b20": 1.0,
+        "cem_cheap_succ": 1.0,
+        "state_jac_med": 1.5882187485694885,
+        "input_jac_med": 0.1710585206747055,
+        "test_mse": 0.0004178797535132617,
+        "lam_val": 0.0,
+        "lam_grad": 0.05
+      },
+      "value+grad": {
+        "align_cos_med": 0.9851650702571295,
+        "align_frac_neg": 0.0,
+        "grad_irreg_p90": 5.8658146381378184,
+        "grad_succ_b3": 1.0,
+        "grad_succ_b20": 1.0,
+        "cem_cheap_succ": 1.0,
+        "state_jac_med": 1.4380961656570435,
+        "input_jac_med": 0.10060369595885277,
+        "test_mse": 0.00032349411048926413,
+        "lam_val": 0.003,
+        "lam_grad": 0.05
+      },
+      "sweep_0.01": {
+        "align_cos_med": 0.9350611919171181,
+        "align_frac_neg": 0.01625,
+        "grad_irreg_p90": 17.506798171997076,
+        "grad_succ_b3": 0.4,
+        "grad_succ_b20": 0.4,
+        "cem_cheap_succ": 1.0,
+        "state_jac_med": 1.829870581626892,
+        "input_jac_med": 0.27027004957199097,
+        "test_mse": 0.0007839929894544184,
+        "lam_val": 0.003,
+        "lam_grad": 0.01
+      },
+      "sweep_0.2": {
+        "align_cos_med": 0.9997025388402594,
+        "align_frac_neg": 0.005,
+        "grad_irreg_p90": 6.001790237426772,
+        "grad_succ_b3": 1.0,
+        "grad_succ_b20": 1.0,
+        "cem_cheap_succ": 1.0,
+        "state_jac_med": 5.1513142585754395,
+        "input_jac_med": 0.052099017426371574,
+        "test_mse": 0.002299603773280978,
+        "lam_val": 0.003,
+        "lam_grad": 0.2
+      },
+      "sweep_1.0": {
+        "align_cos_med": 0.9992885700310419,
+        "align_frac_neg": 0.0125,
+        "grad_irreg_p90": 11.090517044067393,
+        "grad_succ_b3": 1.0,
+        "grad_succ_b20": 1.0,
+        "cem_cheap_succ": 1.0,
+        "state_jac_med": 7.771729469299316,
+        "input_jac_med": 0.10291599482297897,
+        "test_mse": 0.005028778221458197,
+        "lam_val": 0.003,
+        "lam_grad": 1.0
+      }
+    }
+  }
+}
