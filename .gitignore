@@ -4,13 +4,29 @@ __pycache__/
 *.egg-info/
 .ipynb_checkpoints/
 
-# Environments
-.venv/
-venv/
-env/
-
 # OS / editor
 .DS_Store
 *.swp
-.idea/
-.vscode/
+
+# LaTeX build artifacts (keep the .tex and .pdf, drop the rest)
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.spl
+*.synctex.gz
+*.bbl
+*.blg
+*.toc
+
+# Local virtual environments
+.venv/
+venv/
+
+# Internal-only material not part of the public release
+# (remove these lines if you intend to publish them)
+g_refs/
+docs/
+manuscript/
+artifacts/

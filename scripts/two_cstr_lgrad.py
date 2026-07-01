@@ -1,94 +1,58 @@
-"""Paper-H second-plant replication: does the L_grad finding transfer to cart-pole?
+"""Paper-H second process plant: two CSTRs in series (process-control benchmark).
 
-Self-contained (cart-pole dynamics + LQR auxiliary controller copied from the
-paper_g cross-plant pilot; this script writes ONLY under paper_h). Same controlled
-test as on the CSTR: a FIXED GroupSort-LCNN architecture, ablation over the training
-objective {value-only (Cauchy + value-residual E+), grad-only (Cauchy + L_grad),
-value+grad}, with the contractivity (state-Jacobian) control. The thesis predicts:
-value-only fails cheap-budget closed-loop; adding L_grad rescues it, without
-inflating the Jacobian.
+Self-contained replication of the CSTR L_grad study on the standard
+Christofides/Wu "two CSTRs in series" process (4 states, 4 inputs), using the
+SAME fixed GroupSort-LCNN architecture and the SAME training-objective ablation
+{value-only (Cauchy + value-residual E+), grad-only (Cauchy + L_grad),
+value+grad}. The auxiliary controller is saturated LQR. The single-CSTR benchmark
+uses saturated Sontag feedback; on this four-input process, saturated LQR is used
+because it stabilizes the tested region cleanly under the same input box.
 
-Plant: cart-pole (4 states, 1 input), RK4, force_limit 10, dt 0.02, unstable upright.
-V(x)=x'Px with P from the discrete LQR; auxiliary controller Phi(x)=clip(-Kx).
+Plant: src/cstr/two_cstr_series.py (second-order kinetics, open-loop unstable).
+V(x)=x'Px with P from the continuous LQR at the unstable steady state.
 
-Outputs: results/interim/logs/cartpole_lgrad.json
+Outputs: results/interim/logs/two_cstr_lgrad.json
 """
 from __future__ import annotations
 
 import json
-import math
 import sys
-from dataclasses import dataclass
 from pathlib import Path
 
 import numpy as np
 import torch
 import torch.nn as nn
-from scipy.linalg import solve_discrete_are
+from scipy.linalg import solve_continuous_are
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 sys.path.insert(0, str(ROOT / "scripts"))
 from cstr.models_onestep import OneStepLCNN, BjorckLinear              # noqa: E402
+from cstr.two_cstr_series import TwoCSTRSeriesSimulator               # noqa: E402
 import probe_action_gradient as pr                                    # noqa: E402
 
 LOG = ROOT / "results" / "interim" / "logs"
-SEEDS = [0, 1, 2]
+SEEDS = list(range(10))
 
-
-@dataclass(frozen=True)
-class CP:
-    g: float = 9.81; mc: float = 1.0; mp: float = 0.1
-    l: float = 0.5; dt: float = 0.02; flim: float = 10.0
-
-
-CPP = CP()
-
-
-def dyn(x, u, p=CPP):
-    pos, vel, th, thd = x
-    f = float(np.clip(u, -p.flim, p.flim))
-    tm = p.mc + p.mp; pml = p.mp * p.l
-    s = math.sin(th); c = math.cos(th)
-    temp = (f + pml * thd ** 2 * s) / tm
-    tha = (p.g * s - c * temp) / (p.l * (4.0 / 3.0 - p.mp * c ** 2 / tm))
-    xa = temp - pml * tha * c / tm
-    return np.array([vel, xa, thd, tha], dtype=np.float64)
-
-
-def step(x, u, p=CPP):
-    dt = p.dt
-    k1 = dyn(x, u, p); k2 = dyn(x + 0.5 * dt * k1, u, p)
-    k3 = dyn(x + 0.5 * dt * k2, u, p); k4 = dyn(x + dt * k3, u, p)
-    y = x + (dt / 6.0) * (k1 + 2 * k2 + 2 * k3 + k4)
-    y[2] = ((y[2] + np.pi) % (2 * np.pi)) - np.pi
-    return y.astype(np.float64)
-
-
-def design_lqr(p=CPP, eps=1e-5):
-    x0 = np.zeros(4)
-    A = np.zeros((4, 4)); B = np.zeros((4, 1))
-    for i in range(4):
-        dx = np.zeros(4); dx[i] = eps
-        A[:, i] = (step(x0 + dx, 0.0, p) - step(x0 - dx, 0.0, p)) / (2 * eps)
-    B[:, 0] = (step(x0, eps, p) - step(x0, -eps, p)) / (2 * eps)
-    Q = np.diag([1.0, 0.15, 12.0, 0.4]); R = np.array([[0.08]])
-    P = solve_discrete_are(A, B, Q, R)
-    K = np.linalg.solve(B.T @ P @ B + R, B.T @ P @ A)
-    return K, P
-
-
-K_LQR, P_MAT = design_lqr()
+# ----------------------------------------------------------------------------- #
+# Plant, Lyapunov function, input box
+# ----------------------------------------------------------------------------- #
+SIM = TwoCSTRSeriesSimulator()           # shifted coordinates, 4 states / 4 inputs
+A_LIN, B_LIN = SIM.analytic_jacobian(np.zeros(4), np.zeros(4))
+# Input-range-scaled LQR weights (heat inputs have a huge admissible range).
+Q_LQR = np.diag([1.0, 0.02, 1.0, 0.02])
+R_LQR = np.diag([1.0, 1e-9, 1.0, 1e-9])
+P_MAT = solve_continuous_are(A_LIN, B_LIN, Q_LQR, R_LQR)
+K_LQR = np.linalg.solve(R_LQR, B_LIN.T @ P_MAT)   # continuous LQR gain
 Pt = torch.tensor(P_MAT, dtype=torch.float32)
-FLIM = CPP.flim
-ICS = [np.array([0.0, 0.0, 0.30, 0.0]), np.array([0.0, 0.0, -0.30, 0.0]),
-       np.array([0.4, 0.0, 0.20, 0.0]), np.array([-0.4, 0.0, -0.20, 0.0]),
-       np.array([0.0, 0.0, 0.40, 0.0])]
+
+# Per-reactor input box (shifted), same magnitudes as the single-CSTR benchmark.
+BOX_HI = np.array([3.5, 5e5, 3.5, 5e5], dtype=float)
+BOX_LO = -BOX_HI
 
 
-def phi(x):
-    u = -np.asarray(x, float) @ K_LQR.T
-    return np.clip(u.reshape(-1), -FLIM, FLIM)
+def step(x, u):
+    return SIM.step(np.asarray(x, float), np.clip(np.asarray(u, float), BOX_LO, BOX_HI))
 
 
 def Vnp(x):
@@ -100,11 +64,37 @@ def Vt(y):
     return (y @ Pt * y).sum(-1)
 
 
+def phi(x):
+    """Saturated LQR feedback for the quadratic CLF V=x'Px (auxiliary controller).
+
+    The single-CSTR benchmark uses a saturated Sontag controller; on the
+    two-CSTR process the Sontag formula under input saturation/scaling did not
+    fully recover the origin, so we use the saturated LQR auxiliary (the same
+    choice as the cart-pole benchmark), which is a valid CLF-based controller for
+    the quadratic V designed by LQR.
+    """
+    x = np.asarray(x, float)
+    return np.clip(-K_LQR @ x, BOX_LO, BOX_HI)
+
+
+# Initial conditions (shifted deviations the controller must drive to the SS).
+ICS = [np.array([1.0, 50.0, 1.0, 50.0]),
+       np.array([-1.0, -50.0, -1.0, -50.0]),
+       np.array([1.5, 30.0, -1.0, -30.0]),
+       np.array([-1.5, -30.0, 1.0, 30.0]),
+       np.array([0.8, 60.0, 0.8, 60.0])]
+
+
+# ----------------------------------------------------------------------------- #
+# Data
+# ----------------------------------------------------------------------------- #
 def sample_dataset(n, seed):
     rng = np.random.default_rng(seed)
-    lows = np.array([-1.8, -2.5, -0.55, -3.5]); highs = np.array([1.8, 2.5, 0.55, 3.5])
-    X = rng.uniform(lows, highs, size=(n, 4)); U = rng.uniform(-FLIM, FLIM, size=(n, 1))
-    Y = np.array([step(x, float(u[0])) for x, u in zip(X, U)])
+    lows = np.array([-1.8, -70.0, -1.8, -70.0])
+    highs = np.array([1.8, 70.0, 1.8, 70.0])
+    X = rng.uniform(lows, highs, size=(n, 4))
+    U = rng.uniform(BOX_LO, BOX_HI, size=(n, 4))
+    Y = np.array([step(X[i], U[i]) for i in range(n)])
     return np.concatenate([X, U], 1).astype(np.float32), Y.astype(np.float32)
 
 
@@ -120,36 +110,42 @@ def make_data(n=12000, seed=7):
 
 def precompute_phi(XU):
     X = XU[:, :4].astype(np.float64)
-    Phi = np.array([phi(X[i]) for i in range(len(X))], dtype=np.float32)   # (N,1)
-    Yphi = np.array([step(X[i], float(Phi[i, 0])) for i in range(len(X))], dtype=np.float32)
+    Phi = np.array([phi(X[i]) for i in range(len(X))], dtype=np.float32)   # (N,4)
+    Yphi = np.array([step(X[i], Phi[i]) for i in range(len(X))], dtype=np.float32)
     return Phi, Yphi
 
 
 def precompute_true_ugrad(XU, xm, xs, eps=1e-3):
+    """True action-gradient grad_u V(f(x,u)) in normalized control coords (N,4)."""
     x = XU[:, :4].astype(np.float64); u = XU[:, 4:].astype(np.float64)
     u_mean, u_std = xm[4:].astype(np.float64), xs[4:].astype(np.float64)
     un = (u - u_mean) / u_std
-    N = len(XU); g = np.zeros((N, 1), np.float32)
-    up = un.copy(); up[:, 0] += eps; dn = un.copy(); dn[:, 0] -= eps
-    uu_p = up * u_std + u_mean; uu_m = dn * u_std + u_mean
-    Vp = Vnp(np.array([step(x[i], float(uu_p[i, 0])) for i in range(N)]))
-    Vm = Vnp(np.array([step(x[i], float(uu_m[i, 0])) for i in range(N)]))
-    g[:, 0] = ((Vp - Vm) / (2 * eps)).astype(np.float32)
+    N = len(XU); g = np.zeros((N, 4), np.float32)
+    for j in range(4):
+        up = un.copy(); up[:, j] += eps
+        dn = un.copy(); dn[:, j] -= eps
+        uu_p = up * u_std + u_mean; uu_m = dn * u_std + u_mean
+        Vp = Vnp(np.array([step(x[i], uu_p[i]) for i in range(N)]))
+        Vm = Vnp(np.array([step(x[i], uu_m[i]) for i in range(N)]))
+        g[:, j] = ((Vp - Vm) / (2 * eps)).astype(np.float32)
     return g
 
 
-DEFAULT_HIDDEN = 48  # overridable by callers (e.g. capacity-balanced DAgger)
+# ----------------------------------------------------------------------------- #
+# Model + training (same machinery as the CSTR / cart-pole modules)
+# ----------------------------------------------------------------------------- #
+DEFAULT_HIDDEN = 48
 
 
 def build_lcnn(seed, hidden=None, lip=6.0, n_layers=2):
     torch.manual_seed(seed)
-    return OneStepLCNN(state_dim=4, input_dim=1,
+    return OneStepLCNN(state_dim=4, input_dim=4,
                        hidden=DEFAULT_HIDDEN if hidden is None else hidden,
                        lipschitz_bound=lip, n_layers=n_layers)
 
 
 def train(seed, data, Phi_all, Yphi_all, true_ug, lam_val, lam_grad,
-          epochs=60, warmup=35, noise_scale=0.2, noise_clip=5.0):
+          epochs=50, warmup=30, noise_scale=0.2, noise_clip=5.0):
     XU, Y, xm, xs, ym, ys, train_idx, _ = data
     torch.manual_seed(seed); rng = np.random.default_rng(seed + 1000)
     xm_t, xs_t = torch.tensor(xm), torch.tensor(xs)
@@ -179,9 +175,9 @@ def train(seed, data, Phi_all, Yphi_all, true_ug, lam_val, lam_grad,
             pred = model(xb)
             loss = pr.cauchy_nll(pred, Yn_t[b], disp)
             if lam_val > 0 and ep > warmup:
-                y_hat = pred * ys_t + ym_t
                 xphi = torch.cat([torch.tensor(XU[b, :4]), Phi_t[b]], 1)
                 yphi_hat = model((xphi - xm_t) / xs_t) * ys_t + ym_t
+                y_hat = pred * ys_t + ym_t
                 g_hat = Vt(y_hat) - Vt(yphi_hat)
                 loss = loss + lam_val * torch.relu((g_true_all[b] - g_hat) / g_scale).pow(2).mean()
             if lam_grad > 0 and ep > warmup:
@@ -216,7 +212,7 @@ def freeze(model):
 def closed_loop(seq, norm, x0, horizon, budget, steps, lr, rho_u, success_V, un_lo, un_hi):
     xm, xs, ym, ys = norm; xm4, xs4 = xm[:4], xs[:4]
     x = np.asarray(x0, float); Vtraj = [float(Vnp(x))]
-    un = torch.zeros(horizon, 1)
+    un = torch.zeros(horizon, 4)
     for _ in range(steps):
         un = un.detach().clone().requires_grad_(True)
         opt = torch.optim.Adam([un], lr=lr)
@@ -224,40 +220,21 @@ def closed_loop(seq, norm, x0, horizon, budget, steps, lr, rho_u, success_V, un_
         for _it in range(budget):
             opt.zero_grad(); xt = x0n; J = torch.zeros(())
             for h in range(horizon):
-                xun = torch.cat([xt, un[h].view(1, 1)], 1)
+                xun = torch.cat([xt, un[h].view(1, 4)], 1)
                 y = seq(xun) * ys + ym
                 J = J + (y @ Pt * y).sum() + rho_u * (un[h] ** 2).sum()
                 xt = (y - xm4) / xs4
             J.backward(); opt.step()
             with torch.no_grad():
                 un.clamp_(un_lo, un_hi)
-        u0 = float(np.clip(un[0].detach().numpy() * xs[4:].numpy() + xm[4:].numpy(), -FLIM, FLIM)[0])
+        u0 = un[0].detach().numpy() * xs[4:].numpy() + xm[4:].numpy()
         x = step(x, u0); Vtraj.append(float(Vnp(x)))
         un = torch.cat([un[1:].detach(), un[-1:].detach()])
     return dict(final_V=Vtraj[-1], max_V=float(max(Vtraj)),
                 success=bool(Vtraj[-1] <= success_V))
 
 
-def jac_state_med(seq, data, norm, n_pts=300, seed=0):
-    XU, Y, xm, xs, ym, ys, _, test_idx = data
-    rng = np.random.default_rng(seed)
-    idx = rng.choice(test_idx, size=min(n_pts, len(test_idx)), replace=False)
-    xs_t = torch.tensor(xs); ys_t = torch.tensor(ys); ym_t = torch.tensor(ym)
-    jx = []
-    for i in idx:
-        xun = torch.tensor((XU[i] - xm) / xs, dtype=torch.float32, requires_grad=True)
-        y = seq(xun.view(1, 5)).view(4) * ys_t + ym_t  # physical next state
-        rows = []
-        for k in range(4):
-            g, = torch.autograd.grad(y[k], xun, retain_graph=(k < 3))
-            rows.append(g.detach())
-        Jfull = torch.stack(rows) / xs_t          # d y_phys / d (x_phys, u_phys)
-        jx.append(float(torch.linalg.matrix_norm(Jfull[:, :4], 2)))
-    return float(np.median(jx))
-
-
 def align_med(seq, data, norm, n_pts=500, seed=0):
-    """action-grad alignment median + frac_neg, in normalized 1-D action space."""
     XU, Y, xm, xs, ym, ys, _, test_idx = data
     rng = np.random.default_rng(seed)
     idx = rng.choice(test_idx, size=min(n_pts, len(test_idx)), replace=False)
@@ -272,42 +249,60 @@ def align_med(seq, data, norm, n_pts=500, seed=0):
     g = Vt(y).sum()
     (lg,) = torch.autograd.grad(g, un_t)
     lg = lg.detach().numpy()
-    eps = 1e-3
-    up = un.copy(); up[:, 0] += eps; dn = un.copy(); dn[:, 0] -= eps
-    uu_p = up * u_std + u_mean; uu_m = dn * u_std + u_mean
-    Vp = Vnp(np.array([step(x[i], float(uu_p[i, 0])) for i in range(len(x))]))
-    Vm = Vnp(np.array([step(x[i], float(uu_m[i, 0])) for i in range(len(x))]))
-    tg = ((Vp - Vm) / (2 * eps)).reshape(-1, 1)
+    eps = 1e-3; tg = np.zeros_like(lg)
+    for j in range(4):
+        up = un.copy(); up[:, j] += eps; dn = un.copy(); dn[:, j] -= eps
+        uu_p = up * u_std + u_mean; uu_m = dn * u_std + u_mean
+        Vp = Vnp(np.array([step(x[i], uu_p[i]) for i in range(len(x))]))
+        Vm = Vnp(np.array([step(x[i], uu_m[i]) for i in range(len(x))]))
+        tg[:, j] = (Vp - Vm) / (2 * eps)
     cs = (lg * tg).sum(1) / (np.linalg.norm(lg, axis=1) * np.linalg.norm(tg, axis=1) + 1e-12)
     return float(np.median(cs)), float(np.mean(cs < 0))
 
 
+def make_norm(data):
+    _, _, xm, xs, ym, ys, _, _ = data
+    return (torch.tensor(xm), torch.tensor(xs), torch.tensor(ym), torch.tensor(ys))
+
+
+def jac_state_med(seq, data, norm, n_pts=300, seed=0):
+    XU, Y, xm, xs, ym, ys, _, test_idx = data
+    rng = np.random.default_rng(seed)
+    idx = rng.choice(test_idx, size=min(n_pts, len(test_idx)), replace=False)
+    xs_t = torch.tensor(xs); ys_t = torch.tensor(ys); ym_t = torch.tensor(ym)
+    jx = []
+    for i in idx:
+        xun = torch.tensor((XU[i] - xm) / xs, dtype=torch.float32, requires_grad=True)
+        y = seq(xun.view(1, 8)).view(4) * ys_t + ym_t
+        rows = []
+        for k in range(4):
+            g, = torch.autograd.grad(y[k], xun, retain_graph=(k < 3))
+            rows.append(g.detach())
+        Jfull = torch.stack(rows) / xs_t
+        jx.append(float(torch.linalg.matrix_norm(Jfull[:, :4], 2)))
+    return float(np.median(jx))
+
+
 def main():
-    data = make_data()
+    data = make_data(n=12000)
     XU, Y, xm, xs, ym, ys, _, _ = data
-    norm = (torch.tensor(xm), torch.tensor(xs), torch.tensor(ym), torch.tensor(ys))
-    un_lo = torch.tensor((-FLIM - xm[4:]) / xs[4:], dtype=torch.float32)
-    un_hi = torch.tensor((FLIM - xm[4:]) / xs[4:], dtype=torch.float32)
-    print("V at upright-ish [0,0,0.05,0]:", float(Vnp(np.array([0, 0, 0.05, 0]))),
-          " ICs V0:", [round(float(Vnp(ic)), 1) for ic in ICS])
-    print("precomputing Phi/Yphi + true action-grad ...")
+    norm = make_norm(data)
+    un_lo = torch.tensor((BOX_LO - xm[4:]) / xs[4:], dtype=torch.float32)
+    un_hi = torch.tensor((BOX_HI - xm[4:]) / xs[4:], dtype=torch.float32)
+    print("V at ICs:", [round(float(Vnp(ic)), 1) for ic in ICS], flush=True)
+    print("precomputing Phi/Yphi + true action-grad ...", flush=True)
     Phi, Yphi = precompute_phi(XU)
     true_ug = precompute_true_ugrad(XU, xm, xs)
-
-    horizon, steps, lr, rho_u = 10, 150, 0.15, 0.01
-    # success_V=2.0 corresponds to theta~0.04 rad (~2.6 deg) residual, clearly
-    # recovered/upright (LQR-true oracle reaches ~0.26); value-only diverges to ~1e5.
-    success_V = 2.0
-    configs = [("value_only", 0.003, 0.0), ("grad_only", 0.0, 0.05),
-               ("value+grad", 0.003, 0.05)]
-    out = {"config": dict(plant="cartpole", seeds=SEEDS, horizon=horizon, steps=steps,
+    horizon, steps, lr, rho_u, success_V = 3, 120, 0.2, 0.01, 2.0
+    configs = [("value_only", 0.003, 0.0), ("grad_only", 0.0, 0.2), ("value+grad", 0.003, 0.2)]
+    out = {"config": dict(plant="two_cstr_series", seeds=SEEDS, horizon=horizon, steps=steps,
                           lr=lr, rho_u=rho_u, success_V=success_V, n_ic=len(ICS),
-                          configs=configs), "per_seed": {}}
-    print(f"{'config':12} {'seed':>4} {'mse':>9} {'align':>6} {'fneg':>5} {'b3':>4} {'b20':>4} {'Jx':>6}")
+                          n_data=12000, epochs=70, configs=configs), "per_seed": {}}
+    print(f"{'config':12} {'seed':>4} {'mse':>9} {'cos':>6} {'fneg':>5} {'b3':>4} {'b20':>4} {'Jx':>7}", flush=True)
     for seed in SEEDS:
         out["per_seed"][seed] = {}
         for tag, lv, lg in configs:
-            model, mse = train(seed, data, Phi, Yphi, true_ug, lam_val=lv, lam_grad=lg)
+            model, mse = train(seed, data, Phi, Yphi, true_ug, lam_val=lv, lam_grad=lg, epochs=70)
             seq = freeze(model)
             al, fn = align_med(seq, data, norm, seed=seed)
             b3 = float(np.mean([closed_loop(seq, norm, x0, horizon, 3, steps, lr, rho_u,
@@ -318,18 +313,18 @@ def main():
             out["per_seed"][seed][tag] = dict(test_mse=mse, align=al, frac_neg=fn,
                                               b3=b3, b20=b20, state_jac_med=jx,
                                               lam_val=lv, lam_grad=lg)
-            print(f"{tag:12} {seed:>4} {mse:>9.2e} {al:>6.2f} {fn:>5.2f} {b3:>4.1f} {b20:>4.1f} {jx:>6.2f}")
+            print(f"{tag:12} {seed:>4} {mse:>9.2e} {al:>6.2f} {fn:>5.2f} {b3:>4.1f} {b20:>4.1f} {jx:>7.2f}", flush=True)
     LOG.mkdir(parents=True, exist_ok=True)
-    (LOG / "cartpole_lgrad.json").write_text(json.dumps(out, indent=2))
-    print("\nwrote", LOG / "cartpole_lgrad.json")
+    (LOG / "two_cstr_lgrad.json").write_text(json.dumps(out, indent=2))
+    print("\nwrote", LOG / "two_cstr_lgrad.json", flush=True)
 
     def avg(tag, key):
         return float(np.mean([out["per_seed"][s][tag][key] for s in SEEDS]))
-    print("\n=== cart-pole ablation (seed-averaged) ===")
-    print(f"{'config':12} {'align':>6} {'fneg':>5} {'b3':>5} {'b20':>5} {'Jx':>6} {'mse':>9}")
+    print("\n=== two-CSTR-series ablation (seed-averaged) ===")
+    print(f"{'config':12} {'cos':>6} {'fneg':>5} {'b3':>5} {'b20':>5} {'Jx':>7} {'mse':>9}")
     for tag, _, _ in configs:
         print(f"{tag:12} {avg(tag,'align'):>6.2f} {avg(tag,'frac_neg'):>5.2f} "
-              f"{avg(tag,'b3'):>5.2f} {avg(tag,'b20'):>5.2f} {avg(tag,'state_jac_med'):>6.2f} "
+              f"{avg(tag,'b3'):>5.2f} {avg(tag,'b20'):>5.2f} {avg(tag,'state_jac_med'):>7.2f} "
               f"{avg(tag,'test_mse'):>9.2e}")
 
 

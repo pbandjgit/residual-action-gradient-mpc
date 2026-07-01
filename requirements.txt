@@ -1,5 +1,10 @@
+# Core dependencies for reproducing the paper's experiments and figures.
+# Versions are those used for the reported results; nearby versions should work.
 numpy==1.26.4
 scipy==1.17.0
-matplotlib==3.10.8
 torch==2.10.0
-pandas
+matplotlib==3.10.8
+
+# Optional: only needed for the IPOPT/NLP stress check (scripts/two_cstr_ipopt_baseline.py),
+# which is not part of the main paper protocol.
+# casadi>=3.6

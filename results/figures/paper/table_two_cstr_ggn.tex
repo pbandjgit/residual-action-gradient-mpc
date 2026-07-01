@@ -1,0 +1,13 @@
+\begin{tabular}{llccc}
+\toprule
+objective & training & success & $V$-increase frac. & mean true $V$ dec. \\
+\midrule
+rolled-out $V$ & value only & $0.38\pm0.23$ & $0.52\pm0.18$ & $-1.74e-01\pm1e-01$ \\
+rolled-out $V$ & grad only & $1.00\pm0.00$ & $0.27\pm0.09$ & $7.85e-02\pm4e-04$ \\
+rolled-out $V$ & value +$L_{grad}$ & $1.00\pm0.00$ & $0.23\pm0.09$ & $7.85e-02\pm5e-04$ \\
+\midrule
+exact residual & value only & $0.00\pm0.00$ & $0.32\pm0.05$ & $-9.03e-02\pm6e-02$ \\
+exact residual & grad only & $0.53\pm0.09$ & $0.17\pm0.02$ & $-9.14e-03\pm4e-02$ \\
+exact residual & value +$L_{grad}$ & $0.53\pm0.09$ & $0.17\pm0.02$ & $-3.44e-04\pm2e-02$ \\
+\bottomrule
+\end{tabular}

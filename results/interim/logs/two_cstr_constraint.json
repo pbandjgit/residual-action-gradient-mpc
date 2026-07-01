@@ -1,0 +1,73 @@
+{
+  "config": {
+    "plant": "two_cstr_series",
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "T_cap": 70.0,
+    "rho_c": [
+      0.0,
+      0.02,
+      0.1
+    ],
+    "model": "value+grad",
+    "horizon": 3,
+    "steps": 120,
+    "success_V": 2.0
+  },
+  "per_seed": {
+    "0": {
+      "0": {
+        "success": 1.0,
+        "max_temp": 125.01950482358926,
+        "mean_violation": 14.790098501509267
+      },
+      "0.02": {
+        "success": 0.8,
+        "max_temp": 130.16258459812423,
+        "mean_violation": 14.987512317091605
+      },
+      "0.1": {
+        "success": 0.8,
+        "max_temp": 136.21022770522785,
+        "mean_violation": 22.509996954137925
+      }
+    },
+    "1": {
+      "0": {
+        "success": 1.0,
+        "max_temp": 110.34935450473779,
+        "mean_violation": 13.469039299816862
+      },
+      "0.02": {
+        "success": 1.0,
+        "max_temp": 140.3316838267612,
+        "mean_violation": 24.24133416564873
+      },
+      "0.1": {
+        "success": 1.0,
+        "max_temp": 138.08389537750986,
+        "mean_violation": 23.628771194784118
+      }
+    },
+    "2": {
+      "0": {
+        "success": 0.8,
+        "max_temp": 108.43904052339656,
+        "mean_violation": 13.68426225701035
+      },
+      "0.02": {
+        "success": 0.6,
+        "max_temp": 105.68552463119808,
+        "mean_violation": 14.269541895864055
+      },
+      "0.1": {
+        "success": 0.8,
+        "max_temp": 115.32428939174031,
+        "mean_violation": 15.964834296754555
+      }
+    }
+  }
+}

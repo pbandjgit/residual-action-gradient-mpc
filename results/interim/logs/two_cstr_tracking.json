@@ -1,0 +1,146 @@
+{
+  "config": {
+    "plant": "two_cstr_series",
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "x_sp": [
+      -0.5,
+      -25.0,
+      -0.5,
+      -25.0
+    ],
+    "u_sp": [
+      -2.1296802799361347,
+      64831.616096327736,
+      -2.129680279936135,
+      64831.616096327736
+    ],
+    "horizon": 3,
+    "steps": 120,
+    "success_Vsp": 2.0,
+    "configs": [
+      [
+        "value_only",
+        0.003,
+        0.0
+      ],
+      [
+        "value+grad",
+        0.003,
+        0.2
+      ]
+    ]
+  },
+  "per_seed": {
+    "0": {
+      "value_only": {
+        "track_success": 0.2,
+        "final_Vsp": 64.21323826779783
+      },
+      "value+grad": {
+        "track_success": 1.0,
+        "final_Vsp": 0.07758357428665116
+      }
+    },
+    "1": {
+      "value_only": {
+        "track_success": 1.0,
+        "final_Vsp": 0.8698205355810721
+      },
+      "value+grad": {
+        "track_success": 1.0,
+        "final_Vsp": 0.055097843964341545
+      }
+    },
+    "2": {
+      "value_only": {
+        "track_success": 0.0,
+        "final_Vsp": 55.26888884270155
+      },
+      "value+grad": {
+        "track_success": 0.8,
+        "final_Vsp": 0.8091018084295211
+      }
+    },
+    "3": {
+      "value_only": {
+        "track_success": 0.0,
+        "final_Vsp": 79.70014387579965
+      },
+      "value+grad": {
+        "track_success": 1.0,
+        "final_Vsp": 0.2579735843485329
+      }
+    },
+    "4": {
+      "value_only": {
+        "track_success": 0.2,
+        "final_Vsp": 15.669436823068775
+      },
+      "value+grad": {
+        "track_success": 1.0,
+        "final_Vsp": 0.06285552879640391
+      }
+    },
+    "5": {
+      "value_only": {
+        "track_success": 0.2,
+        "final_Vsp": 50.436443125270486
+      },
+      "value+grad": {
+        "track_success": 1.0,
+        "final_Vsp": 0.02627210517005966
+      }
+    },
+    "6": {
+      "value_only": {
+        "track_success": 0.4,
+        "final_Vsp": 23.14600003182957
+      },
+      "value+grad": {
+        "track_success": 0.6,
+        "final_Vsp": 1.7124415298331293
+      }
+    },
+    "7": {
+      "value_only": {
+        "track_success": 0.0,
+        "final_Vsp": 91.94899677212092
+      },
+      "value+grad": {
+        "track_success": 1.0,
+        "final_Vsp": 0.07647392176241123
+      }
+    },
+    "8": {
+      "value_only": {
+        "track_success": 0.0,
+        "final_Vsp": 39.47686439420042
+      },
+      "value+grad": {
+        "track_success": 1.0,
+        "final_Vsp": 0.029113307333368355
+      }
+    },
+    "9": {
+      "value_only": {
+        "track_success": 0.6,
+        "final_Vsp": 6.705703916370718
+      },
+      "value+grad": {
+        "track_success": 1.0,
+        "final_Vsp": 0.21992689937198273
+      }
+    }
+  }
+}
