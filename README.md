@@ -26,7 +26,6 @@ data/processed/    single-CSTR one-step dataset (two-CSTR data is generated on t
 results/
   interim/logs/    experiment outputs (JSON) — figure scripts read these
   figures/paper/   generated figures (PDF/PNG) and LaTeX table fragments
-manuscript_jpc/    the LaTeX manuscript, figures, highlights, cover letter
 ```
 
 ## Two ways to reproduce
