@@ -1,0 +1,17 @@
+{
+  "canonical_payload_sha256": "fa56e4d31e472eca2093461b23599b19c1c509df480bfe720154af2ef55d7e70",
+  "file_sha256": {
+    "docs/JPC_ORACLE_NLP_COMPARISON_PROTOCOL_2026_09_03.md": "24a783c7552bee7aac6a6aa174ba562bf4fce779fe94dcaba10adea77b48eb27",
+    "results/oracle_nlp_execution_2026_09_03_corrective/oracle_nlp_compat_sample_2026_09_03.npz": "da96268ff9678883bf1fa2cc5c53d41eee3d2d628b288af4cf189d91eea41b5b",
+    "results/oracle_nlp_execution_2026_09_03_corrective/oracle_nlp_preflight_gate_results_2026_09_03.json": "07741ea978be8bc819cc50be0974bc3f231849f33dd03c9bc129ad40dcd249ed",
+    "results/oracle_nlp_synthetic_smoke_results_2026_09_03.json": "274293cdf4739f5787d8d702eb0cdc5b6d4613113d567207affe0ae2612185a3",
+    "scripts/oracle_nlp_driver_2026_09_03.py": "886e4a3e4f52fe2fd61b6f7de534b952aedc308102c18184582516f2da61627e",
+    "scripts/oracle_nlp_synthetic_smoke_2026_09_03.py": "480ead0999846d5e5cbe99ef5d934700dceea08473bd7b9e2db4d55ca62750ba",
+    "src/cstr/oracle_nlp_io.py": "b00d8b2ee9c8e89f6c661acc5c720d6132b8bc7421b9fd124e8995efd082a0dc",
+    "src/cstr/oracle_nlp_lib.py": "db899bfd241ace23c30e8c0c3935e8dce1ee9e4d4abd7b326acec092dd33466c"
+  },
+  "generated_at_utc": "2026-09-03T07:02:01.540682+00:00",
+  "kind": "oracle_nlp_freeze_manifest",
+  "smoke_n_pass": 56,
+  "smoke_n_total": 56
+}

@@ -1,0 +1,1778 @@
+{
+  "canonical_payload_sha256": "66e22ff8b1ac884991572ccbf7ac0e91454f819c7e7abef280255e7a24ebff9c",
+  "d_extended_vs_e_contrast": {
+    "ci_lower": 0.0,
+    "ci_upper": 0.0,
+    "confidence": 0.95,
+    "n_resample": 10000,
+    "point_estimate": 0.0
+  },
+  "d_extended_vs_e_permutation": {
+    "n_patterns": 1024,
+    "p_value": 1.0,
+    "statistic": 0.0
+  },
+  "extension_grid": [
+    1.0,
+    2.0,
+    5.0
+  ],
+  "generated_at_utc": "2026-09-03T08:16:39.011882+00:00",
+  "kind": "lamjac_extension_results_manifest",
+  "overall_boundary_outcome": "MIXED",
+  "per_seed": {
+    "0": {
+      "boundary_outcome": "BOUNDARY_PERSISTS",
+      "init_state_hash_consistent_with_original": true,
+      "merged_selected_lambda_jac": 5.0,
+      "new_candidate_closed_loop_success": {
+        "1.0": 0.8,
+        "2.0": 1.0,
+        "5.0": 1.0
+      },
+      "new_candidate_oracle": {
+        "1.0": {
+          "align_cos": {
+            "frac_neg": 0.06375,
+            "mean": 0.8010022960051097,
+            "median": 0.9655732550309407,
+            "p90": 0.9988352960766141
+          },
+          "excluded_fraction": 0.0,
+          "n_points": 800,
+          "rel_grad_error": {
+            "mean": 0.8417540252519135,
+            "median": 0.5861389832689943,
+            "p90": 1.584891277841939
+          }
+        },
+        "2.0": {
+          "align_cos": {
+            "frac_neg": 0.0125,
+            "mean": 0.8935056821640392,
+            "median": 0.978151991286843,
+            "p90": 0.9990909552535466
+          },
+          "excluded_fraction": 0.0,
+          "n_points": 800,
+          "rel_grad_error": {
+            "mean": 0.5393789995017619,
+            "median": 0.3688245878934301,
+            "p90": 1.024717284320831
+          }
+        },
+        "5.0": {
+          "align_cos": {
+            "frac_neg": 0.01,
+            "mean": 0.9114774571360575,
+            "median": 0.9622549413979993,
+            "p90": 0.9962891048347351
+          },
+          "excluded_fraction": 0.0,
+          "n_points": 800,
+          "rel_grad_error": {
+            "mean": 0.47855875885724414,
+            "median": 0.37002643663066426,
+            "p90": 0.7739929449737507
+          }
+        }
+      },
+      "new_trace": [
+        {
+          "checkpoints": [
+            {
+              "epoch": 10,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac1.0_ext_seed0_ep010.pt"
+            },
+            {
+              "epoch": 20,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac1.0_ext_seed0_ep020.pt"
+            },
+            {
+              "epoch": 30,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac1.0_ext_seed0_ep030.pt"
+            },
+            {
+              "epoch": 40,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac1.0_ext_seed0_ep040.pt"
+            },
+            {
+              "epoch": 50,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac1.0_ext_seed0_ep050.pt"
+            }
+          ],
+          "lam_jac": 1.0,
+          "test_mse": 0.0006365209701471031,
+          "val_mse": 0.0006272630416788161
+        },
+        {
+          "checkpoints": [
+            {
+              "epoch": 10,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac2.0_ext_seed0_ep010.pt"
+            },
+            {
+              "epoch": 20,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac2.0_ext_seed0_ep020.pt"
+            },
+            {
+              "epoch": 30,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac2.0_ext_seed0_ep030.pt"
+            },
+            {
+              "epoch": 40,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac2.0_ext_seed0_ep040.pt"
+            },
+            {
+              "epoch": 50,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac2.0_ext_seed0_ep050.pt"
+            }
+          ],
+          "lam_jac": 2.0,
+          "test_mse": 0.0005415664054453373,
+          "val_mse": 0.0005280057084746659
+        },
+        {
+          "checkpoints": [
+            {
+              "epoch": 10,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac5.0_ext_seed0_ep010.pt"
+            },
+            {
+              "epoch": 20,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac5.0_ext_seed0_ep020.pt"
+            },
+            {
+              "epoch": 30,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac5.0_ext_seed0_ep030.pt"
+            },
+            {
+              "epoch": 40,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac5.0_ext_seed0_ep040.pt"
+            },
+            {
+              "epoch": 50,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac5.0_ext_seed0_ep050.pt"
+            }
+          ],
+          "lam_jac": 5.0,
+          "test_mse": 0.00045550282811746,
+          "val_mse": 0.00044115877244621515
+        }
+      ],
+      "old_trace": [
+        {
+          "lam_jac": 0.001,
+          "test_mse": 0.0013213958591222763,
+          "val_mse": 0.0013316399417817593
+        },
+        {
+          "lam_jac": 0.005,
+          "test_mse": 0.001316958456300199,
+          "val_mse": 0.001324645709246397
+        },
+        {
+          "lam_jac": 0.01,
+          "test_mse": 0.001311978790909052,
+          "val_mse": 0.0013222753768786788
+        },
+        {
+          "lam_jac": 0.05,
+          "test_mse": 0.0011864656116813421,
+          "val_mse": 0.0011952337808907032
+        },
+        {
+          "lam_jac": 0.1,
+          "test_mse": 0.0011317413300275803,
+          "val_mse": 0.0011390519794076681
+        },
+        {
+          "lam_jac": 0.5,
+          "test_mse": 0.0007554397452622652,
+          "val_mse": 0.0007527900161221623
+        }
+      ],
+      "seed": 0,
+      "selected_candidate_closed_loop_success": 1.0,
+      "selected_candidate_test_mse": 0.00045550282811746
+    },
+    "1": {
+      "boundary_outcome": "BOUNDARY_PERSISTS",
+      "init_state_hash_consistent_with_original": true,
+      "merged_selected_lambda_jac": 5.0,
+      "new_candidate_closed_loop_success": {
+        "1.0": 1.0,
+        "2.0": 1.0,
+        "5.0": 1.0
+      },
+      "new_candidate_oracle": {
+        "1.0": {
+          "align_cos": {
+            "frac_neg": 0.04,
+            "mean": 0.8097824753215442,
+            "median": 0.9250303521751351,
+            "p90": 0.9970104854641672
+          },
+          "excluded_fraction": 0.0,
+          "n_points": 800,
+          "rel_grad_error": {
+            "mean": 1.1203457547208264,
+            "median": 0.9351878637704092,
+            "p90": 2.0066742498982526
+          }
+        },
+        "2.0": {
+          "align_cos": {
+            "frac_neg": 0.0375,
+            "mean": 0.8389017432083845,
+            "median": 0.938591926474188,
+            "p90": 0.9952628263009716
+          },
+          "excluded_fraction": 0.0,
+          "n_points": 800,
+          "rel_grad_error": {
+            "mean": 0.7573074497421979,
+            "median": 0.6061169304507519,
+            "p90": 1.3588811900177709
+          }
+        },
+        "5.0": {
+          "align_cos": {
+            "frac_neg": 0.01,
+            "mean": 0.9305797643997635,
+            "median": 0.9756788995650177,
+            "p90": 0.9989086257659558
+          },
+          "excluded_fraction": 0.0,
+          "n_points": 800,
+          "rel_grad_error": {
+            "mean": 0.48752951414462214,
+            "median": 0.37408652477668775,
+            "p90": 0.9189967519359389
+          }
+        }
+      },
+      "new_trace": [
+        {
+          "checkpoints": [
+            {
+              "epoch": 10,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac1.0_ext_seed1_ep010.pt"
+            },
+            {
+              "epoch": 20,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac1.0_ext_seed1_ep020.pt"
+            },
+            {
+              "epoch": 30,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac1.0_ext_seed1_ep030.pt"
+            },
+            {
+              "epoch": 40,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac1.0_ext_seed1_ep040.pt"
+            },
+            {
+              "epoch": 50,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac1.0_ext_seed1_ep050.pt"
+            }
+          ],
+          "lam_jac": 1.0,
+          "test_mse": 0.0007559433579444885,
+          "val_mse": 0.0007411980768665671
+        },
+        {
+          "checkpoints": [
+            {
+              "epoch": 10,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac2.0_ext_seed1_ep010.pt"
+            },
+            {
+              "epoch": 20,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac2.0_ext_seed1_ep020.pt"
+            },
+            {
+              "epoch": 30,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac2.0_ext_seed1_ep030.pt"
+            },
+            {
+              "epoch": 40,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac2.0_ext_seed1_ep040.pt"
+            },
+            {
+              "epoch": 50,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac2.0_ext_seed1_ep050.pt"
+            }
+          ],
+          "lam_jac": 2.0,
+          "test_mse": 0.000746573437936604,
+          "val_mse": 0.000733177294023335
+        },
+        {
+          "checkpoints": [
+            {
+              "epoch": 10,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac5.0_ext_seed1_ep010.pt"
+            },
+            {
+              "epoch": 20,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac5.0_ext_seed1_ep020.pt"
+            },
+            {
+              "epoch": 30,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac5.0_ext_seed1_ep030.pt"
+            },
+            {
+              "epoch": 40,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac5.0_ext_seed1_ep040.pt"
+            },
+            {
+              "epoch": 50,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac5.0_ext_seed1_ep050.pt"
+            }
+          ],
+          "lam_jac": 5.0,
+          "test_mse": 0.0005285282386466861,
+          "val_mse": 0.0005232487455941737
+        }
+      ],
+      "old_trace": [
+        {
+          "lam_jac": 0.001,
+          "test_mse": 0.0014043954433873296,
+          "val_mse": 0.001396847190335393
+        },
+        {
+          "lam_jac": 0.005,
+          "test_mse": 0.0013858384918421507,
+          "val_mse": 0.0013794092228636146
+        },
+        {
+          "lam_jac": 0.01,
+          "test_mse": 0.0014197630807757378,
+          "val_mse": 0.0014207642525434494
+        },
+        {
+          "lam_jac": 0.05,
+          "test_mse": 0.0013142939424142241,
+          "val_mse": 0.0013043503277003765
+        },
+        {
+          "lam_jac": 0.1,
+          "test_mse": 0.0012493320973590016,
+          "val_mse": 0.0012462541926652193
+        },
+        {
+          "lam_jac": 0.5,
+          "test_mse": 0.0009143461938947439,
+          "val_mse": 0.0009050664957612753
+        }
+      ],
+      "seed": 1,
+      "selected_candidate_closed_loop_success": 1.0,
+      "selected_candidate_test_mse": 0.0005285282386466861
+    },
+    "2": {
+      "boundary_outcome": "BOUNDARY_PERSISTS",
+      "init_state_hash_consistent_with_original": true,
+      "merged_selected_lambda_jac": 5.0,
+      "new_candidate_closed_loop_success": {
+        "1.0": 1.0,
+        "2.0": 1.0,
+        "5.0": 1.0
+      },
+      "new_candidate_oracle": {
+        "1.0": {
+          "align_cos": {
+            "frac_neg": 0.0375,
+            "mean": 0.8296600716504478,
+            "median": 0.9466303926980529,
+            "p90": 0.9952958596206295
+          },
+          "excluded_fraction": 0.0,
+          "n_points": 800,
+          "rel_grad_error": {
+            "mean": 1.317954037635845,
+            "median": 1.0928059438496969,
+            "p90": 2.3436101026296297
+          }
+        },
+        "2.0": {
+          "align_cos": {
+            "frac_neg": 0.01875,
+            "mean": 0.854157909565903,
+            "median": 0.9387801118955312,
+            "p90": 0.9973421061844844
+          },
+          "excluded_fraction": 0.0,
+          "n_points": 800,
+          "rel_grad_error": {
+            "mean": 0.9645776191674329,
+            "median": 0.7827064718824277,
+            "p90": 1.7132079680520842
+          }
+        },
+        "5.0": {
+          "align_cos": {
+            "frac_neg": 0.0125,
+            "mean": 0.892299719978026,
+            "median": 0.9565679949420397,
+            "p90": 0.9965241393201312
+          },
+          "excluded_fraction": 0.0,
+          "n_points": 800,
+          "rel_grad_error": {
+            "mean": 0.5450240882776206,
+            "median": 0.42720007097741275,
+            "p90": 1.001615265325769
+          }
+        }
+      },
+      "new_trace": [
+        {
+          "checkpoints": [
+            {
+              "epoch": 10,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac1.0_ext_seed2_ep010.pt"
+            },
+            {
+              "epoch": 20,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac1.0_ext_seed2_ep020.pt"
+            },
+            {
+              "epoch": 30,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac1.0_ext_seed2_ep030.pt"
+            },
+            {
+              "epoch": 40,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac1.0_ext_seed2_ep040.pt"
+            },
+            {
+              "epoch": 50,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac1.0_ext_seed2_ep050.pt"
+            }
+          ],
+          "lam_jac": 1.0,
+          "test_mse": 0.0015333694173023105,
+          "val_mse": 0.0015469032805413008
+        },
+        {
+          "checkpoints": [
+            {
+              "epoch": 10,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac2.0_ext_seed2_ep010.pt"
+            },
+            {
+              "epoch": 20,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac2.0_ext_seed2_ep020.pt"
+            },
+            {
+              "epoch": 30,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac2.0_ext_seed2_ep030.pt"
+            },
+            {
+              "epoch": 40,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac2.0_ext_seed2_ep040.pt"
+            },
+            {
+              "epoch": 50,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac2.0_ext_seed2_ep050.pt"
+            }
+          ],
+          "lam_jac": 2.0,
+          "test_mse": 0.0013400983298197389,
+          "val_mse": 0.0013554322067648172
+        },
+        {
+          "checkpoints": [
+            {
+              "epoch": 10,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac5.0_ext_seed2_ep010.pt"
+            },
+            {
+              "epoch": 20,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac5.0_ext_seed2_ep020.pt"
+            },
+            {
+              "epoch": 30,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac5.0_ext_seed2_ep030.pt"
+            },
+            {
+              "epoch": 40,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac5.0_ext_seed2_ep040.pt"
+            },
+            {
+              "epoch": 50,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac5.0_ext_seed2_ep050.pt"
+            }
+          ],
+          "lam_jac": 5.0,
+          "test_mse": 0.0012729344889521599,
+          "val_mse": 0.0012752218171954155
+        }
+      ],
+      "old_trace": [
+        {
+          "lam_jac": 0.001,
+          "test_mse": 0.002024848712608218,
+          "val_mse": 0.0020389859564602375
+        },
+        {
+          "lam_jac": 0.005,
+          "test_mse": 0.002130382228642702,
+          "val_mse": 0.002102716825902462
+        },
+        {
+          "lam_jac": 0.01,
+          "test_mse": 0.0021357694640755653,
+          "val_mse": 0.0021211025305092335
+        },
+        {
+          "lam_jac": 0.05,
+          "test_mse": 0.001905127544887364,
+          "val_mse": 0.0018948254873976111
+        },
+        {
+          "lam_jac": 0.1,
+          "test_mse": 0.002006515860557556,
+          "val_mse": 0.0019816739950329065
+        },
+        {
+          "lam_jac": 0.5,
+          "test_mse": 0.0018745781853795052,
+          "val_mse": 0.0018511656671762466
+        }
+      ],
+      "seed": 2,
+      "selected_candidate_closed_loop_success": 1.0,
+      "selected_candidate_test_mse": 0.0012729344889521599
+    },
+    "3": {
+      "boundary_outcome": "BOUNDARY_PERSISTS",
+      "init_state_hash_consistent_with_original": true,
+      "merged_selected_lambda_jac": 5.0,
+      "new_candidate_closed_loop_success": {
+        "1.0": 0.8,
+        "2.0": 1.0,
+        "5.0": 1.0
+      },
+      "new_candidate_oracle": {
+        "1.0": {
+          "align_cos": {
+            "frac_neg": 0.045,
+            "mean": 0.8145678454028145,
+            "median": 0.9305532766609983,
+            "p90": 0.9970813005288193
+          },
+          "excluded_fraction": 0.0,
+          "n_points": 800,
+          "rel_grad_error": {
+            "mean": 0.8848819579287333,
+            "median": 0.6728074244775486,
+            "p90": 1.766046752964845
+          }
+        },
+        "2.0": {
+          "align_cos": {
+            "frac_neg": 0.02375,
+            "mean": 0.8845352192047785,
+            "median": 0.9773636544761051,
+            "p90": 0.9988348088130042
+          },
+          "excluded_fraction": 0.0,
+          "n_points": 800,
+          "rel_grad_error": {
+            "mean": 0.6369185838436691,
+            "median": 0.4283688122882361,
+            "p90": 1.2339012617590097
+          }
+        },
+        "5.0": {
+          "align_cos": {
+            "frac_neg": 0.01125,
+            "mean": 0.9254314434497221,
+            "median": 0.9664800702827991,
+            "p90": 0.9989890870907735
+          },
+          "excluded_fraction": 0.0,
+          "n_points": 800,
+          "rel_grad_error": {
+            "mean": 0.6652592381009685,
+            "median": 0.5080644309253455,
+            "p90": 1.1456012860892115
+          }
+        }
+      },
+      "new_trace": [
+        {
+          "checkpoints": [
+            {
+              "epoch": 10,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac1.0_ext_seed3_ep010.pt"
+            },
+            {
+              "epoch": 20,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac1.0_ext_seed3_ep020.pt"
+            },
+            {
+              "epoch": 30,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac1.0_ext_seed3_ep030.pt"
+            },
+            {
+              "epoch": 40,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac1.0_ext_seed3_ep040.pt"
+            },
+            {
+              "epoch": 50,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac1.0_ext_seed3_ep050.pt"
+            }
+          ],
+          "lam_jac": 1.0,
+          "test_mse": 0.0014354840386658907,
+          "val_mse": 0.0014101380947977304
+        },
+        {
+          "checkpoints": [
+            {
+              "epoch": 10,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac2.0_ext_seed3_ep010.pt"
+            },
+            {
+              "epoch": 20,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac2.0_ext_seed3_ep020.pt"
+            },
+            {
+              "epoch": 30,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac2.0_ext_seed3_ep030.pt"
+            },
+            {
+              "epoch": 40,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac2.0_ext_seed3_ep040.pt"
+            },
+            {
+              "epoch": 50,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac2.0_ext_seed3_ep050.pt"
+            }
+          ],
+          "lam_jac": 2.0,
+          "test_mse": 0.0011984271695837379,
+          "val_mse": 0.001183148822747171
+        },
+        {
+          "checkpoints": [
+            {
+              "epoch": 10,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac5.0_ext_seed3_ep010.pt"
+            },
+            {
+              "epoch": 20,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac5.0_ext_seed3_ep020.pt"
+            },
+            {
+              "epoch": 30,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac5.0_ext_seed3_ep030.pt"
+            },
+            {
+              "epoch": 40,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac5.0_ext_seed3_ep040.pt"
+            },
+            {
+              "epoch": 50,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac5.0_ext_seed3_ep050.pt"
+            }
+          ],
+          "lam_jac": 5.0,
+          "test_mse": 0.0010553596075624228,
+          "val_mse": 0.0010452043497934937
+        }
+      ],
+      "old_trace": [
+        {
+          "lam_jac": 0.001,
+          "test_mse": 0.0020109638571739197,
+          "val_mse": 0.0019343058811500669
+        },
+        {
+          "lam_jac": 0.005,
+          "test_mse": 0.0018959802109748125,
+          "val_mse": 0.0018294105539098382
+        },
+        {
+          "lam_jac": 0.01,
+          "test_mse": 0.0019890477415174246,
+          "val_mse": 0.0019160632509738207
+        },
+        {
+          "lam_jac": 0.05,
+          "test_mse": 0.0018170567927882075,
+          "val_mse": 0.0017596065299585462
+        },
+        {
+          "lam_jac": 0.1,
+          "test_mse": 0.001794158248230815,
+          "val_mse": 0.0017350019188597798
+        },
+        {
+          "lam_jac": 0.5,
+          "test_mse": 0.0015825428999960423,
+          "val_mse": 0.0015472746454179287
+        }
+      ],
+      "seed": 3,
+      "selected_candidate_closed_loop_success": 1.0,
+      "selected_candidate_test_mse": 0.0010553596075624228
+    },
+    "4": {
+      "boundary_outcome": "BOUNDARY_PERSISTS",
+      "init_state_hash_consistent_with_original": true,
+      "merged_selected_lambda_jac": 5.0,
+      "new_candidate_closed_loop_success": {
+        "1.0": 1.0,
+        "2.0": 1.0,
+        "5.0": 1.0
+      },
+      "new_candidate_oracle": {
+        "1.0": {
+          "align_cos": {
+            "frac_neg": 0.02125,
+            "mean": 0.8378849192932333,
+            "median": 0.9223533794196273,
+            "p90": 0.9973643084910264
+          },
+          "excluded_fraction": 0.0,
+          "n_points": 800,
+          "rel_grad_error": {
+            "mean": 0.9165914312577361,
+            "median": 0.7220287395034726,
+            "p90": 1.7171196135886322
+          }
+        },
+        "2.0": {
+          "align_cos": {
+            "frac_neg": 0.01875,
+            "mean": 0.8923707344658205,
+            "median": 0.9473779938219773,
+            "p90": 0.9965330236575394
+          },
+          "excluded_fraction": 0.0,
+          "n_points": 800,
+          "rel_grad_error": {
+            "mean": 0.9542840116125343,
+            "median": 0.7751938749495868,
+            "p90": 1.5821139307993943
+          }
+        },
+        "5.0": {
+          "align_cos": {
+            "frac_neg": 0.00625,
+            "mean": 0.9458320502341501,
+            "median": 0.9878303234244108,
+            "p90": 0.9994830193034084
+          },
+          "excluded_fraction": 0.0,
+          "n_points": 800,
+          "rel_grad_error": {
+            "mean": 0.5378705892468969,
+            "median": 0.41290107561295825,
+            "p90": 0.9498211778864983
+          }
+        }
+      },
+      "new_trace": [
+        {
+          "checkpoints": [
+            {
+              "epoch": 10,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac1.0_ext_seed4_ep010.pt"
+            },
+            {
+              "epoch": 20,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac1.0_ext_seed4_ep020.pt"
+            },
+            {
+              "epoch": 30,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac1.0_ext_seed4_ep030.pt"
+            },
+            {
+              "epoch": 40,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac1.0_ext_seed4_ep040.pt"
+            },
+            {
+              "epoch": 50,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac1.0_ext_seed4_ep050.pt"
+            }
+          ],
+          "lam_jac": 1.0,
+          "test_mse": 0.0006844522431492805,
+          "val_mse": 0.0006924651679582894
+        },
+        {
+          "checkpoints": [
+            {
+              "epoch": 10,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac2.0_ext_seed4_ep010.pt"
+            },
+            {
+              "epoch": 20,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac2.0_ext_seed4_ep020.pt"
+            },
+            {
+              "epoch": 30,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac2.0_ext_seed4_ep030.pt"
+            },
+            {
+              "epoch": 40,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac2.0_ext_seed4_ep040.pt"
+            },
+            {
+              "epoch": 50,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac2.0_ext_seed4_ep050.pt"
+            }
+          ],
+          "lam_jac": 2.0,
+          "test_mse": 0.0007070927531458437,
+          "val_mse": 0.0007144891424104571
+        },
+        {
+          "checkpoints": [
+            {
+              "epoch": 10,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac5.0_ext_seed4_ep010.pt"
+            },
+            {
+              "epoch": 20,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac5.0_ext_seed4_ep020.pt"
+            },
+            {
+              "epoch": 30,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac5.0_ext_seed4_ep030.pt"
+            },
+            {
+              "epoch": 40,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac5.0_ext_seed4_ep040.pt"
+            },
+            {
+              "epoch": 50,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac5.0_ext_seed4_ep050.pt"
+            }
+          ],
+          "lam_jac": 5.0,
+          "test_mse": 0.0005528738256543875,
+          "val_mse": 0.0005606972263194621
+        }
+      ],
+      "old_trace": [
+        {
+          "lam_jac": 0.001,
+          "test_mse": 0.000835695827845484,
+          "val_mse": 0.0008402070379815996
+        },
+        {
+          "lam_jac": 0.005,
+          "test_mse": 0.0008402576204389334,
+          "val_mse": 0.0008449749439023435
+        },
+        {
+          "lam_jac": 0.01,
+          "test_mse": 0.0008249546517618,
+          "val_mse": 0.0008212022949010134
+        },
+        {
+          "lam_jac": 0.05,
+          "test_mse": 0.0007786270580254495,
+          "val_mse": 0.0007822614279575646
+        },
+        {
+          "lam_jac": 0.1,
+          "test_mse": 0.0007698637782596052,
+          "val_mse": 0.0007686218013986945
+        },
+        {
+          "lam_jac": 0.5,
+          "test_mse": 0.0007344697369262576,
+          "val_mse": 0.0007430005935020745
+        }
+      ],
+      "seed": 4,
+      "selected_candidate_closed_loop_success": 1.0,
+      "selected_candidate_test_mse": 0.0005528738256543875
+    },
+    "5": {
+      "boundary_outcome": "INTERIOR_OPTIMUM_FOUND",
+      "init_state_hash_consistent_with_original": true,
+      "merged_selected_lambda_jac": 1.0,
+      "new_candidate_closed_loop_success": {
+        "1.0": 1.0,
+        "2.0": 1.0,
+        "5.0": 1.0
+      },
+      "new_candidate_oracle": {
+        "1.0": {
+          "align_cos": {
+            "frac_neg": 0.055,
+            "mean": 0.781065673088527,
+            "median": 0.9312185233983739,
+            "p90": 0.9982294842198884
+          },
+          "excluded_fraction": 0.0,
+          "n_points": 800,
+          "rel_grad_error": {
+            "mean": 0.8461642761543331,
+            "median": 0.6965990948344509,
+            "p90": 1.6169696549503583
+          }
+        },
+        "2.0": {
+          "align_cos": {
+            "frac_neg": 0.035,
+            "mean": 0.8329306265267943,
+            "median": 0.9537519459461501,
+            "p90": 0.998448564356518
+          },
+          "excluded_fraction": 0.0,
+          "n_points": 800,
+          "rel_grad_error": {
+            "mean": 0.7250919704688836,
+            "median": 0.5980401602040282,
+            "p90": 1.38784474686842
+          }
+        },
+        "5.0": {
+          "align_cos": {
+            "frac_neg": 0.01125,
+            "mean": 0.8966869897836116,
+            "median": 0.95882153842126,
+            "p90": 0.9986043308258065
+          },
+          "excluded_fraction": 0.0,
+          "n_points": 800,
+          "rel_grad_error": {
+            "mean": 0.5700351647965338,
+            "median": 0.5033078253486415,
+            "p90": 0.9051582035489975
+          }
+        }
+      },
+      "new_trace": [
+        {
+          "checkpoints": [
+            {
+              "epoch": 10,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac1.0_ext_seed5_ep010.pt"
+            },
+            {
+              "epoch": 20,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac1.0_ext_seed5_ep020.pt"
+            },
+            {
+              "epoch": 30,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac1.0_ext_seed5_ep030.pt"
+            },
+            {
+              "epoch": 40,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac1.0_ext_seed5_ep040.pt"
+            },
+            {
+              "epoch": 50,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac1.0_ext_seed5_ep050.pt"
+            }
+          ],
+          "lam_jac": 1.0,
+          "test_mse": 0.0004443537909537554,
+          "val_mse": 0.0004518841451499611
+        },
+        {
+          "checkpoints": [
+            {
+              "epoch": 10,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac2.0_ext_seed5_ep010.pt"
+            },
+            {
+              "epoch": 20,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac2.0_ext_seed5_ep020.pt"
+            },
+            {
+              "epoch": 30,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac2.0_ext_seed5_ep030.pt"
+            },
+            {
+              "epoch": 40,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac2.0_ext_seed5_ep040.pt"
+            },
+            {
+              "epoch": 50,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac2.0_ext_seed5_ep050.pt"
+            }
+          ],
+          "lam_jac": 2.0,
+          "test_mse": 0.0006537903682328761,
+          "val_mse": 0.0006690490990877151
+        },
+        {
+          "checkpoints": [
+            {
+              "epoch": 10,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac5.0_ext_seed5_ep010.pt"
+            },
+            {
+              "epoch": 20,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac5.0_ext_seed5_ep020.pt"
+            },
+            {
+              "epoch": 30,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac5.0_ext_seed5_ep030.pt"
+            },
+            {
+              "epoch": 40,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac5.0_ext_seed5_ep040.pt"
+            },
+            {
+              "epoch": 50,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac5.0_ext_seed5_ep050.pt"
+            }
+          ],
+          "lam_jac": 5.0,
+          "test_mse": 0.00046870188089087605,
+          "val_mse": 0.0004822908667847514
+        }
+      ],
+      "old_trace": [
+        {
+          "lam_jac": 0.001,
+          "test_mse": 0.0008715132134966552,
+          "val_mse": 0.0008882357506081462
+        },
+        {
+          "lam_jac": 0.005,
+          "test_mse": 0.0008909180178306997,
+          "val_mse": 0.0009087153594009578
+        },
+        {
+          "lam_jac": 0.01,
+          "test_mse": 0.0008421543170697987,
+          "val_mse": 0.0008568487246520817
+        },
+        {
+          "lam_jac": 0.05,
+          "test_mse": 0.0007899211486801505,
+          "val_mse": 0.0008071328629739583
+        },
+        {
+          "lam_jac": 0.1,
+          "test_mse": 0.000756257853936404,
+          "val_mse": 0.0007721917354501784
+        },
+        {
+          "lam_jac": 0.5,
+          "test_mse": 0.0004943259991705418,
+          "val_mse": 0.0005003372789360583
+        }
+      ],
+      "seed": 5,
+      "selected_candidate_closed_loop_success": 1.0,
+      "selected_candidate_test_mse": 0.0004443537909537554
+    },
+    "6": {
+      "boundary_outcome": "BOUNDARY_PERSISTS",
+      "init_state_hash_consistent_with_original": true,
+      "merged_selected_lambda_jac": 5.0,
+      "new_candidate_closed_loop_success": {
+        "1.0": 1.0,
+        "2.0": 1.0,
+        "5.0": 1.0
+      },
+      "new_candidate_oracle": {
+        "1.0": {
+          "align_cos": {
+            "frac_neg": 0.045,
+            "mean": 0.8179504011191306,
+            "median": 0.9582731339942772,
+            "p90": 0.9984133919648026
+          },
+          "excluded_fraction": 0.0,
+          "n_points": 800,
+          "rel_grad_error": {
+            "mean": 0.8885929030407028,
+            "median": 0.6549059708999401,
+            "p90": 1.8449474983679734
+          }
+        },
+        "2.0": {
+          "align_cos": {
+            "frac_neg": 0.02875,
+            "mean": 0.8793053366753881,
+            "median": 0.9648186445564155,
+            "p90": 0.997133433738377
+          },
+          "excluded_fraction": 0.0,
+          "n_points": 800,
+          "rel_grad_error": {
+            "mean": 0.9269406242195661,
+            "median": 0.8003702153791157,
+            "p90": 1.557461491954359
+          }
+        },
+        "5.0": {
+          "align_cos": {
+            "frac_neg": 0.01125,
+            "mean": 0.8987217478523672,
+            "median": 0.9498609097226932,
+            "p90": 0.9873844349593016
+          },
+          "excluded_fraction": 0.0,
+          "n_points": 800,
+          "rel_grad_error": {
+            "mean": 0.8049207433622033,
+            "median": 0.6925867991692698,
+            "p90": 1.3261724464996658
+          }
+        }
+      },
+      "new_trace": [
+        {
+          "checkpoints": [
+            {
+              "epoch": 10,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac1.0_ext_seed6_ep010.pt"
+            },
+            {
+              "epoch": 20,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac1.0_ext_seed6_ep020.pt"
+            },
+            {
+              "epoch": 30,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac1.0_ext_seed6_ep030.pt"
+            },
+            {
+              "epoch": 40,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac1.0_ext_seed6_ep040.pt"
+            },
+            {
+              "epoch": 50,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac1.0_ext_seed6_ep050.pt"
+            }
+          ],
+          "lam_jac": 1.0,
+          "test_mse": 0.0007960895891301334,
+          "val_mse": 0.0008076634840108454
+        },
+        {
+          "checkpoints": [
+            {
+              "epoch": 10,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac2.0_ext_seed6_ep010.pt"
+            },
+            {
+              "epoch": 20,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac2.0_ext_seed6_ep020.pt"
+            },
+            {
+              "epoch": 30,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac2.0_ext_seed6_ep030.pt"
+            },
+            {
+              "epoch": 40,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac2.0_ext_seed6_ep040.pt"
+            },
+            {
+              "epoch": 50,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac2.0_ext_seed6_ep050.pt"
+            }
+          ],
+          "lam_jac": 2.0,
+          "test_mse": 0.0007684758747927845,
+          "val_mse": 0.0007721965666860342
+        },
+        {
+          "checkpoints": [
+            {
+              "epoch": 10,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac5.0_ext_seed6_ep010.pt"
+            },
+            {
+              "epoch": 20,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac5.0_ext_seed6_ep020.pt"
+            },
+            {
+              "epoch": 30,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac5.0_ext_seed6_ep030.pt"
+            },
+            {
+              "epoch": 40,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac5.0_ext_seed6_ep040.pt"
+            },
+            {
+              "epoch": 50,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac5.0_ext_seed6_ep050.pt"
+            }
+          ],
+          "lam_jac": 5.0,
+          "test_mse": 0.0006958644953556359,
+          "val_mse": 0.0006949864327907562
+        }
+      ],
+      "old_trace": [
+        {
+          "lam_jac": 0.001,
+          "test_mse": 0.0012991057010367513,
+          "val_mse": 0.0013080444186925888
+        },
+        {
+          "lam_jac": 0.005,
+          "test_mse": 0.0013216561637818813,
+          "val_mse": 0.0013376203132793307
+        },
+        {
+          "lam_jac": 0.01,
+          "test_mse": 0.001278374227695167,
+          "val_mse": 0.0012797918170690536
+        },
+        {
+          "lam_jac": 0.05,
+          "test_mse": 0.0012101042084395885,
+          "val_mse": 0.001218409277498722
+        },
+        {
+          "lam_jac": 0.1,
+          "test_mse": 0.0010984205873683095,
+          "val_mse": 0.0011036329669877887
+        },
+        {
+          "lam_jac": 0.5,
+          "test_mse": 0.000824951333925128,
+          "val_mse": 0.0008387656998820603
+        }
+      ],
+      "seed": 6,
+      "selected_candidate_closed_loop_success": 1.0,
+      "selected_candidate_test_mse": 0.0006958644953556359
+    },
+    "7": {
+      "boundary_outcome": "INTERIOR_OPTIMUM_FOUND",
+      "init_state_hash_consistent_with_original": true,
+      "merged_selected_lambda_jac": 1.0,
+      "new_candidate_closed_loop_success": {
+        "1.0": 1.0,
+        "2.0": 1.0,
+        "5.0": 1.0
+      },
+      "new_candidate_oracle": {
+        "1.0": {
+          "align_cos": {
+            "frac_neg": 0.0525,
+            "mean": 0.8050859888997993,
+            "median": 0.9452929689591725,
+            "p90": 0.9961069001069142
+          },
+          "excluded_fraction": 0.0,
+          "n_points": 800,
+          "rel_grad_error": {
+            "mean": 0.9884138269548646,
+            "median": 0.7456129786354135,
+            "p90": 2.036194427181489
+          }
+        },
+        "2.0": {
+          "align_cos": {
+            "frac_neg": 0.02125,
+            "mean": 0.8825080243921494,
+            "median": 0.9756739828109284,
+            "p90": 0.998955015019426
+          },
+          "excluded_fraction": 0.0,
+          "n_points": 800,
+          "rel_grad_error": {
+            "mean": 0.7464685778766174,
+            "median": 0.5868523231442289,
+            "p90": 1.4077831981507327
+          }
+        },
+        "5.0": {
+          "align_cos": {
+            "frac_neg": 0.00875,
+            "mean": 0.9339873965855392,
+            "median": 0.9836164494665759,
+            "p90": 0.999341048517319
+          },
+          "excluded_fraction": 0.0,
+          "n_points": 800,
+          "rel_grad_error": {
+            "mean": 0.6412152227467146,
+            "median": 0.5409509578157627,
+            "p90": 1.1346049474547615
+          }
+        }
+      },
+      "new_trace": [
+        {
+          "checkpoints": [
+            {
+              "epoch": 10,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac1.0_ext_seed7_ep010.pt"
+            },
+            {
+              "epoch": 20,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac1.0_ext_seed7_ep020.pt"
+            },
+            {
+              "epoch": 30,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac1.0_ext_seed7_ep030.pt"
+            },
+            {
+              "epoch": 40,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac1.0_ext_seed7_ep040.pt"
+            },
+            {
+              "epoch": 50,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac1.0_ext_seed7_ep050.pt"
+            }
+          ],
+          "lam_jac": 1.0,
+          "test_mse": 0.0012897662818431854,
+          "val_mse": 0.001290811924263835
+        },
+        {
+          "checkpoints": [
+            {
+              "epoch": 10,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac2.0_ext_seed7_ep010.pt"
+            },
+            {
+              "epoch": 20,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac2.0_ext_seed7_ep020.pt"
+            },
+            {
+              "epoch": 30,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac2.0_ext_seed7_ep030.pt"
+            },
+            {
+              "epoch": 40,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac2.0_ext_seed7_ep040.pt"
+            },
+            {
+              "epoch": 50,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac2.0_ext_seed7_ep050.pt"
+            }
+          ],
+          "lam_jac": 2.0,
+          "test_mse": 0.001297500915825367,
+          "val_mse": 0.0013105310499668121
+        },
+        {
+          "checkpoints": [
+            {
+              "epoch": 10,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac5.0_ext_seed7_ep010.pt"
+            },
+            {
+              "epoch": 20,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac5.0_ext_seed7_ep020.pt"
+            },
+            {
+              "epoch": 30,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac5.0_ext_seed7_ep030.pt"
+            },
+            {
+              "epoch": 40,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac5.0_ext_seed7_ep040.pt"
+            },
+            {
+              "epoch": 50,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac5.0_ext_seed7_ep050.pt"
+            }
+          ],
+          "lam_jac": 5.0,
+          "test_mse": 0.0012877691769972444,
+          "val_mse": 0.0012954220874235034
+        }
+      ],
+      "old_trace": [
+        {
+          "lam_jac": 0.001,
+          "test_mse": 0.0017605193424969912,
+          "val_mse": 0.0017461006063967943
+        },
+        {
+          "lam_jac": 0.005,
+          "test_mse": 0.001649221288971603,
+          "val_mse": 0.0016497159376740456
+        },
+        {
+          "lam_jac": 0.01,
+          "test_mse": 0.001793264178559184,
+          "val_mse": 0.0017760905902832747
+        },
+        {
+          "lam_jac": 0.05,
+          "test_mse": 0.0015601167688146234,
+          "val_mse": 0.0015619585756212473
+        },
+        {
+          "lam_jac": 0.1,
+          "test_mse": 0.0015428378246724606,
+          "val_mse": 0.0015457492554560304
+        },
+        {
+          "lam_jac": 0.5,
+          "test_mse": 0.0013061845675110817,
+          "val_mse": 0.0013190153986215591
+        }
+      ],
+      "seed": 7,
+      "selected_candidate_closed_loop_success": 1.0,
+      "selected_candidate_test_mse": 0.0012897662818431854
+    },
+    "8": {
+      "boundary_outcome": "BOUNDARY_PERSISTS",
+      "init_state_hash_consistent_with_original": true,
+      "merged_selected_lambda_jac": 5.0,
+      "new_candidate_closed_loop_success": {
+        "1.0": 0.8,
+        "2.0": 1.0,
+        "5.0": 1.0
+      },
+      "new_candidate_oracle": {
+        "1.0": {
+          "align_cos": {
+            "frac_neg": 0.05875,
+            "mean": 0.8106642644589368,
+            "median": 0.9626370269225846,
+            "p90": 0.9988906593578115
+          },
+          "excluded_fraction": 0.0,
+          "n_points": 800,
+          "rel_grad_error": {
+            "mean": 1.2668871615538735,
+            "median": 0.980055798860205,
+            "p90": 2.2961577872545864
+          }
+        },
+        "2.0": {
+          "align_cos": {
+            "frac_neg": 0.02625,
+            "mean": 0.8886740670218717,
+            "median": 0.9840759488780637,
+            "p90": 0.9995150080403788
+          },
+          "excluded_fraction": 0.0,
+          "n_points": 800,
+          "rel_grad_error": {
+            "mean": 0.9593879644880946,
+            "median": 0.7533442132053768,
+            "p90": 1.878760306338035
+          }
+        },
+        "5.0": {
+          "align_cos": {
+            "frac_neg": 0.0075,
+            "mean": 0.9598601318786458,
+            "median": 0.9940040016638741,
+            "p90": 0.9998408192348905
+          },
+          "excluded_fraction": 0.0,
+          "n_points": 800,
+          "rel_grad_error": {
+            "mean": 0.46836142947934034,
+            "median": 0.36366782856519686,
+            "p90": 0.8812257388408138
+          }
+        }
+      },
+      "new_trace": [
+        {
+          "checkpoints": [
+            {
+              "epoch": 10,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac1.0_ext_seed8_ep010.pt"
+            },
+            {
+              "epoch": 20,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac1.0_ext_seed8_ep020.pt"
+            },
+            {
+              "epoch": 30,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac1.0_ext_seed8_ep030.pt"
+            },
+            {
+              "epoch": 40,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac1.0_ext_seed8_ep040.pt"
+            },
+            {
+              "epoch": 50,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac1.0_ext_seed8_ep050.pt"
+            }
+          ],
+          "lam_jac": 1.0,
+          "test_mse": 0.0008432686445303261,
+          "val_mse": 0.0008409524452872574
+        },
+        {
+          "checkpoints": [
+            {
+              "epoch": 10,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac2.0_ext_seed8_ep010.pt"
+            },
+            {
+              "epoch": 20,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac2.0_ext_seed8_ep020.pt"
+            },
+            {
+              "epoch": 30,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac2.0_ext_seed8_ep030.pt"
+            },
+            {
+              "epoch": 40,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac2.0_ext_seed8_ep040.pt"
+            },
+            {
+              "epoch": 50,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac2.0_ext_seed8_ep050.pt"
+            }
+          ],
+          "lam_jac": 2.0,
+          "test_mse": 0.0006960445898585021,
+          "val_mse": 0.0006846662145107985
+        },
+        {
+          "checkpoints": [
+            {
+              "epoch": 10,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac5.0_ext_seed8_ep010.pt"
+            },
+            {
+              "epoch": 20,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac5.0_ext_seed8_ep020.pt"
+            },
+            {
+              "epoch": 30,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac5.0_ext_seed8_ep030.pt"
+            },
+            {
+              "epoch": 40,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac5.0_ext_seed8_ep040.pt"
+            },
+            {
+              "epoch": 50,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac5.0_ext_seed8_ep050.pt"
+            }
+          ],
+          "lam_jac": 5.0,
+          "test_mse": 0.0002986325416713953,
+          "val_mse": 0.0002897705417126417
+        }
+      ],
+      "old_trace": [
+        {
+          "lam_jac": 0.001,
+          "test_mse": 0.0012740498641505837,
+          "val_mse": 0.0012844318989664316
+        },
+        {
+          "lam_jac": 0.005,
+          "test_mse": 0.0012309163575991988,
+          "val_mse": 0.001244170474819839
+        },
+        {
+          "lam_jac": 0.01,
+          "test_mse": 0.0011776492465287447,
+          "val_mse": 0.0011811289004981518
+        },
+        {
+          "lam_jac": 0.05,
+          "test_mse": 0.0012842363212257624,
+          "val_mse": 0.0012835568049922585
+        },
+        {
+          "lam_jac": 0.1,
+          "test_mse": 0.0011076161172240973,
+          "val_mse": 0.001110775745473802
+        },
+        {
+          "lam_jac": 0.5,
+          "test_mse": 0.0009053359972313046,
+          "val_mse": 0.0008992025977931917
+        }
+      ],
+      "seed": 8,
+      "selected_candidate_closed_loop_success": 1.0,
+      "selected_candidate_test_mse": 0.0002986325416713953
+    },
+    "9": {
+      "boundary_outcome": "INTERIOR_OPTIMUM_FOUND",
+      "init_state_hash_consistent_with_original": true,
+      "merged_selected_lambda_jac": 1.0,
+      "new_candidate_closed_loop_success": {
+        "1.0": 1.0,
+        "2.0": 1.0,
+        "5.0": 1.0
+      },
+      "new_candidate_oracle": {
+        "1.0": {
+          "align_cos": {
+            "frac_neg": 0.01625,
+            "mean": 0.8494537003434581,
+            "median": 0.9305916918053784,
+            "p90": 0.9976291043915516
+          },
+          "excluded_fraction": 0.0,
+          "n_points": 800,
+          "rel_grad_error": {
+            "mean": 0.8319982597061031,
+            "median": 0.6262848329342297,
+            "p90": 1.653463814156658
+          }
+        },
+        "2.0": {
+          "align_cos": {
+            "frac_neg": 0.005,
+            "mean": 0.927744201887061,
+            "median": 0.9693670925345116,
+            "p90": 0.9988536323571485
+          },
+          "excluded_fraction": 0.0,
+          "n_points": 800,
+          "rel_grad_error": {
+            "mean": 0.5918511070073318,
+            "median": 0.4153340899472008,
+            "p90": 1.262986426347623
+          }
+        },
+        "5.0": {
+          "align_cos": {
+            "frac_neg": 0.0,
+            "mean": 0.9495456294343143,
+            "median": 0.9761314499086085,
+            "p90": 0.9988930760783674
+          },
+          "excluded_fraction": 0.0,
+          "n_points": 800,
+          "rel_grad_error": {
+            "mean": 0.4054633374812653,
+            "median": 0.2950642571464014,
+            "p90": 0.8555896898202192
+          }
+        }
+      },
+      "new_trace": [
+        {
+          "checkpoints": [
+            {
+              "epoch": 10,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac1.0_ext_seed9_ep010.pt"
+            },
+            {
+              "epoch": 20,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac1.0_ext_seed9_ep020.pt"
+            },
+            {
+              "epoch": 30,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac1.0_ext_seed9_ep030.pt"
+            },
+            {
+              "epoch": 40,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac1.0_ext_seed9_ep040.pt"
+            },
+            {
+              "epoch": 50,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac1.0_ext_seed9_ep050.pt"
+            }
+          ],
+          "lam_jac": 1.0,
+          "test_mse": 0.00119890202768147,
+          "val_mse": 0.001187300542369485
+        },
+        {
+          "checkpoints": [
+            {
+              "epoch": 10,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac2.0_ext_seed9_ep010.pt"
+            },
+            {
+              "epoch": 20,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac2.0_ext_seed9_ep020.pt"
+            },
+            {
+              "epoch": 30,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac2.0_ext_seed9_ep030.pt"
+            },
+            {
+              "epoch": 40,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac2.0_ext_seed9_ep040.pt"
+            },
+            {
+              "epoch": 50,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac2.0_ext_seed9_ep050.pt"
+            }
+          ],
+          "lam_jac": 2.0,
+          "test_mse": 0.0015672200825065374,
+          "val_mse": 0.0015669079730287194
+        },
+        {
+          "checkpoints": [
+            {
+              "epoch": 10,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac5.0_ext_seed9_ep010.pt"
+            },
+            {
+              "epoch": 20,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac5.0_ext_seed9_ep020.pt"
+            },
+            {
+              "epoch": 30,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac5.0_ext_seed9_ep030.pt"
+            },
+            {
+              "epoch": 40,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac5.0_ext_seed9_ep040.pt"
+            },
+            {
+              "epoch": 50,
+              "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_lamjac_extension_2026_09_03/checkpoints/D_lamjac5.0_ext_seed9_ep050.pt"
+            }
+          ],
+          "lam_jac": 5.0,
+          "test_mse": 0.0013578006764873862,
+          "val_mse": 0.001357552013359964
+        }
+      ],
+      "old_trace": [
+        {
+          "lam_jac": 0.001,
+          "test_mse": 0.001418540021404624,
+          "val_mse": 0.0013859086902812123
+        },
+        {
+          "lam_jac": 0.005,
+          "test_mse": 0.0014048435259610415,
+          "val_mse": 0.001369834877550602
+        },
+        {
+          "lam_jac": 0.01,
+          "test_mse": 0.0014772998401895165,
+          "val_mse": 0.0014388979179784656
+        },
+        {
+          "lam_jac": 0.05,
+          "test_mse": 0.0013894204748794436,
+          "val_mse": 0.0013506260002031922
+        },
+        {
+          "lam_jac": 0.1,
+          "test_mse": 0.0013930422719568014,
+          "val_mse": 0.0013575369957834482
+        },
+        {
+          "lam_jac": 0.5,
+          "test_mse": 0.001268954249098897,
+          "val_mse": 0.0012467601336538792
+        }
+      ],
+      "seed": 9,
+      "selected_candidate_closed_loop_success": 1.0,
+      "selected_candidate_test_mse": 0.00119890202768147
+    }
+  },
+  "predecessor_freeze_sha256": "3c7aa5f8fb2972b3cd04b87e4163a4968261a523e39daaf80494c65df759b003",
+  "predecessor_original_freeze_sha256": "19bd6cab7a036642006b8627722161fcfa7686fe95bd3a7e34e22672f503242a",
+  "predecessor_original_query_manifest_sha256": "9d20952e81a2f0e384e8e43318ef16b4a381d2def5dd0fd0f4ee426e7a423635"
+}

@@ -5,6 +5,8 @@ scipy==1.17.0
 torch==2.10.0
 matplotlib==3.10.8
 
-# Optional: only needed for the IPOPT/NLP stress check (scripts/two_cstr_ipopt_baseline.py),
-# which is not part of the main paper protocol.
-# casadi>=3.6
+# Required as of the JPC revision: the true-model Adam reference and the
+# certified local-NLP reference (oracle_nlp_lib.py, oracle_nlp_io.py,
+# scripts/oracle_nlp_driver_2026_09_03.py, scripts/two_cstr_ipopt_baseline.py)
+# formulate and solve the NLP through CasADi with the bundled IPOPT build.
+casadi==3.7.2

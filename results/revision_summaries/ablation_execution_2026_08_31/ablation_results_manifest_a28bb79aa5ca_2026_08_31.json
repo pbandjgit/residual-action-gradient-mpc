@@ -1,0 +1,133 @@
+{
+  "canonical_payload_sha256": "aff8803fd4455227d5cf680e4106f75bc64522ee2e76ee2c656eade8c113fe74",
+  "generated_at_utc": "2026-09-01T05:09:20.793178+00:00",
+  "kind": "ablation_results_manifest",
+  "lambda_jac_full_grid_contrasts": {
+    "0.001": {
+      "ci_lower": 0.78,
+      "ci_upper": 1.0,
+      "p_value": 0.001953125,
+      "point_estimate": 0.9
+    },
+    "0.005": {
+      "ci_lower": 0.9,
+      "ci_upper": 1.0,
+      "p_value": 0.001953125,
+      "point_estimate": 0.9600000000000002
+    },
+    "0.01": {
+      "ci_lower": 0.86,
+      "ci_upper": 1.0,
+      "p_value": 0.001953125,
+      "point_estimate": 0.9400000000000001
+    },
+    "0.05": {
+      "ci_lower": 0.86,
+      "ci_upper": 1.0,
+      "p_value": 0.001953125,
+      "point_estimate": 0.9400000000000001
+    },
+    "0.1": {
+      "ci_lower": 0.7,
+      "ci_upper": 1.0,
+      "p_value": 0.001953125,
+      "point_estimate": 0.86
+    },
+    "0.5": {
+      "ci_lower": 0.07999999999999999,
+      "ci_upper": 0.45999999999999996,
+      "p_value": 0.0625,
+      "point_estimate": 0.26
+    }
+  },
+  "mse_attribution_detail": {
+    "status": "UNRESOLVED",
+    "sub_label": "MSE_MATCH_INFEASIBLE"
+  },
+  "oracle_fixed_idx_path": "results/ablation_execution_2026_08_31/ablation_oracle_fixed_idx_a28bb79aa5ca_2026_08_31.npz",
+  "oracle_fixed_idx_sha256": "1a2db3cff400242e57ca4c5125ad9fd94d2513c63adc46a8e9de27a2b11fc03f",
+  "outcome": {
+    "loss_interaction": "INCONCLUSIVE",
+    "manuscript_action": "NARROW_TO_SUBSET",
+    "mse_attribution": "UNRESOLVED",
+    "mse_attribution_sub_label": "MSE_MATCH_INFEASIBLE",
+    "non_groupsort_replication": "GROUPSORT_SPECIFIC",
+    "query_matched_effect": "SUPPORTED",
+    "step2_exploratory_only": false,
+    "target_specificity": "NOT_SPECIFIC"
+  },
+  "predecessor_training_manifest_sha256": {
+    "0": "69c45b61e5767fb2bce7aefad91af0815280211ddfe3f14cc9997df75dbde523",
+    "1": "891b1e838f891710c976ad4849b736abd6807fe87815b876959483484c4a075e",
+    "2": "ffa581f5185b4792268a13914a9cdca8b9fd18e6d3eacac85ee2e2e0a0fef4c2",
+    "3": "6abbc4046fba4500f70b41677ecc45f225d313b57c437e8a1b4fdea6ff77f714",
+    "4": "51328ac7d31df48b05a56fa7c67ef4639096b8360b929d2b6d64c126eb33ef99",
+    "5": "cc32f80cc000822a560b566fa0c27dcfd39326d48add90a91cfa1f8f91a794a7",
+    "6": "c0b1ad50310dedb7c0ba2f9016e6013012f159a4bc40248446adfb52e02373e3",
+    "7": "c395863ec3c56ac77e439088e215f8dc0893600902f895f1e69d480e3ca72e5c",
+    "8": "b4292b99ef7ee8e011df4ba6f446b9b2b43511652ecea9a6707b54b2f731ea83",
+    "9": "48225445d193ef992a6168abd1b8726538547f574e118952d877d8ddd6fa1a96"
+  },
+  "primary_contrast": {
+    "ci_lower": 0.14,
+    "ci_upper": 0.5599999999999999,
+    "p_value": 0.015625,
+    "point_estimate": 0.34
+  },
+  "raw_metrics_path": "results/ablation_execution_2026_08_31/ablation_results_raw_metrics_a28bb79aa5ca_2026_08_31.json",
+  "raw_metrics_sha256": "0f92a2c0aafdb183fcaf0c8dce2b09095a99967f4c874d54122e6ab79a515c24",
+  "raw_resample_arrays_path": "results/ablation_execution_2026_08_31/ablation_results_raw_a28bb79aa5ca_2026_08_31.npz",
+  "raw_resample_arrays_sha256": "f7e4b362f188679a7b503b4b33e3bcb2f1c91578b15f2c048d463b82a17c694e",
+  "secondary_family": {
+    "C_vs_B": {
+      "ci_lower": 0.12,
+      "ci_upper": 0.42000000000000004,
+      "p_value": 0.015625,
+      "p_value_holm_adjusted": 0.109375,
+      "point_estimate": 0.25999999999999995
+    },
+    "EFNN_vs_BFNN": {
+      "ci_lower": -0.5,
+      "ci_upper": 0.0,
+      "p_value": 0.5,
+      "p_value_holm_adjusted": 1.0,
+      "point_estimate": -0.2
+    },
+    "E_vs_D": {
+      "ci_lower": 0.07999999999999999,
+      "ci_upper": 0.45999999999999996,
+      "p_value": 0.0625,
+      "p_value_holm_adjusted": 0.3125,
+      "point_estimate": 0.26
+    },
+    "F_vs_C": {
+      "ci_lower": 0.0,
+      "ci_upper": 0.24000000000000005,
+      "p_value": 1.0,
+      "p_value_holm_adjusted": 1.0,
+      "point_estimate": 0.08
+    },
+    "F_vs_E": {
+      "ci_lower": 0.0,
+      "ci_upper": 0.0,
+      "p_value": 1.0,
+      "p_value_holm_adjusted": 1.0,
+      "point_estimate": 0.0
+    },
+    "MSE_match": {
+      "ci_lower": null,
+      "ci_upper": null,
+      "infeasible": true,
+      "p_value": 1.0,
+      "p_value_holm_adjusted": 1.0,
+      "point_estimate": null
+    },
+    "interaction": {
+      "ci_lower": -0.42000000000000004,
+      "ci_upper": -0.12,
+      "p_value": 0.015625,
+      "p_value_holm_adjusted": 0.109375,
+      "point_estimate": -0.25999999999999995
+    }
+  }
+}

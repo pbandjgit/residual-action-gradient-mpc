@@ -1,0 +1,38 @@
+{
+  "canonical_payload_sha256": "9d20952e81a2f0e384e8e43318ef16b4a381d2def5dd0fd0f4ee426e7a423635",
+  "clean_query_table_content_sha256": "aac1f8d682b2024a1dee18ded5d6d919bb63909693e0da8c25ad5d958271d6f3",
+  "clean_query_table_fields": [
+    "Phi_all",
+    "Yphi_all",
+    "true_df_du",
+    "true_ug",
+    "un_minus",
+    "un_plus",
+    "valid_mask",
+    "y_minus_n",
+    "y_plus_n"
+  ],
+  "clean_query_table_path": "results/ablation_execution_2026_08_31/ablation_clean_query_table_2026_08_31.npz",
+  "clean_query_table_sha256": "72e63074c292ae0a173eee6fcb15b04131dad1e732f8848a468fdf3a53a18b02",
+  "generated_at_utc": "2026-09-01T04:34:03.368099+00:00",
+  "kind": "ablation_query_manifest",
+  "n_test": 6000,
+  "n_train": 10500,
+  "n_val": 3500,
+  "pool_content_sha256": "4076dd7f245afc98560ea0d8b7ca3d418bb2cb9f9a4b0b0178378b06b6aba71a",
+  "predecessor_freeze_sha256": "19bd6cab7a036642006b8627722161fcfa7686fe95bd3a7e34e22672f503242a",
+  "query_counts_per_condition": {
+    "A": 21000,
+    "B": 62970,
+    "C": 62970,
+    "D": 62970,
+    "E": 62970,
+    "F": 62970
+  },
+  "valid_pair_counts": {
+    "n_pairs_dropped": 15,
+    "n_pairs_total": 21000,
+    "n_pairs_valid": 20985,
+    "n_points": 10500
+  }
+}

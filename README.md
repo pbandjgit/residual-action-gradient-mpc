@@ -2,10 +2,17 @@
 
 Reproduction code and data for the paper. A learned surrogate placed inside a
 finite-budget Lyapunov MPC must be faithful in the **control-gradient** of the
-Lyapunov residual (the derivative the online solver moves along), not only in the
-predicted residual value. We add a single, architecture-agnostic training term,
-`L_grad`, that enforces this, and evaluate it on two open-loop-unstable reactor
-benchmarks (a CSTR and two CSTRs in series).
+Lyapunov residual (a one-step local derivative relevant to the online solver's
+sensitivity to the input, not identical to the solver's actual multi-step
+update direction), not only in the predicted residual value. We add a
+training term, `L_grad`, that targets this, and evaluate it on two
+open-loop-unstable reactor benchmarks (a CSTR and two CSTRs in series).
+
+**This README describes the original submission's code layout (tag
+`jpc-submission-2026-07-01`).** For the major-revision content added since
+then (equal-query ablation, actual-solver-iterate audit, true-model/NLP
+reference, sensitivity studies, and the two-CSTR LQR operational audit), see
+`README_REPRODUCTION.md`.
 
 ## Requirements
 

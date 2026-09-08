@@ -1,0 +1,134 @@
+{
+  "canonical_payload_sha256": "4e8adeb42f428a6c5d24087ffd8542fd6f965f852e8549f360a73e0401ea0c19",
+  "descriptive": {
+    "B": {
+      "accepted_frac": {
+        "mean": 0.5510333333333334,
+        "n": 10
+      },
+      "mean_accepted_alpha": {
+        "mean": 0.5923280044047659,
+        "n": 10
+      },
+      "mean_counterfactual_dec_applied": {
+        "mean": 0.4155499317767906,
+        "n": 10
+      },
+      "mean_lam_before": {
+        "mean": 1092.138741416148,
+        "n": 10
+      },
+      "mean_pred_dec_applied": {
+        "mean": 0.24856542674687193,
+        "n": 10
+      },
+      "mean_true_dec": {
+        "mean": 1.8092791048717796,
+        "n": 10
+      },
+      "median": {
+        "mean": 0.040341820912435655,
+        "n": 10
+      },
+      "p95": {
+        "mean": 0.041677092921920116,
+        "n": 10
+      },
+      "rejection_frac": {
+        "mean": 0.4489666666666666,
+        "n": 10
+      },
+      "singular_solve_frac": {
+        "mean": 0.0,
+        "n": 10
+      },
+      "true_incr_frac": {
+        "mean": 0.5050000000000001,
+        "n": 10
+      }
+    },
+    "E": {
+      "accepted_frac": {
+        "mean": 0.44689999999999996,
+        "n": 10
+      },
+      "mean_accepted_alpha": {
+        "mean": 0.7740305750129404,
+        "n": 10
+      },
+      "mean_counterfactual_dec_applied": {
+        "mean": 0.47570248428083434,
+        "n": 10
+      },
+      "mean_lam_before": {
+        "mean": 1587.9971228400293,
+        "n": 10
+      },
+      "mean_pred_dec_applied": {
+        "mean": 0.14664346312380847,
+        "n": 10
+      },
+      "mean_true_dec": {
+        "mean": 1.8105883253658015,
+        "n": 10
+      },
+      "median": {
+        "mean": 0.03921772048808635,
+        "n": 10
+      },
+      "p95": {
+        "mean": 0.040102545516565447,
+        "n": 10
+      },
+      "rejection_frac": {
+        "mean": 0.5531,
+        "n": 10
+      },
+      "singular_solve_frac": {
+        "mean": 0.0,
+        "n": 10
+      },
+      "true_incr_frac": {
+        "mean": 0.38049999999999995,
+        "n": 10
+      }
+    }
+  },
+  "generated_at_utc": "2026-09-02T07:02:19.404294+00:00",
+  "input_record_hashes": {
+    "B__seed0": "ffffad1bc5a8b4fe87dc22575679bc268f8216b6d650066e10d1ce081d371847",
+    "B__seed1": "4a55c34a5192ff082fb88a3dbbe4b876aaa297d895a7b3f7aa2b79a508c35e50",
+    "B__seed2": "1cb9713abeafe598f5afaca64cac7276949a8a58407db6199d175c17b5795a9d",
+    "B__seed3": "5e0416ae100a389be38ee24c3eb620c50811f7b4986fba68cc4972e11d9cb486",
+    "B__seed4": "4ee5ad8b1693a31467e1d6c5b3837a5616f6370bcea96815f8c542ad019bec7b",
+    "B__seed5": "bafec7196ef98076a3edb520d853f6fd417f19e76c604801318ac748a0309cd2",
+    "B__seed6": "8f169990071f964418590ade8b389ce420a28ced257664fc0c0ef4bc52920c58",
+    "B__seed7": "394154343328be192b967ef3af240407b82ad2bfbe080ffc1b7b4268119073db",
+    "B__seed8": "d607048d26f657ac1df63deea9f6cfe34538ad735a396586e7c6e658e92b36d7",
+    "B__seed9": "dd612a30824b9d06a8897267851d005407b95ba7752dca06e9fe229030d0a783",
+    "E__seed0": "a6c53a699e177c109e3dc3d45f06173b1579a9f9b67c0179681a6c82eb2926ca",
+    "E__seed1": "f1c8c98807f5916a63de67295b33a6f47b6e1dcbb851ae519275beb6ff382f55",
+    "E__seed2": "21f9f077eb93ff3b62cfdb55f585e07a8585728874b4b9fc71204a5f8e9a36d9",
+    "E__seed3": "a8f1029d975ed358f197927294481ac6cc32b0bc79ee20e4efc5a79ff521c51c",
+    "E__seed4": "edca2349334989b11995c723d4dcda32d73f49858101d122654f0b7c1b3c734c",
+    "E__seed5": "8cabb2738733e88d7a0a1ca45af13285137e6b90b61c2bd0f373e11c86a8e8a5",
+    "E__seed6": "c0d65203cfb51173bdd23216a7a306eb258ec3efdbe647205877d0a4f50d20a2",
+    "E__seed7": "f70b1914c7f8ec509fdee2a3b727cf522eef90109caa66bbc2e686e24c6f6a13",
+    "E__seed8": "2d6dc62f39e51f00c70e42c5a90062497c5de943d869478f06551b5f7538db09",
+    "E__seed9": "2f8acd0e18b2946afb236d98e362a1668a3865017899319c4b2b8958222757a4"
+  },
+  "kind": "solver_audit_battery3_summary",
+  "predecessor_setup_manifest_sha256": "03773cbe9f1329650a1fc7719e8a479125cae00b34e6a2303235273a7515e70d",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ]
+}

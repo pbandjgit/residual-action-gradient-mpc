@@ -1,0 +1,32 @@
+{
+  "canonical_payload_sha256": "14bf236e2cf0f7131f052fdbb2c1ac1a51524ff60b27d26229163980d716cb87",
+  "compatibility_reconstruction_result_path": "results/sensitivity_compatibility_reconstruction_2026_09_03.json",
+  "compatibility_reconstruction_result_sha256": "61b7eb1112f992b40e1a4cc108126ecdfca89bba6e3f4a0d9e83803cffc9a917",
+  "file_sha256": {
+    "docs/JPC_SENSITIVITY_PROTOCOL_2026_09_03.md": "e85d2643bf1fda5d33ad731c600d41a94ed02f18cbd22caa739c4d4cf17bf458",
+    "results/sensitivity_smoke_results_2026_09_03.json": "d5a5f5dedc6771c3a419aba0a47ea10eb1b78662a95320cef9fee2628a0de3bf",
+    "scripts/ablation_driver_2026_08_31.py": "53a251c08f41c7495370d2f80d3cb5e73c6c178f700286914220e94869dcd51f",
+    "scripts/budget_sweep_solver.py": "3f38a9867696baae24d3eb561dd2c50bd02057235a46ba24e50dd5ed5630e3d8",
+    "scripts/disambiguate_landscape_vs_gradient.py": "bab1ebf1f47afb7f8db971ca6ac4d73af7693b66ec88391117fc235445436139",
+    "scripts/ggn_mpc_probe.py": "704c6a2691812ae7d7ee719531b673a433bec50598fb53af52ae1b9482326b78",
+    "scripts/lgrad_experiment.py": "459a756d743f32b2b4e066c01842a483bfe6e38f9bd8064073141d2747e74849",
+    "scripts/probe_action_gradient.py": "75d99e3624407ecc2d4edb660f254e1b6c3e30094c84549806fb55923d93769b",
+    "scripts/sensitivity_driver_2026_09_03.py": "9022e6391c4b531ebfb0338173a2158ffa81e6bce093d8c30114bf435eb44d8d",
+    "scripts/two_cstr_lgrad.py": "61fe9d27eb360d5291695e2af4dbb67511cc7fa62b2c1cc6ab6786c70cb07944",
+    "src/cstr/ablation_io.py": "4bd349e9171f9424f6d4b8342c56c8eb94844170b48226bc537d6e34a781962a",
+    "src/cstr/ablation_lib.py": "5222feabaec5ae8e4c4177144d0986ccd4ae88d069c88a494dd5aac3f5fd1024",
+    "src/cstr/lcnn_paper_simulator.py": "1bed7b4720bb1ba7fe73b486070cf4bed4a0147608253435a986b0828449ac4b",
+    "src/cstr/models_onestep.py": "7b9f9bf1807d5537a97680660c7bad36567e466c69eeb3d59a1026c57638c733",
+    "src/cstr/sensitivity_lib.py": "3d10e0dd24004296602b0912271cd0e63e290d790ddfabb1130facf49fa25eda",
+    "src/cstr/solver_audit_io.py": "b581775543846a9ce1bfd39dc9389f187a086d9ad1f76a9ac27868d1379beaff",
+    "src/cstr/solver_audit_lib.py": "4910414291728d3a43fa0dc1f786227fa6cc1289c7918852a2b24fdf20771906",
+    "src/cstr/sontag.py": "ed70874ac881f6f5f574af01911047d37daa6a294bba1eac85c466601802925e",
+    "src/cstr/two_cstr_series.py": "518d6aa98a9ac86466f97b5543ad28f84a92434aec9e5505ef9cb2ff4649b135"
+  },
+  "generated_at_utc": "2026-09-03T10:05:27.429188+00:00",
+  "kind": "sensitivity_freeze_manifest",
+  "predecessor_original_ablation_freeze_sha256": "19bd6cab7a036642006b8627722161fcfa7686fe95bd3a7e34e22672f503242a",
+  "predecessor_solver_audit_freeze_sha256": "43a2f92def68d4b432121bd2e558fa5f6684cb007c82cd616eb59462900ceac0",
+  "smoke_n_pass": 17,
+  "smoke_n_total": 17
+}

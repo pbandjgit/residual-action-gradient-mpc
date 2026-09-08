@@ -1,0 +1,608 @@
+{
+  "canonical_payload_sha256": "007b6f4888b00377327bebb6326a2d8a3204dfa37ddd856d24326b8061923105",
+  "generated_at_utc": "2026-09-02T07:58:51.366219+00:00",
+  "kind": "solver_audit_two_cstr_replica_manifest",
+  "predecessor_two_cstr_setup_manifest_sha256": "56b6670b1ed2a0446e100fbd21c6269a280b72d71d6786131d99d251e237d3c6",
+  "replicas": {
+    "value+grad__seed0": {
+      "checkpoint_path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/solver_audit_execution_2026_09_01/two_cstr_checkpoints/two_cstr_value+grad_seed0_metric_compatible_replica.pt",
+      "checkpoint_sha256": "fb41b908484263bde41d5357ac356730b80d6fe4eed6b378917eb67c3d2f5b95",
+      "config_name": "value+grad",
+      "gate4_result": {
+        "mismatches": [],
+        "passed": true
+      },
+      "legacy_metrics": {
+        "align": 0.8678728342056274,
+        "b20": 1.0,
+        "b3": 1.0,
+        "frac_neg": 0.01,
+        "lam_grad": 0.2,
+        "lam_val": 0.003,
+        "state_jac_med": 3.162496328353882,
+        "test_mse": 0.004632127936929464
+      },
+      "metrics": {
+        "align": 0.8678728342056274,
+        "b20": 1.0,
+        "b3": 1.0,
+        "frac_neg": 0.01,
+        "lam_grad": 0.2,
+        "lam_val": 0.003,
+        "state_jac_med": 3.162496328353882,
+        "test_mse": 0.004632127936929464
+      },
+      "seed": 0
+    },
+    "value+grad__seed1": {
+      "checkpoint_path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/solver_audit_execution_2026_09_01/two_cstr_checkpoints/two_cstr_value+grad_seed1_metric_compatible_replica.pt",
+      "checkpoint_sha256": "fecdf67ee112884c3ce804fcee20b36978a912d087da3ce1e13ebf4f18cbeae6",
+      "config_name": "value+grad",
+      "gate4_result": {
+        "mismatches": [],
+        "passed": true
+      },
+      "legacy_metrics": {
+        "align": 0.7752223014831543,
+        "b20": 1.0,
+        "b3": 1.0,
+        "frac_neg": 0.02,
+        "lam_grad": 0.2,
+        "lam_val": 0.003,
+        "state_jac_med": 2.3849157094955444,
+        "test_mse": 0.004003067500889301
+      },
+      "metrics": {
+        "align": 0.7752223014831543,
+        "b20": 1.0,
+        "b3": 1.0,
+        "frac_neg": 0.02,
+        "lam_grad": 0.2,
+        "lam_val": 0.003,
+        "state_jac_med": 2.3849157094955444,
+        "test_mse": 0.004003067500889301
+      },
+      "seed": 1
+    },
+    "value+grad__seed2": {
+      "checkpoint_path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/solver_audit_execution_2026_09_01/two_cstr_checkpoints/two_cstr_value+grad_seed2_metric_compatible_replica.pt",
+      "checkpoint_sha256": "414a8758c8415dc6569bbf5a1423704cac2a517e23053a8cb278464f73cbef87",
+      "config_name": "value+grad",
+      "gate4_result": {
+        "mismatches": [],
+        "passed": true
+      },
+      "legacy_metrics": {
+        "align": 0.8010677099227905,
+        "b20": 0.8,
+        "b3": 0.8,
+        "frac_neg": 0.022,
+        "lam_grad": 0.2,
+        "lam_val": 0.003,
+        "state_jac_med": 2.5627137422561646,
+        "test_mse": 0.004464997909963131
+      },
+      "metrics": {
+        "align": 0.8010677099227905,
+        "b20": 0.8,
+        "b3": 0.8,
+        "frac_neg": 0.022,
+        "lam_grad": 0.2,
+        "lam_val": 0.003,
+        "state_jac_med": 2.5627137422561646,
+        "test_mse": 0.004464997909963131
+      },
+      "seed": 2
+    },
+    "value+grad__seed3": {
+      "checkpoint_path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/solver_audit_execution_2026_09_01/two_cstr_checkpoints/two_cstr_value+grad_seed3_metric_compatible_replica.pt",
+      "checkpoint_sha256": "1f148b6913e86b28de477f6283368fb350b5093a99e40e04e68093b9fe055a9e",
+      "config_name": "value+grad",
+      "gate4_result": {
+        "mismatches": [],
+        "passed": true
+      },
+      "legacy_metrics": {
+        "align": 0.7508300542831421,
+        "b20": 1.0,
+        "b3": 1.0,
+        "frac_neg": 0.012,
+        "lam_grad": 0.2,
+        "lam_val": 0.003,
+        "state_jac_med": 2.807075023651123,
+        "test_mse": 0.0041512963362038136
+      },
+      "metrics": {
+        "align": 0.7508300542831421,
+        "b20": 1.0,
+        "b3": 1.0,
+        "frac_neg": 0.012,
+        "lam_grad": 0.2,
+        "lam_val": 0.003,
+        "state_jac_med": 2.807075023651123,
+        "test_mse": 0.0041512963362038136
+      },
+      "seed": 3
+    },
+    "value+grad__seed4": {
+      "checkpoint_path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/solver_audit_execution_2026_09_01/two_cstr_checkpoints/two_cstr_value+grad_seed4_metric_compatible_replica.pt",
+      "checkpoint_sha256": "ac682141b70e20d5336c6603ada990f21c48fa60551d1232293dc30941f87d25",
+      "config_name": "value+grad",
+      "gate4_result": {
+        "mismatches": [],
+        "passed": true
+      },
+      "legacy_metrics": {
+        "align": 0.8620097637176514,
+        "b20": 1.0,
+        "b3": 1.0,
+        "frac_neg": 0.012,
+        "lam_grad": 0.2,
+        "lam_val": 0.003,
+        "state_jac_med": 3.216315746307373,
+        "test_mse": 0.004690400790423155
+      },
+      "metrics": {
+        "align": 0.8620097637176514,
+        "b20": 1.0,
+        "b3": 1.0,
+        "frac_neg": 0.012,
+        "lam_grad": 0.2,
+        "lam_val": 0.003,
+        "state_jac_med": 3.216315746307373,
+        "test_mse": 0.004690400790423155
+      },
+      "seed": 4
+    },
+    "value+grad__seed5": {
+      "checkpoint_path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/solver_audit_execution_2026_09_01/two_cstr_checkpoints/two_cstr_value+grad_seed5_metric_compatible_replica.pt",
+      "checkpoint_sha256": "42405286d8a819e21170b30b172784db5a5bd4d885d875e3b24d51ed205fa177",
+      "config_name": "value+grad",
+      "gate4_result": {
+        "mismatches": [],
+        "passed": true
+      },
+      "legacy_metrics": {
+        "align": 0.8674827814102173,
+        "b20": 1.0,
+        "b3": 1.0,
+        "frac_neg": 0.014,
+        "lam_grad": 0.2,
+        "lam_val": 0.003,
+        "state_jac_med": 2.6028175354003906,
+        "test_mse": 0.00429574865847826
+      },
+      "metrics": {
+        "align": 0.8674827814102173,
+        "b20": 1.0,
+        "b3": 1.0,
+        "frac_neg": 0.014,
+        "lam_grad": 0.2,
+        "lam_val": 0.003,
+        "state_jac_med": 2.6028175354003906,
+        "test_mse": 0.00429574865847826
+      },
+      "seed": 5
+    },
+    "value+grad__seed6": {
+      "checkpoint_path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/solver_audit_execution_2026_09_01/two_cstr_checkpoints/two_cstr_value+grad_seed6_metric_compatible_replica.pt",
+      "checkpoint_sha256": "339bce20d2f3b6cfe4161c1289fca7b0e1ddf0ea35c94dabd99ae6edb5d4df3a",
+      "config_name": "value+grad",
+      "gate4_result": {
+        "mismatches": [],
+        "passed": true
+      },
+      "legacy_metrics": {
+        "align": 0.8057681918144226,
+        "b20": 0.8,
+        "b3": 0.8,
+        "frac_neg": 0.044,
+        "lam_grad": 0.2,
+        "lam_val": 0.003,
+        "state_jac_med": 2.9294544458389282,
+        "test_mse": 0.0035285537596791983
+      },
+      "metrics": {
+        "align": 0.8057681918144226,
+        "b20": 0.8,
+        "b3": 0.8,
+        "frac_neg": 0.044,
+        "lam_grad": 0.2,
+        "lam_val": 0.003,
+        "state_jac_med": 2.9294544458389282,
+        "test_mse": 0.0035285537596791983
+      },
+      "seed": 6
+    },
+    "value+grad__seed7": {
+      "checkpoint_path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/solver_audit_execution_2026_09_01/two_cstr_checkpoints/two_cstr_value+grad_seed7_metric_compatible_replica.pt",
+      "checkpoint_sha256": "71043c9de1920932db565674ad44eedba9aa2d554bda21038523f8ff725a7737",
+      "config_name": "value+grad",
+      "gate4_result": {
+        "mismatches": [],
+        "passed": true
+      },
+      "legacy_metrics": {
+        "align": 0.8728793859481812,
+        "b20": 1.0,
+        "b3": 1.0,
+        "frac_neg": 0.002,
+        "lam_grad": 0.2,
+        "lam_val": 0.003,
+        "state_jac_med": 2.9965980052948,
+        "test_mse": 0.00473315455019474
+      },
+      "metrics": {
+        "align": 0.8728793859481812,
+        "b20": 1.0,
+        "b3": 1.0,
+        "frac_neg": 0.002,
+        "lam_grad": 0.2,
+        "lam_val": 0.003,
+        "state_jac_med": 2.9965980052948,
+        "test_mse": 0.00473315455019474
+      },
+      "seed": 7
+    },
+    "value+grad__seed8": {
+      "checkpoint_path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/solver_audit_execution_2026_09_01/two_cstr_checkpoints/two_cstr_value+grad_seed8_metric_compatible_replica.pt",
+      "checkpoint_sha256": "f2d6c4fb2b330c0248cfe016dba4fa4d40f474be1073f4e52e135a38085f612d",
+      "config_name": "value+grad",
+      "gate4_result": {
+        "mismatches": [],
+        "passed": true
+      },
+      "legacy_metrics": {
+        "align": 0.8446619510650635,
+        "b20": 1.0,
+        "b3": 1.0,
+        "frac_neg": 0.016,
+        "lam_grad": 0.2,
+        "lam_val": 0.003,
+        "state_jac_med": 2.7914153337478638,
+        "test_mse": 0.00519463699311018
+      },
+      "metrics": {
+        "align": 0.8446619510650635,
+        "b20": 1.0,
+        "b3": 1.0,
+        "frac_neg": 0.016,
+        "lam_grad": 0.2,
+        "lam_val": 0.003,
+        "state_jac_med": 2.7914153337478638,
+        "test_mse": 0.00519463699311018
+      },
+      "seed": 8
+    },
+    "value+grad__seed9": {
+      "checkpoint_path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/solver_audit_execution_2026_09_01/two_cstr_checkpoints/two_cstr_value+grad_seed9_metric_compatible_replica.pt",
+      "checkpoint_sha256": "831061f83fd0cc0c9a4b510919a065a8ac55c1e2eba6a2715b65f072975f1c5c",
+      "config_name": "value+grad",
+      "gate4_result": {
+        "mismatches": [],
+        "passed": true
+      },
+      "legacy_metrics": {
+        "align": 0.8207520246505737,
+        "b20": 1.0,
+        "b3": 1.0,
+        "frac_neg": 0.01,
+        "lam_grad": 0.2,
+        "lam_val": 0.003,
+        "state_jac_med": 2.1534749269485474,
+        "test_mse": 0.003436875529587269
+      },
+      "metrics": {
+        "align": 0.8207520246505737,
+        "b20": 1.0,
+        "b3": 1.0,
+        "frac_neg": 0.01,
+        "lam_grad": 0.2,
+        "lam_val": 0.003,
+        "state_jac_med": 2.1534749269485474,
+        "test_mse": 0.003436875529587269
+      },
+      "seed": 9
+    },
+    "value_only__seed0": {
+      "checkpoint_path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/solver_audit_execution_2026_09_01/two_cstr_checkpoints/two_cstr_value_only_seed0_metric_compatible_replica.pt",
+      "checkpoint_sha256": "8df4b144519abf8caac39d521fe349cff434f5272f178c6ce1d635ad4bfaa7b0",
+      "config_name": "value_only",
+      "gate4_result": {
+        "mismatches": [],
+        "passed": true
+      },
+      "legacy_metrics": {
+        "align": 0.24061410129070282,
+        "b20": 0.2,
+        "b3": 0.0,
+        "frac_neg": 0.338,
+        "lam_grad": 0.0,
+        "lam_val": 0.003,
+        "state_jac_med": 4.065959453582764,
+        "test_mse": 0.006184360943734646
+      },
+      "metrics": {
+        "align": 0.24061410129070282,
+        "b20": 0.2,
+        "b3": 0.0,
+        "frac_neg": 0.338,
+        "lam_grad": 0.0,
+        "lam_val": 0.003,
+        "state_jac_med": 4.065959453582764,
+        "test_mse": 0.006184360943734646
+      },
+      "seed": 0
+    },
+    "value_only__seed1": {
+      "checkpoint_path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/solver_audit_execution_2026_09_01/two_cstr_checkpoints/two_cstr_value_only_seed1_metric_compatible_replica.pt",
+      "checkpoint_sha256": "3ac3829f54208b68f87e8beeae57f826d6940e52e5ac69cb6e595b66888813e8",
+      "config_name": "value_only",
+      "gate4_result": {
+        "mismatches": [],
+        "passed": true
+      },
+      "legacy_metrics": {
+        "align": 0.36374539136886597,
+        "b20": 0.4,
+        "b3": 0.6,
+        "frac_neg": 0.274,
+        "lam_grad": 0.0,
+        "lam_val": 0.003,
+        "state_jac_med": 3.5834317207336426,
+        "test_mse": 0.006154253613203764
+      },
+      "metrics": {
+        "align": 0.36374539136886597,
+        "b20": 0.4,
+        "b3": 0.6,
+        "frac_neg": 0.274,
+        "lam_grad": 0.0,
+        "lam_val": 0.003,
+        "state_jac_med": 3.5834317207336426,
+        "test_mse": 0.006154253613203764
+      },
+      "seed": 1
+    },
+    "value_only__seed2": {
+      "checkpoint_path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/solver_audit_execution_2026_09_01/two_cstr_checkpoints/two_cstr_value_only_seed2_metric_compatible_replica.pt",
+      "checkpoint_sha256": "1ae57eb59ad90b4bb3787ffdc655c2334225f7e092fb7e54523d25fb74be8a68",
+      "config_name": "value_only",
+      "gate4_result": {
+        "mismatches": [],
+        "passed": true
+      },
+      "legacy_metrics": {
+        "align": 0.36377790570259094,
+        "b20": 0.0,
+        "b3": 0.2,
+        "frac_neg": 0.258,
+        "lam_grad": 0.0,
+        "lam_val": 0.003,
+        "state_jac_med": 3.727742314338684,
+        "test_mse": 0.0067198192700743675
+      },
+      "metrics": {
+        "align": 0.36377790570259094,
+        "b20": 0.0,
+        "b3": 0.2,
+        "frac_neg": 0.258,
+        "lam_grad": 0.0,
+        "lam_val": 0.003,
+        "state_jac_med": 3.727742314338684,
+        "test_mse": 0.0067198192700743675
+      },
+      "seed": 2
+    },
+    "value_only__seed3": {
+      "checkpoint_path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/solver_audit_execution_2026_09_01/two_cstr_checkpoints/two_cstr_value_only_seed3_metric_compatible_replica.pt",
+      "checkpoint_sha256": "ad523ed7312888109bcd171b0f691a7bb86498e5ef46020a3dc01ecec0022ea1",
+      "config_name": "value_only",
+      "gate4_result": {
+        "mismatches": [],
+        "passed": true
+      },
+      "legacy_metrics": {
+        "align": 0.2756034731864929,
+        "b20": 0.0,
+        "b3": 0.0,
+        "frac_neg": 0.302,
+        "lam_grad": 0.0,
+        "lam_val": 0.003,
+        "state_jac_med": 3.741012454032898,
+        "test_mse": 0.005812902469187975
+      },
+      "metrics": {
+        "align": 0.2756034731864929,
+        "b20": 0.0,
+        "b3": 0.0,
+        "frac_neg": 0.302,
+        "lam_grad": 0.0,
+        "lam_val": 0.003,
+        "state_jac_med": 3.741012454032898,
+        "test_mse": 0.005812902469187975
+      },
+      "seed": 3
+    },
+    "value_only__seed4": {
+      "checkpoint_path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/solver_audit_execution_2026_09_01/two_cstr_checkpoints/two_cstr_value_only_seed4_metric_compatible_replica.pt",
+      "checkpoint_sha256": "3b4cf087887617dd1ffeb30d23025b761a4b942e3731a27054581aacce04fd5e",
+      "config_name": "value_only",
+      "gate4_result": {
+        "mismatches": [],
+        "passed": true
+      },
+      "legacy_metrics": {
+        "align": 0.1810533106327057,
+        "b20": 0.0,
+        "b3": 0.2,
+        "frac_neg": 0.398,
+        "lam_grad": 0.0,
+        "lam_val": 0.003,
+        "state_jac_med": 4.017565011978149,
+        "test_mse": 0.006162380799651146
+      },
+      "metrics": {
+        "align": 0.1810533106327057,
+        "b20": 0.0,
+        "b3": 0.2,
+        "frac_neg": 0.398,
+        "lam_grad": 0.0,
+        "lam_val": 0.003,
+        "state_jac_med": 4.017565011978149,
+        "test_mse": 0.006162380799651146
+      },
+      "seed": 4
+    },
+    "value_only__seed5": {
+      "checkpoint_path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/solver_audit_execution_2026_09_01/two_cstr_checkpoints/two_cstr_value_only_seed5_metric_compatible_replica.pt",
+      "checkpoint_sha256": "64ae2cad9594ae3066849529d35f3bf4b23e7d4ee3955b1d23d06847b4054116",
+      "config_name": "value_only",
+      "gate4_result": {
+        "mismatches": [],
+        "passed": true
+      },
+      "legacy_metrics": {
+        "align": 0.31593963503837585,
+        "b20": 0.2,
+        "b3": 0.2,
+        "frac_neg": 0.318,
+        "lam_grad": 0.0,
+        "lam_val": 0.003,
+        "state_jac_med": 3.3200342655181885,
+        "test_mse": 0.0060439202934503555
+      },
+      "metrics": {
+        "align": 0.31593963503837585,
+        "b20": 0.2,
+        "b3": 0.2,
+        "frac_neg": 0.318,
+        "lam_grad": 0.0,
+        "lam_val": 0.003,
+        "state_jac_med": 3.3200342655181885,
+        "test_mse": 0.0060439202934503555
+      },
+      "seed": 5
+    },
+    "value_only__seed6": {
+      "checkpoint_path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/solver_audit_execution_2026_09_01/two_cstr_checkpoints/two_cstr_value_only_seed6_metric_compatible_replica.pt",
+      "checkpoint_sha256": "b7e7cfb0ecf1fef7e349bf60f49049f6a271627d02ec002a3f0917a541c17828",
+      "config_name": "value_only",
+      "gate4_result": {
+        "mismatches": [],
+        "passed": true
+      },
+      "legacy_metrics": {
+        "align": 0.3414863348007202,
+        "b20": 0.0,
+        "b3": 0.2,
+        "frac_neg": 0.284,
+        "lam_grad": 0.0,
+        "lam_val": 0.003,
+        "state_jac_med": 4.188740491867065,
+        "test_mse": 0.005664160009473562
+      },
+      "metrics": {
+        "align": 0.3414863348007202,
+        "b20": 0.0,
+        "b3": 0.2,
+        "frac_neg": 0.284,
+        "lam_grad": 0.0,
+        "lam_val": 0.003,
+        "state_jac_med": 4.188740491867065,
+        "test_mse": 0.005664160009473562
+      },
+      "seed": 6
+    },
+    "value_only__seed7": {
+      "checkpoint_path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/solver_audit_execution_2026_09_01/two_cstr_checkpoints/two_cstr_value_only_seed7_metric_compatible_replica.pt",
+      "checkpoint_sha256": "8ad8e9283deb3363fe0e32326479e3112bf6eca8ac28f745014bfce681e144e0",
+      "config_name": "value_only",
+      "gate4_result": {
+        "mismatches": [],
+        "passed": true
+      },
+      "legacy_metrics": {
+        "align": 0.3135654330253601,
+        "b20": 0.4,
+        "b3": 0.0,
+        "frac_neg": 0.306,
+        "lam_grad": 0.0,
+        "lam_val": 0.003,
+        "state_jac_med": 3.9102818965911865,
+        "test_mse": 0.0059753418900072575
+      },
+      "metrics": {
+        "align": 0.3135654330253601,
+        "b20": 0.4,
+        "b3": 0.0,
+        "frac_neg": 0.306,
+        "lam_grad": 0.0,
+        "lam_val": 0.003,
+        "state_jac_med": 3.9102818965911865,
+        "test_mse": 0.0059753418900072575
+      },
+      "seed": 7
+    },
+    "value_only__seed8": {
+      "checkpoint_path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/solver_audit_execution_2026_09_01/two_cstr_checkpoints/two_cstr_value_only_seed8_metric_compatible_replica.pt",
+      "checkpoint_sha256": "f3d36e23e28ea192538f12478a7088d113b399249f444f6f3f9019876d9308e3",
+      "config_name": "value_only",
+      "gate4_result": {
+        "mismatches": [],
+        "passed": true
+      },
+      "legacy_metrics": {
+        "align": 0.23076888918876648,
+        "b20": 0.0,
+        "b3": 0.0,
+        "frac_neg": 0.352,
+        "lam_grad": 0.0,
+        "lam_val": 0.003,
+        "state_jac_med": 3.9083834886550903,
+        "test_mse": 0.007220450323075056
+      },
+      "metrics": {
+        "align": 0.23076888918876648,
+        "b20": 0.0,
+        "b3": 0.0,
+        "frac_neg": 0.352,
+        "lam_grad": 0.0,
+        "lam_val": 0.003,
+        "state_jac_med": 3.9083834886550903,
+        "test_mse": 0.007220450323075056
+      },
+      "seed": 8
+    },
+    "value_only__seed9": {
+      "checkpoint_path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/solver_audit_execution_2026_09_01/two_cstr_checkpoints/two_cstr_value_only_seed9_metric_compatible_replica.pt",
+      "checkpoint_sha256": "0088f239e26c23221ebdd512da79f5201a3f92366793cfc895b693b02a87595b",
+      "config_name": "value_only",
+      "gate4_result": {
+        "mismatches": [],
+        "passed": true
+      },
+      "legacy_metrics": {
+        "align": 0.4402787983417511,
+        "b20": 0.8,
+        "b3": 0.8,
+        "frac_neg": 0.226,
+        "lam_grad": 0.0,
+        "lam_val": 0.003,
+        "state_jac_med": 2.9497077465057373,
+        "test_mse": 0.004847453907132149
+      },
+      "metrics": {
+        "align": 0.4402787983417511,
+        "b20": 0.8,
+        "b3": 0.8,
+        "frac_neg": 0.226,
+        "lam_grad": 0.0,
+        "lam_val": 0.003,
+        "state_jac_med": 2.9497077465057373,
+        "test_mse": 0.004847453907132149
+      },
+      "seed": 9
+    }
+  }
+}

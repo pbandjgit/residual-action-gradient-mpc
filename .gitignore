@@ -25,8 +25,14 @@ __pycache__/
 venv/
 
 # Internal-only material not part of the public release
-# (remove these lines if you intend to publish them)
+# (docs/ is now curated for publication -- see docs/ for the included
+# protocol/decision-record/freeze-manifest files; reviewer correspondence
+# and pre-review drafting notes are never copied into this repo at all)
 g_refs/
-docs/
-manuscript/
 artifacts/
+
+# Local release-staging scratch (raw result directories, archives before
+# upload); these are published separately as GitHub Release assets, not
+# committed to git history
+release_staging/
+*.tar.zst

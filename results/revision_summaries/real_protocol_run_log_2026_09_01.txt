@@ -1,0 +1,15 @@
+[2026-09-01T04:33:15.384406+00:00] starting run_real_protocol()
+[2026-09-01T05:09:20.793784+00:00] run_real_protocol() completed in 2165.4s
+M1: /Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/ablation_query_manifest_2026_08_31.json 9d20952e81a2f0e384e8e43318ef16b4a381d2def5dd0fd0f4ee426e7a423635
+M2 seed 0 : /Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/ablation_training_manifest_seed0_2026_08_31.json
+M2 seed 1 : /Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/ablation_training_manifest_seed1_2026_08_31.json
+M2 seed 2 : /Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/ablation_training_manifest_seed2_2026_08_31.json
+M2 seed 3 : /Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/ablation_training_manifest_seed3_2026_08_31.json
+M2 seed 4 : /Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/ablation_training_manifest_seed4_2026_08_31.json
+M2 seed 5 : /Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/ablation_training_manifest_seed5_2026_08_31.json
+M2 seed 6 : /Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/ablation_training_manifest_seed6_2026_08_31.json
+M2 seed 7 : /Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/ablation_training_manifest_seed7_2026_08_31.json
+M2 seed 8 : /Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/ablation_training_manifest_seed8_2026_08_31.json
+M2 seed 9 : /Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/ablation_training_manifest_seed9_2026_08_31.json
+M3: /Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/ablation_results_manifest_a28bb79aa5ca_2026_08_31.json aff8803fd4455227d5cf680e4106f75bc64522ee2e76ee2c656eade8c113fe74
+outcome: {'query_matched_effect': 'SUPPORTED', 'target_specificity': 'NOT_SPECIFIC', 'non_groupsort_replication': 'GROUPSORT_SPECIFIC', 'loss_interaction': 'INCONCLUSIVE', 'mse_attribution': 'UNRESOLVED', 'mse_attribution_sub_label': 'MSE_MATCH_INFEASIBLE', 'step2_exploratory_only': False, 'manuscript_action': 'NARROW_TO_SUBSET'}

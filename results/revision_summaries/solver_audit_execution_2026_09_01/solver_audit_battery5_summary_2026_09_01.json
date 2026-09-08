@@ -1,0 +1,276 @@
+{
+  "canonical_payload_sha256": "32a9391009810ab46bd0cddef863a2e1863bc2a6d2a4a18594b724eac3d476cf",
+  "descriptive": {
+    "value+grad": {
+      "input_box_satisfied": {
+        "max": 1.0,
+        "mean": 1.0,
+        "min": 1.0,
+        "n_seeds": 10
+      },
+      "input_never_saturated": {
+        "max": 0.0,
+        "mean": 0.0,
+        "min": 0.0,
+        "n_seeds": 10
+      },
+      "input_saturation_frequency_actuator0": {
+        "max": 0.32666666666666666,
+        "mean": 0.21133333333333332,
+        "min": 0.07333333333333333,
+        "n_seeds": 10
+      },
+      "input_saturation_frequency_actuator1": {
+        "max": 0.43499999999999994,
+        "mean": 0.32633333333333336,
+        "min": 0.23166666666666663,
+        "n_seeds": 10
+      },
+      "input_saturation_frequency_actuator2": {
+        "max": 0.4883333333333333,
+        "mean": 0.26516666666666666,
+        "min": 0.07333333333333333,
+        "n_seeds": 10
+      },
+      "input_saturation_frequency_actuator3": {
+        "max": 0.32166666666666666,
+        "mean": 0.2763333333333334,
+        "min": 0.22833333333333336,
+        "n_seeds": 10
+      },
+      "max_temperature_absolute_reactor1": {
+        "max": 459.84063828056316,
+        "mean": 453.3023093566803,
+        "min": 447.7914752309677,
+        "n_seeds": 10
+      },
+      "max_temperature_absolute_reactor3": {
+        "max": 454.89925905880773,
+        "mean": 449.8575702766837,
+        "min": 444.520398244041,
+        "n_seeds": 10
+      },
+      "max_temperature_deviation_reactor1": {
+        "max": 57.84063828056318,
+        "mean": 51.30230935668029,
+        "min": 45.79147523096773,
+        "n_seeds": 10
+      },
+      "max_temperature_deviation_reactor3": {
+        "max": 52.89925905880769,
+        "mean": 47.85757027668369,
+        "min": 42.52039824404105,
+        "n_seeds": 10
+      },
+      "solver_completed_rate": {
+        "max": 1.0,
+        "mean": 1.0,
+        "min": 1.0,
+        "n_seeds": 10
+      },
+      "success": {
+        "max": 1.0,
+        "mean": 0.96,
+        "min": 0.8,
+        "n_seeds": 10
+      },
+      "temperature_cap_satisfied_posthoc": {
+        "max": 0.6,
+        "mean": 0.5799999999999998,
+        "min": 0.4,
+        "n_seeds": 10
+      },
+      "temperature_violation_frequency_reactor1": {
+        "max": 0.16,
+        "mean": 0.10166666666666666,
+        "min": 0.06833333333333333,
+        "n_seeds": 10
+      },
+      "temperature_violation_frequency_reactor3": {
+        "max": 0.26166666666666666,
+        "mean": 0.11549999999999998,
+        "min": 0.06833333333333333,
+        "n_seeds": 10
+      },
+      "temperature_violation_integral_reactor1": {
+        "max": 0.5179415240313626,
+        "mean": 0.21964870683988452,
+        "min": 0.08992373387030703,
+        "n_seeds": 10
+      },
+      "temperature_violation_integral_reactor3": {
+        "max": 0.7147559289194008,
+        "mean": 0.2527218291187948,
+        "min": 0.08992373387030703,
+        "n_seeds": 10
+      }
+    },
+    "value_only": {
+      "input_box_satisfied": {
+        "max": 1.0,
+        "mean": 1.0,
+        "min": 1.0,
+        "n_seeds": 10
+      },
+      "input_never_saturated": {
+        "max": 0.2,
+        "mean": 0.02,
+        "min": 0.0,
+        "n_seeds": 10
+      },
+      "input_saturation_frequency_actuator0": {
+        "max": 0.6383333333333333,
+        "mean": 0.4491666666666667,
+        "min": 0.17166666666666666,
+        "n_seeds": 10
+      },
+      "input_saturation_frequency_actuator1": {
+        "max": 0.5166666666666666,
+        "mean": 0.2546666666666667,
+        "min": 0.03333333333333333,
+        "n_seeds": 10
+      },
+      "input_saturation_frequency_actuator2": {
+        "max": 0.7033333333333334,
+        "mean": 0.2801666666666667,
+        "min": 0.03333333333333333,
+        "n_seeds": 10
+      },
+      "input_saturation_frequency_actuator3": {
+        "max": 0.46333333333333326,
+        "mean": 0.22949999999999998,
+        "min": 0.07666666666666667,
+        "n_seeds": 10
+      },
+      "max_temperature_absolute_reactor1": {
+        "max": 580.3328919065541,
+        "mean": 520.5206581248502,
+        "min": 453.3546465490914,
+        "n_seeds": 10
+      },
+      "max_temperature_absolute_reactor3": {
+        "max": 518.2966149768615,
+        "mean": 489.080757144751,
+        "min": 449.74427220098295,
+        "n_seeds": 10
+      },
+      "max_temperature_deviation_reactor1": {
+        "max": 178.3328919065541,
+        "mean": 118.5206581248502,
+        "min": 51.35464654909147,
+        "n_seeds": 10
+      },
+      "max_temperature_deviation_reactor3": {
+        "max": 116.29661497686152,
+        "mean": 87.08075714475102,
+        "min": 47.74427220098288,
+        "n_seeds": 10
+      },
+      "solver_completed_rate": {
+        "max": 1.0,
+        "mean": 1.0,
+        "min": 1.0,
+        "n_seeds": 10
+      },
+      "success": {
+        "max": 0.8,
+        "mean": 0.2,
+        "min": 0.0,
+        "n_seeds": 10
+      },
+      "temperature_cap_satisfied_posthoc": {
+        "max": 0.4,
+        "mean": 0.26,
+        "min": 0.2,
+        "n_seeds": 10
+      },
+      "temperature_violation_frequency_reactor1": {
+        "max": 0.625,
+        "mean": 0.4333333333333333,
+        "min": 0.18166666666666667,
+        "n_seeds": 10
+      },
+      "temperature_violation_frequency_reactor3": {
+        "max": 0.62,
+        "mean": 0.4128333333333333,
+        "min": 0.14833333333333334,
+        "n_seeds": 10
+      },
+      "temperature_violation_integral_reactor1": {
+        "max": 11.327639502640725,
+        "mean": 5.257498973612312,
+        "min": 0.6237111405981162,
+        "n_seeds": 10
+      },
+      "temperature_violation_integral_reactor3": {
+        "max": 6.749398867115431,
+        "mean": 3.4071480967853205,
+        "min": 0.4728986179405089,
+        "n_seeds": 10
+      }
+    }
+  },
+  "generated_at_utc": "2026-09-02T08:05:38.396561+00:00",
+  "input_record_hashes": {
+    "value+grad__seed0": "a09fdec153498cb72106999c8334824caa3e00beee938811e6e87ba60d643316",
+    "value+grad__seed1": "de4d3684efb736b6cece492842589bef2e6bed0a6ff19cf26517da8c59713d50",
+    "value+grad__seed2": "7157cbaa579c8ccba71c6686dd8493573c4f4d3eb779f5fbe9146c8b53cb1846",
+    "value+grad__seed3": "51f9c824662ac33e88f5e59e3f19b35c7a719b90a6cd63950dec97297387a50b",
+    "value+grad__seed4": "68947fb0f3931d32ecded8e66dd642e27403513c14c2c80200ed56c43d0d4df1",
+    "value+grad__seed5": "653b8ecaa8e2a8b93111486c123bf19dbe364b19c58d3e220795031a81ddcb13",
+    "value+grad__seed6": "fa1b8690e12cfc2a35196f451ed2be001278edee8ad33abc7c4056655aaa01ec",
+    "value+grad__seed7": "6abdc6494a98458188a90c677b807e365fa9d883d4930a12abfcec9f47366445",
+    "value+grad__seed8": "cfad136cdb52d0ee87464fcaf82ee7528dc3edd3a665af8def45030786d5aeff",
+    "value+grad__seed9": "e1e4e1b494a43d052e90a0cc3c98df14861c39ba45137efe2df2792f05deae10",
+    "value_only__seed0": "401bedb0586acfce2fcf3f4bb4e9a6ae17a6bed94e83b42a8236d2e0cbfdbbda",
+    "value_only__seed1": "59c58658bb0e7e87f0cfa564564dad62236121aef930b8fe7199b70a8269557d",
+    "value_only__seed2": "d67c45710241e910833cb4a70f191956e94e1abb3202734138aaaa85886c6687",
+    "value_only__seed3": "ebe0087fb4c6b5299b958dc21e849ef886bc7c11ddf4557f659c413dd4e74be5",
+    "value_only__seed4": "549778775839145df3f3d026b390732fbda2a6f96499ee4eb74c51206b4f7f95",
+    "value_only__seed5": "d8147c9eae954914c76467524e2c554194923509ffc2ffe50bdb0a80dfd44f98",
+    "value_only__seed6": "11ec0e3cede21a7f121b26df54d20aff1966d53faceeffb06fcb8b51319a46cc",
+    "value_only__seed7": "4e487c270940c88296c708165e83b421907640c5de812b93b38b98e2e2acca4f",
+    "value_only__seed8": "baa3e2d03a3ee6d4c90b8ec4d09bf2111b1c5a2ab0ea80e0bb5d244e4d88c990",
+    "value_only__seed9": "ae9a9df5061af61eba87e1ee73ddef784f3e82cb38c90eac9940b149750ad628"
+  },
+  "kind": "solver_audit_battery5_summary",
+  "predecessor_two_cstr_setup_manifest_sha256": "56b6670b1ed2a0446e100fbd21c6269a280b72d71d6786131d99d251e237d3c6",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "worst_case": {
+    "value+grad": {
+      "reactor1": {
+        "n_rollouts": 50,
+        "worst_max_temperature_absolute_K": 527.0195048235893,
+        "worst_max_temperature_deviation_K": 125.01950482358926
+      },
+      "reactor3": {
+        "n_rollouts": 50,
+        "worst_max_temperature_absolute_K": 514.1806320943551,
+        "worst_max_temperature_deviation_K": 112.18063209435508
+      }
+    },
+    "value_only": {
+      "reactor1": {
+        "n_rollouts": 50,
+        "worst_max_temperature_absolute_K": 763.9282214688385,
+        "worst_max_temperature_deviation_K": 361.9282214688385
+      },
+      "reactor3": {
+        "n_rollouts": 50,
+        "worst_max_temperature_absolute_K": 690.1558141024948,
+        "worst_max_temperature_deviation_K": 288.15581410249484
+      }
+    }
+  }
+}

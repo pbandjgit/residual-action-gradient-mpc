@@ -1,0 +1,103 @@
+{
+  "all_passed": true,
+  "battery2_json_path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/solver_audit_execution_2026_09_01/solver_audit_battery2_B_seed0_2026_09_01.json",
+  "battery2_json_self_hash": "f4cc802a3eff261256f72b1ce2fb456d44367c9e35423308dd5be3a255c3f36a",
+  "battery2_npz_hash_cross_check_passed": true,
+  "battery2_npz_path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/solver_audit_execution_2026_09_01/solver_audit_battery2_B_seed0_iterations_2026_09_01.npz",
+  "battery2_npz_sha256": "7bc97818d185acf91abad5e09801030f54f5f634ef03adbb6d666d08f8fd8c56",
+  "canonical_payload_sha256": "434bfe18e5306a6d9cea0985416775fa53044e98ac8444212b1c9fc1c139702f",
+  "checkpoint_path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed0/attempt1/B_seed0_ep050.pt",
+  "checkpoint_sha256": "9c6e573b27dd34966061d6c1baa7bc9a60fd343e3bc6f09f17b21e545f4cb60e",
+  "compat_sample_sha256": "da96268ff9678883bf1fa2cc5c53d41eee3d2d628b288af4cf189d91eea41b5b",
+  "gates": {
+    "gate1": {
+      "measured_error": 0.0,
+      "passed": true,
+      "per_point_error": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "gate2": {
+      "measured_error": 1.6852657700416774e-16,
+      "passed": true,
+      "per_point_error": [
+        0.0,
+        0.0,
+        0.0,
+        1.6852657700416774e-16,
+        0.0
+      ]
+    },
+    "gate3": {
+      "measured_error": 1.9927441301782916e-09,
+      "passed": true,
+      "per_point_error": [
+        1.8683014438050834e-09,
+        1.1885037972722625e-09,
+        1.4795860691959967e-09,
+        1.9927441301782916e-09,
+        1.1019886606816298e-09
+      ]
+    },
+    "gate4": {
+      "full_coverage": true,
+      "n_steps_checked": 120,
+      "passed": true,
+      "per_step_mismatches": [],
+      "summary_mismatches": []
+    },
+    "gate5": {
+      "cases": {
+        "dedup_path": {
+          "passed": true,
+          "selected_start_id": 0,
+          "starts_deduplicated": [
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        "status_rejection": {
+          "candidate0_certified": false,
+          "candidate0_status_ok": false,
+          "passed": true
+        },
+        "uncertified_fallback": {
+          "passed": true,
+          "selected_start_id": 1
+        }
+      },
+      "passed": true
+    },
+    "gate6": {
+      "mismatches": [],
+      "passed": true
+    }
+  },
+  "generated_at_utc": "2026-09-03T07:02:01.525283+00:00",
+  "kind": "oracle_nlp_preflight_gate_results",
+  "pool_path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/data/processed/lcnn_paper_cstr_onestep_20k.npz",
+  "pool_sha256": "4076dd7f245afc98560ea0d8b7ca3d418bb2cb9f9a4b0b0178378b06b6aba71a",
+  "simulator_config": {
+    "dt_hr": 0.001,
+    "integration_substeps": 100,
+    "shifted": true
+  },
+  "upstream_solver_audit_freeze_manifest_sha256": "43a2f92def68d4b432121bd2e558fa5f6684cb007c82cd616eb59462900ceac0",
+  "upstream_solver_audit_setup_manifest_sha256": "03773cbe9f1329650a1fc7719e8a479125cae00b34e6a2303235273a7515e70d"
+}

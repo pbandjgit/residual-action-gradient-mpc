@@ -1,0 +1,51 @@
+{
+  "battery1_record_hashes": {
+    "B_seed0": "a37af1dfae304270235b2c1b11b935f57eaa54af5306ae859da09fa49945d4f3",
+    "B_seed1": "9a5e6b3bd3b619adc22ad374baaa52cb99847b0bed048c991ae6d77a66580973",
+    "B_seed2": "c9c8a35c7b7efb11629734a166cc57b53cb7d95c1865a451f207cf5b81ac8f12",
+    "B_seed3": "e7e079459ae5f0ef493e1f39509d32243aa01fa59a821bfe021701c8006836e3",
+    "B_seed4": "4cdb954df2c1809d5e483e6af8ee7d71ac53d00434311b3eec0a3e2698a8d045",
+    "B_seed5": "372ae123fa44d6ae5d197c3064be6e04e44c6b910cfaa635c9a2d7dc92b7cbfa",
+    "B_seed6": "be98545d9f5140ecfab2ac6b8d921e81b89795a46046ab650935f8e2a4f8bc4e",
+    "B_seed7": "86a734c31d3df834b6f1debd173449f7680274819ac47eb2f75e1658af530043",
+    "B_seed8": "63e2992a1745f173898c97d00568923f0ce1a791351b38529881c6e3ec5a474e",
+    "B_seed9": "015d32fd6a399f4e50096c42daf66da37a28de8da3acb65669c63dacad48a63e",
+    "E_seed0": "fcabf58e204b7d203f153c2c4ce6af6e66de9ca08de3172a96788119b1525c20",
+    "E_seed1": "61bc0e81a69d82bb4aab74aee7844c603113e11360f87aa2cfb899380f74e145",
+    "E_seed2": "a0a246f2f9f28546e760defb44b6060cd146bab5b7317f58ce1fef7964406c50",
+    "E_seed3": "88bce00f7c349deaeba40ffa526b1e38edd006ab5cb0addf77f43743f15a3187",
+    "E_seed4": "c64669088af1ad96bc5cf889b66ddfa366e44676d843e676e312e595343ec482",
+    "E_seed5": "70b3e647acd7c1d5307122e8be4e5ce18b56d70732d913f91aac868f7f32cfa1",
+    "E_seed6": "c166f7f40142c67de58673419a225f2ff6e0039e1d7757cfff63b9c3c842507e",
+    "E_seed7": "2c443c3cba0baf7425dbc8ee0548f50f5ecea7c8ed076a98537a83030f21bc28",
+    "E_seed8": "13ba9ab583bb025e39316d3ac164feec5b57505e8e039cfe28101d59ffd38c0d",
+    "E_seed9": "6f3185d0587306fbc05583076e0c0db1c92d6eaa030a3842979d3d9c3c07240a"
+  },
+  "battery2_semantic_check_passed": true,
+  "canonical_payload_sha256": "d0e0c242f5ce0b0c5f0983eff02abf14670213cda1c0717834ff0d5dd806705a",
+  "casadi_version": "3.7.2",
+  "environment": {
+    "machine": "arm64",
+    "numpy_version": "1.26.4",
+    "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+    "processor": "arm",
+    "python_version": "3.14.0",
+    "torch_version": "2.10.0"
+  },
+  "generated_at_utc": "2026-09-03T07:05:06.737516+00:00",
+  "ipopt_options": {
+    "ipopt.acceptable_iter": 15,
+    "ipopt.acceptable_tol": 1e-06,
+    "ipopt.hessian_approximation": "exact",
+    "ipopt.linear_solver": "mumps",
+    "ipopt.max_iter": 500,
+    "ipopt.mu_strategy": "adaptive",
+    "ipopt.print_level": 0,
+    "ipopt.sb": "yes",
+    "ipopt.tol": 1e-08,
+    "print_time": 0
+  },
+  "kind": "oracle_nlp_setup_manifest",
+  "predecessor_freeze_sha256": "fa56e4d31e472eca2093461b23599b19c1c509df480bfe720154af2ef55d7e70",
+  "predecessor_solver_audit_freeze_sha256": "43a2f92def68d4b432121bd2e558fa5f6684cb007c82cd616eb59462900ceac0"
+}

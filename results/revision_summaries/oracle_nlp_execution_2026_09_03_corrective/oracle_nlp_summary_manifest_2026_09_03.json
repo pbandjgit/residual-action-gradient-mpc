@@ -1,0 +1,131 @@
+{
+  "canonical_payload_sha256": "bb3ef491b8d264f335047ff8a2707baecc1dd5accfe2d6faae751a306adfa377",
+  "decomposition_identity_passed": true,
+  "gap_B": {
+    "ci_lower": 10.886289423923623,
+    "ci_upper": 93.75914934357192,
+    "p_value": 0.001953125,
+    "p_value_holm": 0.00390625,
+    "per_seed": [
+      247.3876515802961,
+      6.4247415947549635,
+      0.25509235021528937,
+      0.3925386024418135,
+      28.540135942221834,
+      62.61437964578361,
+      0.07835181233834587,
+      26.972203941841187,
+      54.799786356477696,
+      8.951925189171698
+    ],
+    "point_estimate": 43.64168070155425
+  },
+  "gap_E": {
+    "ci_lower": 0.09337934877049477,
+    "ci_upper": 0.2857382391957021,
+    "p_value": 0.001953125,
+    "p_value_holm": 0.00390625,
+    "per_seed": [
+      0.12126625563030405,
+      0.06501378199535698,
+      0.0764831538171052,
+      0.23660943670677942,
+      0.5080956006440479,
+      0.1569107918936481,
+      0.0412259696508516,
+      0.43345475922590493,
+      0.09967081570336189,
+      0.06437404094357978
+    ],
+    "point_estimate": 0.180310460621094
+  },
+  "generated_at_utc": "2026-09-03T07:09:39.928859+00:00",
+  "kind": "oracle_nlp_summary_manifest",
+  "nlp_mean_final_v": 1.6750884862143245e-09,
+  "optimizer_gap": {
+    "per_ic_range": 0.0009878810833807475,
+    "point_estimate": 0.0005955525750385866
+  },
+  "oracle_mean_final_v": 0.0005955542501270729,
+  "outcome": "REPORTED",
+  "predecessor_certnlp_record_hashes": [
+    "12a9d533d3d2f73054d80265edb4c183d8ed5778ea55c047f0e9f7597de7eac5",
+    "56d387a5db7a5409d7227865f17cb7dfe60a1dff9a0db5c6f82f27e39a0f1cc5",
+    "dc554b5a3dc7c462f26ea2edd0d6bae35170541ae0886c1a31b9465f4d579c43",
+    "bbc2582a155b7eb17bc22cd2b25f6e4e0375ac565e92259f7a1e08bedd02816f",
+    "3251450aa8a74b1321a0c60285b4efc8e5a9e10b9c5ec3e50de86609f38e857f"
+  ],
+  "predecessor_oracle20_record_hashes": [
+    "8089a78cd2b2a7e7a0911d323c226b13ea1bbc967d7e79a900f0de8b5d74eee5",
+    "38b79154edbe70efda0352d7525392be9fa44a44437e02164769e2cdd1beff15",
+    "0c7762ec985c194a36935e90c58c3b40ecef0c69f486aa64e719a7506843536c",
+    "374936d329e6494b12f6e78c21494acfa9f3e6d9724b7fb843d1417d5a461ade",
+    "07c8367b4d714dd0c50a627ad54ee6d97330170a297f633965cd284e7dcd282e"
+  ],
+  "predecessor_setup_manifest_sha256": "d0e0c242f5ce0b0c5f0983eff02abf14670213cda1c0717834ff0d5dd806705a",
+  "predecessor_timing_manifest_sha256": "01b17aa6a5f6622530c6e44c317b49117727358cd86b759fa40e8c5006534486",
+  "resample_arrays_path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/oracle_nlp_execution_2026_09_03_corrective/oracle_nlp_resample_arrays_2026_09_03.npz",
+  "resample_arrays_sha256": "8bf89173f3298110dc52383b57ccdb95f3f16bbf80b5d71f1bddc27098cd1406",
+  "secondary_endpoints": {
+    "certified_nlp": {
+      "lyapunov_increase_count": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "settling_time": [
+        8,
+        8,
+        7,
+        7,
+        18
+      ],
+      "success": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tv": [
+        2.0000455928164267,
+        1.9999998859076673,
+        1.341389344907232,
+        1.3413907101493427,
+        1.3466320796762763
+      ]
+    },
+    "oracle20": {
+      "lyapunov_increase_count": [
+        52,
+        52,
+        53,
+        53,
+        47
+      ],
+      "settling_time": [
+        8,
+        8,
+        7,
+        7,
+        18
+      ],
+      "success": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tv": [
+        5.220820277835675,
+        5.220356708403827,
+        4.602115363331803,
+        4.611612710835933,
+        4.368932564945391
+      ]
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "canonical_payload_sha256": "21aebe787011c50b7cfdbcb45f8f8a325f0a2f8d478a2be594c5ec98ee7c1a02",
+  "clean_rebuild_paths": {
+    "0.0001": "results/ablation_sensitivity_2026_09_03/sensitivity_clean_eps0.0001_2026_09_03.npz",
+    "0.01": "results/ablation_sensitivity_2026_09_03/sensitivity_clean_eps0.01_2026_09_03.npz",
+    "0.02": "results/ablation_sensitivity_2026_09_03/sensitivity_clean_eps0.02_2026_09_03.npz"
+  },
+  "clean_rebuild_sha256": {
+    "0.0001": "e051c96d89a83181155ad5ae08a2df01815da8d4e38e59f7e32299f96a8c7c28",
+    "0.01": "55bb39ca0b129ab2afbe95eb9b4868ccf11a1923e61b162a2810510b5868fa90",
+    "0.02": "1fb66b99e69a7fe619097035bd2964a8aa584bf4df5680bd912a7e2e721e8739"
+  },
+  "common_support_mask_path": "results/ablation_sensitivity_2026_09_03/sensitivity_common_support_mask_2026_09_03.npz",
+  "common_support_mask_sha256": "d05ee3a7053e71d92bb00ed85cf005dc8037ce76998c2f9a4b5b1e074212ab51",
+  "environment": {
+    "cpu_architecture": "arm64",
+    "numpy_version": "1.26.4",
+    "os_platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+    "processor": "arm",
+    "python_version": "3.14.0",
+    "torch_version": "2.10.0"
+  },
+  "fd_reference_ug_scale": 13.057424650981908,
+  "generated_at_utc": "2026-09-03T10:09:28.956953+00:00",
+  "kind": "sensitivity_setup_manifest",
+  "oracle_fixed_idx_path": "results/ablation_execution_2026_08_31/ablation_oracle_fixed_idx_a28bb79aa5ca_2026_08_31.npz",
+  "oracle_fixed_idx_sha256": "1a2db3cff400242e57ca4c5125ad9fd94d2513c63adc46a8e9de27a2b11fc03f",
+  "pool_content_sha256": "4076dd7f245afc98560ea0d8b7ca3d418bb2cb9f9a4b0b0178378b06b6aba71a",
+  "predecessor_freeze_sha256": "14bf236e2cf0f7131f052fdbb2c1ac1a51524ff60b27d26229163980d716cb87",
+  "predecessor_original_ablation_m1_sha256": "9d20952e81a2f0e384e8e43318ef16b4a381d2def5dd0fd0f4ee426e7a423635"
+}

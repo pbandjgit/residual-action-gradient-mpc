@@ -1,0 +1,9 @@
+{
+  "canonical_payload_sha256": "300526736dc1a920edb97bb945b772142476c47a9fd69b298ac38516593ed673",
+  "generated_at_utc": "2026-09-03T07:05:06.738431+00:00",
+  "hash_chain_verified": true,
+  "kind": "oracle_nlp_compat_gate_manifest",
+  "predecessor_setup_manifest_sha256": "d0e0c242f5ce0b0c5f0983eff02abf14670213cda1c0717834ff0d5dd806705a",
+  "rehashed_compat_sample_sha256": "da96268ff9678883bf1fa2cc5c53d41eee3d2d628b288af4cf189d91eea41b5b",
+  "rehashed_preflight_results_sha256": "07741ea978be8bc819cc50be0974bc3f231849f33dd03c9bc129ad40dcd249ed"
+}

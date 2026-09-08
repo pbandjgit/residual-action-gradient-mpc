@@ -1,0 +1,446 @@
+{
+  "canonical_payload_sha256": "c395863ec3c56ac77e439088e215f8dc0893600902f895f1e69d480e3ca72e5c",
+  "checkpoint_sha256": {
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/A_seed7_ep010.pt": "21434a656ca0c39dc56ca97490d945a7f788eeba8e9a03dacc85f7c6054c61e6",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/A_seed7_ep020.pt": "232f7af10e93a873d9198458863ceec0d543de41a80e4d5fb33fcb3eda57cb35",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/A_seed7_ep030.pt": "71547cc7e155a829c136df18fd8f912846c6a42823fc457d5879a0c70df846f2",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/A_seed7_ep040.pt": "57a5652fa447e7b8acb8b631c7addb256223cc518ebba4ead8e7e9b21a17d903",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/A_seed7_ep050.pt": "465132d1adfd420521748fc71741f4d31909430ba9176ccb6e372c3996867459",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/BFNN_seed7_ep010.pt": "9f2a9994f651457ada200956b62206217d5f4e7311702fc83b57c4b2d2a3646f",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/BFNN_seed7_ep020.pt": "994101098c745f6d9410efde9c77c14569c8ca6939be3ca3c659eed4d89ff858",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/BFNN_seed7_ep030.pt": "7a74f5d87258d3099dfcf1b66c4a2798ac8c79e024bfa7e72143ed7eddd3aaac",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/BFNN_seed7_ep040.pt": "119fa3409d269b881c3bf8ed74b09c3853d7383d70638738c59f3e6be5a01255",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/BFNN_seed7_ep050.pt": "54e8833c7fc13edd26265ec5775be19adaf63a32733a4f3ef206acdd65ce74ae",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/B_seed7_ep010.pt": "f27e7a15d5534b66630d7f8197df3da545546bf1b164a7959b6bd5ba9330a7bc",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/B_seed7_ep020.pt": "52b085f23bef9fde18dbc2818b5c675b56623bdd94d5e7d61f4c6585be5dbcda",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/B_seed7_ep030.pt": "e284e2fb413eaee0921322c48cb7086c3310e9f6bc2f1ecee22f35123339319a",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/B_seed7_ep040.pt": "3f071ad3cd386fff4602e1dd1b33e5251b985682b5d54d8d748e149220b4197c",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/B_seed7_ep050.pt": "745a9e23c56fc300bd1cbaf6d28c47b2477132ff1344631bc34739aae5575ff4",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/B_sensitivity_seed7_ep010.pt": "484bda9c5629dfeaa555d92d6f211cef6d3a88ca7619490ba834ea6a6f321c1c",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/B_sensitivity_seed7_ep020.pt": "e1260301afd06c8123c9a3b6e9152de0c340f98b69c9a5b967b094751f8d3614",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/B_sensitivity_seed7_ep030.pt": "f4861ee961b8c248b71eb6e5f22a79907dacfba9ee1810a665499b60aa51fd78",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/B_sensitivity_seed7_ep040.pt": "54c51aedb9d76ddea3f0d6cbc59ef094b12953eb610ba7881798c49d4ac88391",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/B_sensitivity_seed7_ep050.pt": "2a2a8ed6d88fcb64da7e1154a9f3011d49171ac81be30f2dc2a8a007ce20b54f",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/B_wd0.0001_seed7_ep050.pt": "7fefe8000e16ed18ded3c267672cb73cb6e4cda164d978f749bbb8bc87909d0d",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/B_wd0.001_seed7_ep050.pt": "d519b9016fdfd0ad1c87e41699ca20381c03330a66444d1d3c3bf414e453914d",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/B_wd0.01_seed7_ep050.pt": "e2f139aecca6795f6047e1442f43048a4a9181ce322ea1deb49d5def0049f999",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/B_wd0.0_seed7_ep050.pt": "0660ed4e6bda591a1454e01d0e7cdb7190f32dc0a83c7ee9433e08fac03beed6",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/B_wd1e-05_seed7_ep050.pt": "a5edc9a5fe8c1615b4f81cabffaaee130db8a56fb2c489f65564b321d06d2419",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/C_seed7_ep010.pt": "d07dce0c971ba794030c4807e1764f40466888e9b519e95b32833dc64d296b80",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/C_seed7_ep020.pt": "0945efd011f98f68b3ddea5a15f7e84e7bfaccc1f33def0dc4b5578f0311bb14",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/C_seed7_ep030.pt": "bacef9a27e9df815a8f0f5d1f1f79387325e020ee6359419a2bf53623bf80bbc",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/C_seed7_ep040.pt": "cf4f1e7c7c20a82e5af9c211fea82da9a177bf4e86fa42de0a1e0936b2503ad4",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/C_seed7_ep050.pt": "64f1293a00ad746c614d38a9b3cfbf78564dbf7db861118a033ba388d0e58c47",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/C_sensitivity_seed7_ep010.pt": "f2f2568d9938b6584bb5b194fbc31dc31cdd77d182eddb95a5114e92bd31e6d9",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/C_sensitivity_seed7_ep020.pt": "d4ec76c2b111137d74ee3acdd4802c52fce9640fa4c79d13988693e716491c62",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/C_sensitivity_seed7_ep030.pt": "ab170537538d71c1a799ff7a71e5325a4da1fea7a95e9dacf3243b8e5c14179c",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/C_sensitivity_seed7_ep040.pt": "90febd447bdfb3aa5f3088ec2f9fe2d3deed1d802cf717adcf1774df36e4ee1c",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/C_sensitivity_seed7_ep050.pt": "6f1cd23a0431ad4947a1952f4a80f2f88ff91044df259404f81642a456f694c8",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/D_lamjac0.001_seed7_ep010.pt": "9ec398ec91d47e57acfd2efb6f1fde53f3922867c29436bce015987054aeea5f",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/D_lamjac0.001_seed7_ep020.pt": "ed36d7b2f2b8bae68a1028d2010056c6409011ed3709b334ac4344054dc6a9db",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/D_lamjac0.001_seed7_ep030.pt": "8425094faab461bc08a4c9b32996e5452a0d15ac2cf3a5408b5c54eb818b683c",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/D_lamjac0.001_seed7_ep040.pt": "7405d4d14eafe1462f962034d2600c506b5dab6a069e9d15a4f58c1c28a3cf22",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/D_lamjac0.001_seed7_ep050.pt": "85a764ba4af9d128c0262d337f02988fa6c34c84c350208e62fc5c6210d1bdd3",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/D_lamjac0.005_seed7_ep010.pt": "3441122b6dda3f43f61a7e05f920d7ffbfb18086e63ed757ae70ea47c77e5e0a",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/D_lamjac0.005_seed7_ep020.pt": "b30fd7ad50ab4bb4a6e67a090a1127263a76e35bbe293c75b0ef2801cf110c2f",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/D_lamjac0.005_seed7_ep030.pt": "967a70c45d68cde68239b90a256b829d7bfb993acf3ed7ba91458d56bb821741",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/D_lamjac0.005_seed7_ep040.pt": "02c9b13e64320486ef640b6d3faf84794490867a4f10b6b0ff82428564ef6c04",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/D_lamjac0.005_seed7_ep050.pt": "f8b0a9d3229b217b704bbbce45fb2c504b502d8911610fc2cc7ce0deba4f412c",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/D_lamjac0.01_seed7_ep010.pt": "3b0c164bcdc8eabd84aa14f763e07d4a1356a75b24ec7a248143476be1a65e8b",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/D_lamjac0.01_seed7_ep020.pt": "9f942a60bc089d32690f07f9e0e97e2c7792559b5476d5989fd312ad85f971ac",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/D_lamjac0.01_seed7_ep030.pt": "88909bfc7d78fc6f369896219ff54dfc5f9f6348cb255aefc98219dbb46b2863",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/D_lamjac0.01_seed7_ep040.pt": "572c740f512fea470a5fda75ed8288dac55c4d475a1639137466f06c78ca6799",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/D_lamjac0.01_seed7_ep050.pt": "9c9b872a810ae77fd502694427de6ddd2b07ffe8508d301fd8e133525ec0f178",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/D_lamjac0.05_seed7_ep010.pt": "4f9e3b86c06a304b422470f6ad0f536732ea5501571ac4be9783c80928dcd1e1",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/D_lamjac0.05_seed7_ep020.pt": "16f3c559083053bad00f3e98b862f26e79eb426f0a66f0f221682111eb1027ff",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/D_lamjac0.05_seed7_ep030.pt": "b315c90d12275d5ed6c864bd8285a4231c198e16314460f30c9647c3979b383a",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/D_lamjac0.05_seed7_ep040.pt": "bcab8f8c98395f638b8fc680733eac4eacaded92ff0c833ae54cebc0b3213271",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/D_lamjac0.05_seed7_ep050.pt": "7ee7f784c0483a602dd12edd29a66af05452942d7a11257707168e2d16529f47",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/D_lamjac0.1_seed7_ep010.pt": "524a5966f38278627d0d96dafcc0a69114ea79a3d1b3507a6f9e7fe2ac7559cb",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/D_lamjac0.1_seed7_ep020.pt": "d9e7e9ba5d4d20cd8ab5c2a0a01ce846b8e5a72cbd8eba541e208321c3e1e171",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/D_lamjac0.1_seed7_ep030.pt": "266353f25eb625b78dad4cf008f8be8725ee135b8e4b5b383338dd23507747f1",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/D_lamjac0.1_seed7_ep040.pt": "07d2ed43f10dd5e45df679f809f65da2883f70e8ec349b89d77e7d2a88a120b5",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/D_lamjac0.1_seed7_ep050.pt": "4beec36880ee931b221b4a645e611bd2548b4dd16e64edfc56ca26d7690185b4",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/D_lamjac0.5_seed7_ep010.pt": "0901d8a25e4bea99225c265df8badda94e5346457b4db377156979449e705281",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/D_lamjac0.5_seed7_ep020.pt": "20700912403a745225ecb09d365199f694106441084afe52fbee105b24f7b80f",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/D_lamjac0.5_seed7_ep030.pt": "e91a173b02ca5c33f2d4293d5c72d7cf9ba0b12c2a2be1ee71b42b4302d8f684",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/D_lamjac0.5_seed7_ep040.pt": "3893d71f282497ef4caf61d2bb6f3d3f99de2299f1e748bd03f17a9e2c0bba47",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/D_lamjac0.5_seed7_ep050.pt": "6d4878a0a350b87c9092819b9ec37bdffe4dc2afcdb4e65b898b660868b08000",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/E-FNN_seed7_ep010.pt": "2368d46b7538798a1b354bb027819dc4ec2ade4e9bb9597a8e83bb50a70537b6",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/E-FNN_seed7_ep020.pt": "55a5b44855ef814dca51ee2474da241c358eccc27417fa590b9d913f4899372e",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/E-FNN_seed7_ep030.pt": "c0bf0a1d4dc9fddedcdd250dd46f3079928e2eb317eff71654edf625f3d35d6a",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/E-FNN_seed7_ep040.pt": "4fba70fb87ce22e43346d225ec5fa747ae9c1bb5f9ea6bcb790fd66559f05e5c",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/E-FNN_seed7_ep050.pt": "fddb0fcbd945ad55c961dbe694fdb6203da8b1385dd0781762eea7bedbe6bd71",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/E_seed7_ep010.pt": "404fdaa42831fe89ba56584d6aa764b72d4867c788528d6e32b29bb91a4bccd2",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/E_seed7_ep020.pt": "3cc7e61048569d56e315b8929d9323cb629a7924b385e17178e3e2ff7be525d6",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/E_seed7_ep030.pt": "96b8c319a222fccbe72ca506c36e869e837c08ebb9e37f5b7b6ca5433a55545f",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/E_seed7_ep040.pt": "fb76e11999104402b7157902247a13a8cc21d4ba9e9a34a9dfc3373f615ad3c3",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/E_seed7_ep050.pt": "4c55fdbbb5c013c473d5c41e0a087053fde58c37a46b16e2b76b4d7551fc3a8b",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/F_seed7_ep010.pt": "1c53c19ef4ad58ef17ced7db0ea45d308a4791873dba3b1e4495c99cfcc60c45",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/F_seed7_ep020.pt": "915797a6a46388a5cfd50b126195c4a5e61d4a44acd88bd73b22ab761e4eac70",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/F_seed7_ep030.pt": "43f8136f74c3fbd52349aa72eeaa8eeaec92091df884ff292db6cfda9cfc9778",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/F_seed7_ep040.pt": "fef14c5950a8dd70abcb685d881b610a3944060a944c456de6defded64421bfa",
+    "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/F_seed7_ep050.pt": "97040384cf0fe85ed2fd0136f50e9b505044bb6b5a8004aa6655aa6d49375264"
+  },
+  "closed_loop_success": {
+    "A": 0.0,
+    "B": 0.0,
+    "B-FNN": 1.0,
+    "C": 0.2,
+    "D": 1.0,
+    "E": 1.0,
+    "E-FNN": 1.0,
+    "F": 1.0
+  },
+  "generated_at_utc": "2026-09-01T05:01:24.600019+00:00",
+  "init_state_hashes": {
+    "A": "8a521c3c0b88abc8a750ee1248fdc9f60459f9297fcc754c26203bc9ecac8a59",
+    "B": "8a521c3c0b88abc8a750ee1248fdc9f60459f9297fcc754c26203bc9ecac8a59",
+    "B-FNN": "2940ad3426815924d80a3607161aaf090df3a5765ad0faa9bc03f7beb2c97c7a",
+    "C": "8a521c3c0b88abc8a750ee1248fdc9f60459f9297fcc754c26203bc9ecac8a59",
+    "D": "8a521c3c0b88abc8a750ee1248fdc9f60459f9297fcc754c26203bc9ecac8a59",
+    "E": "8a521c3c0b88abc8a750ee1248fdc9f60459f9297fcc754c26203bc9ecac8a59",
+    "E-FNN": "2940ad3426815924d80a3607161aaf090df3a5765ad0faa9bc03f7beb2c97c7a",
+    "F": "8a521c3c0b88abc8a750ee1248fdc9f60459f9297fcc754c26203bc9ecac8a59"
+  },
+  "kind": "ablation_training_manifest",
+  "lambda_jac_full_grid_closed_loop": {
+    "0.001": 0.0,
+    "0.005": 0.0,
+    "0.01": 0.0,
+    "0.05": 0.0,
+    "0.1": 0.0,
+    "0.5": 1.0
+  },
+  "lambda_jac_grid_trace": [
+    {
+      "lam_jac": 0.001,
+      "test_mse": 0.0017605193424969912,
+      "val_mse": 0.0017461006063967943
+    },
+    {
+      "lam_jac": 0.005,
+      "test_mse": 0.001649221288971603,
+      "val_mse": 0.0016497159376740456
+    },
+    {
+      "lam_jac": 0.01,
+      "test_mse": 0.001793264178559184,
+      "val_mse": 0.0017760905902832747
+    },
+    {
+      "lam_jac": 0.05,
+      "test_mse": 0.0015601167688146234,
+      "val_mse": 0.0015619585756212473
+    },
+    {
+      "lam_jac": 0.1,
+      "test_mse": 0.0015428378246724606,
+      "val_mse": 0.0015457492554560304
+    },
+    {
+      "lam_jac": 0.5,
+      "test_mse": 0.0013061845675110817,
+      "val_mse": 0.0013190153986215591
+    }
+  ],
+  "lambda_jac_selected": 0.5,
+  "lcnn_init_hash_consistent": true,
+  "mse_match_attempt_log": [
+    {
+      "epoch": 10,
+      "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/B_seed7_ep010.pt",
+      "rel_diff": 0.7524845462533335,
+      "test_mse": 0.0003107557713519782,
+      "val_mse": 0.0003177693288307637,
+      "weight_decay": 0.0
+    },
+    {
+      "epoch": 20,
+      "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/B_seed7_ep020.pt",
+      "rel_diff": 0.7079123999031562,
+      "test_mse": 0.0003843112790491432,
+      "val_mse": 0.0003749926690943539,
+      "weight_decay": 0.0
+    },
+    {
+      "epoch": 30,
+      "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/B_seed7_ep030.pt",
+      "rel_diff": 0.9013671136472655,
+      "test_mse": 0.000126910483231768,
+      "val_mse": 0.0001266284816665575,
+      "weight_decay": 0.0
+    },
+    {
+      "epoch": 40,
+      "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/B_seed7_ep040.pt",
+      "rel_diff": 0.8387670961464698,
+      "test_mse": 0.00020794739248231053,
+      "val_mse": 0.00020699665765278041,
+      "weight_decay": 0.0
+    },
+    {
+      "epoch": 50,
+      "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/B_seed7_ep050.pt",
+      "rel_diff": 0.8898656564566602,
+      "test_mse": 0.0001441371423425153,
+      "val_mse": 0.00014139447011984885,
+      "weight_decay": 0.0
+    },
+    {
+      "epoch": 50,
+      "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/B_wd0.0_seed7_ep050.pt",
+      "rel_diff": 0.8898656564566602,
+      "test_mse": 0.0001441371423425153,
+      "val_mse": 0.00014139447011984885,
+      "weight_decay": 0.0
+    },
+    {
+      "epoch": 50,
+      "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/B_wd1e-05_seed7_ep050.pt",
+      "rel_diff": 0.8830461948464238,
+      "test_mse": 0.00015328149311244488,
+      "val_mse": 0.0001501495426055044,
+      "weight_decay": 1e-05
+    },
+    {
+      "epoch": 50,
+      "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/B_wd0.0001_seed7_ep050.pt",
+      "rel_diff": 0.894109463396587,
+      "test_mse": 0.00013747907360084355,
+      "val_mse": 0.00013594611664302647,
+      "weight_decay": 0.0001
+    },
+    {
+      "epoch": 50,
+      "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/B_wd0.001_seed7_ep050.pt",
+      "rel_diff": 0.7978793660178073,
+      "test_mse": 0.0002668287488631904,
+      "val_mse": 0.0002594898105598986,
+      "weight_decay": 0.001
+    },
+    {
+      "epoch": 50,
+      "path": "/Users/pbandj/Documents/mpc_phase1/phd/paper_h_smooth_lcnn_lmpc/results/ablation_execution_2026_08_31/checkpoints/seed7/attempt1/B_wd0.01_seed7_ep050.pt",
+      "rel_diff": 0.5005861859781449,
+      "test_mse": 0.0006542573100887239,
+      "val_mse": 0.0006411655922420323,
+      "weight_decay": 0.01
+    }
+  ],
+  "mse_match_outcome": "MSE_MATCH_INFEASIBLE_FOR_SEED",
+  "mse_match_selected_test_mse": null,
+  "noise_realized_table_path": "results/ablation_execution_2026_08_31/ablation_noise_table_seed7_2026_08_31.npz",
+  "noise_realized_table_sha256": "7b89b8b1a1632a8c0728cdce41d5ef517f9e843758793d4bc5faa5b131da7869",
+  "optimizer_steps": {
+    "A": 2100,
+    "B": 10250,
+    "B-FNN": 10250,
+    "C": 10250,
+    "D": 12600,
+    "E": 2100,
+    "E-FNN": 2100,
+    "F": 2100
+  },
+  "oracle_summary": {
+    "A": {
+      "align_cos": {
+        "frac_neg": 0.25375,
+        "mean": 0.40747659630283595,
+        "median": 0.6022771473936075,
+        "p90": 0.9816841689102453
+      },
+      "excluded_fraction": 0.0,
+      "rel_grad_error": {
+        "mean": 2.7198671363242704,
+        "median": 2.2713788955048364,
+        "p90": 5.062279862646061
+      }
+    },
+    "B": {
+      "align_cos": {
+        "frac_neg": 0.06875,
+        "mean": 0.7430785206611946,
+        "median": 0.9119424271606587,
+        "p90": 0.9981402115252734
+      },
+      "excluded_fraction": 0.0,
+      "rel_grad_error": {
+        "mean": 0.8640855875539093,
+        "median": 0.6944221051429709,
+        "p90": 1.741923820778988
+      }
+    },
+    "B-FNN": {
+      "align_cos": {
+        "frac_neg": 0.005,
+        "mean": 0.9634564114777434,
+        "median": 0.9930016323116583,
+        "p90": 0.9998179917077636
+      },
+      "excluded_fraction": 0.0,
+      "rel_grad_error": {
+        "mean": 0.3974333795584326,
+        "median": 0.34056481982988085,
+        "p90": 0.7354540610233264
+      }
+    },
+    "C": {
+      "align_cos": {
+        "frac_neg": 0.00625,
+        "mean": 0.9479509227587305,
+        "median": 0.9932956191205446,
+        "p90": 0.9998466837321955
+      },
+      "excluded_fraction": 0.0,
+      "rel_grad_error": {
+        "mean": 0.30960028129073075,
+        "median": 0.20386192878550008,
+        "p90": 0.6295944956772831
+      }
+    },
+    "D": {
+      "align_cos": {
+        "frac_neg": 0.0775,
+        "mean": 0.7034193584013991,
+        "median": 0.8599832050167133,
+        "p90": 0.9947498537416348
+      },
+      "excluded_fraction": 0.0,
+      "rel_grad_error": {
+        "mean": 1.2894552045518912,
+        "median": 1.0109711629051008,
+        "p90": 2.523516115526896
+      }
+    },
+    "E": {
+      "align_cos": {
+        "frac_neg": 0.00875,
+        "mean": 0.9529477298619367,
+        "median": 0.9974947719019249,
+        "p90": 0.9998912125350666
+      },
+      "excluded_fraction": 0.0,
+      "rel_grad_error": {
+        "mean": 0.23895388119750968,
+        "median": 0.1383752476218541,
+        "p90": 0.6013814284839993
+      }
+    },
+    "E-FNN": {
+      "align_cos": {
+        "frac_neg": 0.00625,
+        "mean": 0.9666166420660022,
+        "median": 0.998824148378973,
+        "p90": 0.9999698013615264
+      },
+      "excluded_fraction": 0.0,
+      "rel_grad_error": {
+        "mean": 0.23545822195737875,
+        "median": 0.12616733573670008,
+        "p90": 0.5536112901915803
+      }
+    },
+    "F": {
+      "align_cos": {
+        "frac_neg": 0.01,
+        "mean": 0.9520482869185745,
+        "median": 0.9967685927431741,
+        "p90": 0.9998491816689321
+      },
+      "excluded_fraction": 0.0,
+      "rel_grad_error": {
+        "mean": 0.23921546556150963,
+        "median": 0.12871408238835463,
+        "p90": 0.5739778305864319
+      }
+    }
+  },
+  "predecessor_query_manifest_sha256": "9d20952e81a2f0e384e8e43318ef16b4a381d2def5dd0fd0f4ee426e7a423635",
+  "rng_stream_mapping": {
+    "base_noise_seed": 1007,
+    "sensitivity_noise_seed": 4007,
+    "shuffle_seed": 5007
+  },
+  "scale_constants": {
+    "disp": [
+      1.3525928258895874,
+      1.3445199728012085
+    ],
+    "g_scale": 19.21042251586914,
+    "ug_scale": 13.053929328918457,
+    "xm": [
+      0.0038025975227355957,
+      -0.31276121735572815,
+      0.00557453790679574,
+      -1295.78369140625
+    ],
+    "xs": [
+      0.8477103114128113,
+      38.15367889404297,
+      2.0224528312683105,
+      287433.4375
+    ],
+    "ym": [
+      0.005209453869611025,
+      -0.38639551401138306
+    ],
+    "ys": [
+      0.8455620408058167,
+      38.15328598022461
+    ]
+  },
+  "seed": 7,
+  "sensitivity_arm": {
+    "closed_loop_success": {
+      "B": 0.0,
+      "C": 0.4
+    },
+    "optimizer_steps": {
+      "B": 10250,
+      "C": 10250
+    },
+    "test_mse": {
+      "B": 0.000821860448922962,
+      "C": 0.0005039158859290183
+    },
+    "val_mse": {
+      "B": 0.0008297890308313072,
+      "C": 0.0005115020903758705
+    },
+    "wall_clock_seconds": {
+      "B": 14.292263417504728,
+      "C": 14.211873207241297
+    }
+  },
+  "test_mse": {
+    "A": 0.0016547893173992634,
+    "B": 0.0001441371423425153,
+    "B-FNN": 0.0001484798704041168,
+    "C": 6.148573447717354e-05,
+    "D": 0.0013061845675110817,
+    "E": 0.001268640742637217,
+    "E-FNN": 0.0013152888277545571,
+    "F": 0.0012060316512361169
+  },
+  "val_mse": {
+    "A": 0.0016433901619166136,
+    "B": 0.00014139447011984885,
+    "B-FNN": 0.0001502089435234666,
+    "C": 6.089595990488306e-05,
+    "D": 0.0013190153986215591,
+    "E": 0.001283836318179965,
+    "E-FNN": 0.0013015983859077096,
+    "F": 0.0012168243993073702
+  },
+  "wall_clock_seconds": {
+    "A": 2.940427583642304,
+    "B": 14.261748874559999,
+    "B-FNN": 3.0360840829089284,
+    "C": 14.317626917734742,
+    "D": 23.628137541934848,
+    "E": 3.853723249398172,
+    "E-FNN": 0.9931008750572801,
+    "F": 3.8879299592226744
+  }
+}

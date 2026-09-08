@@ -1,0 +1,21 @@
+{
+  "all_passed": true,
+  "canonical_payload_sha256": "61b7eb1112f992b40e1a4cc108126ecdfca89bba6e3f4a0d9e83803cffc9a917",
+  "checks": {
+    "clean_rebuild_byte_identical": true,
+    "final_checkpoint_state_dict_match": true,
+    "init_state_hash_match": true,
+    "test_mse_match": true,
+    "val_mse_match": true
+  },
+  "environment": {
+    "cpu_architecture": "arm64",
+    "numpy_version": "1.26.4",
+    "os_platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+    "processor": "arm",
+    "python_version": "3.14.0",
+    "torch_version": "2.10.0"
+  },
+  "generated_at_utc": "2026-09-03T10:02:27.911155+00:00",
+  "kind": "sensitivity_compatibility_reconstruction"
+}

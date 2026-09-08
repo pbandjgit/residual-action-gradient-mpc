@@ -1,0 +1,37 @@
+{
+  "canonical_payload_sha256": "56b6670b1ed2a0446e100fbd21c6269a280b72d71d6786131d99d251e237d3c6",
+  "compute_device": "cpu",
+  "configs": [
+    "value+grad",
+    "value_only"
+  ],
+  "environment": {
+    "cpu_architecture": "arm64",
+    "numpy_version": "1.26.4",
+    "os_platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+    "processor": "arm",
+    "python_version": "3.14.0",
+    "torch_version": "2.10.0"
+  },
+  "generated_at_utc": "2026-09-02T07:06:37.314032+00:00",
+  "kind": "solver_audit_two_cstr_setup_manifest",
+  "legacy_log_path": "results/interim/logs/two_cstr_lgrad.json",
+  "legacy_log_sha256": "080f0a98386e5bd4afca0ac7749a136a0c39e034cd5091b96d20c261ac803709",
+  "predecessor_solver_audit_freeze_sha256": "43a2f92def68d4b432121bd2e558fa5f6684cb007c82cd616eb59462900ceac0",
+  "schema_version": "solver_audit_v11_2026_09_02_two_cstr",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "torch_num_threads": 1,
+  "two_cstr_lgrad_file_sha256": "61fe9d27eb360d5291695e2af4dbb67511cc7fa62b2c1cc6ab6786c70cb07944",
+  "two_cstr_series_file_sha256": "518d6aa98a9ac86466f97b5543ad28f84a92434aec9e5505ef9cb2ff4649b135"
+}
