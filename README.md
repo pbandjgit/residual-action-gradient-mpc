@@ -1,6 +1,14 @@
 # Residual Action-Gradient Consistency for Finite-Budget Learned Lyapunov MPC of Nonlinear Processes
 
-Reproduction code and data for the paper. A learned surrogate placed inside a
+This repository reproduces the computational results of the manuscript
+"Residual Action-Gradient Consistency for Finite-Budget Learned Lyapunov
+Model Predictive Control of Nonlinear Processes," submitted to the *Journal
+of Process Control* (manuscript number JPROCONT-D-26-00624). It contains
+code, configuration, result data, and figure/table regeneration procedures;
+it is not a mirror of the manuscript text, which is submitted separately
+through the journal's own system.
+
+A learned surrogate placed inside a
 finite-budget Lyapunov MPC must be faithful in the **control-gradient** of the
 Lyapunov residual (a one-step local derivative relevant to the online solver's
 sensitivity to the input, not identical to the solver's actual multi-step

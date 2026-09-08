@@ -21,11 +21,10 @@ would make every clone of this repository unnecessarily heavy.
 Instead:
 
 - **This repository** contains the code that produced every reported number
-  and figure, the pre-registered protocol/decision-record documentation for
-  each batch (`docs/`), the top-level summary and manifest files for each
-  batch (`results/revision_summaries/`, small, aggregate-level), an index of
-  every file in the full raw archives with its SHA-256 (`RELEASE_INDEX.json`
-  / `SHA256SUMS`), and a verifier (`verify_release.py`).
+  and figure, the top-level summary and manifest files for each batch
+  (`results/revision_summaries/`, small, aggregate-level), an index of every
+  file in the full raw archives with its SHA-256 (`RELEASE_INDEX.json` /
+  `SHA256SUMS`), and a verifier (`verify_release.py`).
 - **The GitHub Release** attached to this repository's revision tag carries
   the five full raw-evidence archives as binary assets:
 
@@ -39,11 +38,10 @@ Instead:
 
   An earlier, uncorrected run of the oracle-NLP comparison
   (`oracle_nlp_execution_2026_09_03_preliminary`) is not published: it has a
-  known documentation/provenance defect described in the corrective batch's
-  own Decision Record, is not the source of any number reported in the
-  paper, and publishing it alongside the corrective batch would only create
-  ambiguity about which archive is authoritative. It is retained in the
-  authors' internal (non-public) records.
+  known documentation/provenance defect, is not the source of any number
+  reported in the paper, and publishing it alongside the corrective batch
+  would only create ambiguity about which archive is authoritative. It is
+  retained in the authors' internal (non-public) records.
 
 ## Reproducing from a clean checkout
 
@@ -119,13 +117,3 @@ strings.
 Each `*_synthetic_smoke_*.py` / `*_smoke_*.py` script is a fast, synthetic-data
 correctness check for its corresponding driver and does not itself produce a
 reported number.
-
-## Protocol and decision-record documentation
-
-`docs/` contains, for each of the five batches, the pre-registered protocol
-(what would be run and how it would be judged, written before execution),
-its freeze manifest (the SHA-256 of the protocol document itself, fixing it
-against later edits), and a decision record (what was actually observed and
-how the manuscript's claims were adjusted in response, written after
-execution). These are the primary source for how "prespecified before
-execution" claims in the paper and Supplement should be understood.
